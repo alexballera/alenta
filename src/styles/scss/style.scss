@@ -1,4 +1,7 @@
-body{
-  background-color: pink;
-  color: blue;
-}
+@charset "UTF-8";
+
+@import "utils/**/*";
+@import '../fonts/src/**/*';
+@import '../fonts/scss/font-awesome';
+@import "customs/**/*";
+@import "components/**/*";

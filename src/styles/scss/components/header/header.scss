@@ -1,0 +1,43 @@
+.header{
+  display: flex;
+  flex-flow: row wrap;
+  padding: 2rem;
+  &__nav{
+    &--desktop{
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      >li{
+        >a{
+          padding: 2rem 0.5rem;
+          text-transform: uppercase;
+          font-weight: 300;
+          font-size: 1.2rem;
+          position: relative;
+          &:hover{
+            background-color: rgb(39,198,193);
+            color: white;
+          }
+          &:before {
+        		content: "";
+        		display: block;
+        		width: 2px;
+        		height: 60%;
+            top: 20%;
+        		background-color: darkgrey;
+        		position: absolute;
+        	}
+        }
+        &:first-child a:before {
+			  	display: none;
+      	}
+      }
+    }
+    &--mobile{
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 200px;
+    }
+  }
+}
