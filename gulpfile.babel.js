@@ -2,7 +2,7 @@ import gulp from 'gulp';
 require('require-dir')('./tasks')
 
 // Para que babelify trabaje se debe instalar babel-preset-latest
-// sudo npm i -D babel-preset-latest gulp-sass-glob
+// sudo npm i -D babel-preset-latest require-dir gulp-sass-glob
 
 // Build
 gulp.task('build', ['copy'], () => {
