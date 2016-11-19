@@ -4,6 +4,6 @@
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad() {
-    alert('Funciona Script')
+    console.log('Funciona Script')
   }
 })()
