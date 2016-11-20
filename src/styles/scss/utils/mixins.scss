@@ -20,7 +20,7 @@ $screen-sm: 37.5em; // 600px
 $screen-mm: 42.5em; // 680px
 $screen-md: 48em; // 768px
 $screen-lg: 64em; // 1024px
-$screen-xl: 90em; // 1440px
+$screen-xl: 80em; // 1280px
 $screen-landscape: landscape; // landscape
 
 @mixin respond-to($media) {
