@@ -2,7 +2,7 @@
   &__alenta{}
   &__seccion{
     // height: 100px;
-    padding: 2rem;
+    padding: 3rem;
     box-sizing: border-box;
     &:nth-child(odd){
       background-color: #F4F3F2;
@@ -30,7 +30,7 @@
     }
     &:nth-child(2){
       width: 6%;
-      margin: 0 auto;
+      text-align: center;
       >img{
         position: relative;
         top: -40px;
@@ -54,8 +54,9 @@
     color: rgb(105,210,239);
     width: 64px;
     position: relative;
-    top: -312px;
-    left: 1250px;
+    top: -380px;
+    left: 1230px;
+    border-radius: 10px;
     &:hover{
       background-color: rgb(105,210,239);
       span,
