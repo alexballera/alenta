@@ -12,6 +12,11 @@ a{
   }
 }
 
+.enlace__activo{
+  background-color: $color-primary;
+  color: white !important;
+}
+
 #alenta,
 #acerca,
 #consultorios,

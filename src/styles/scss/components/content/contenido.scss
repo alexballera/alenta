@@ -79,10 +79,13 @@
       margin: 1.25rem 0;
       font-size: 1.5rem;
     }
-    & p{
+    & p,
+    & ul,
+    & ul>li{
       color: $color-fonts;
       text-align: left;
       font-weight: 200;
+      line-height: 1.75rem;
     }
   }
   &__button{
@@ -120,6 +123,9 @@
         display: block;
         text-align: center;
       }
+    }
+    &__localizacion{
+      top: -560px;
     }
   }
 }
