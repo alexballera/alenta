@@ -92,8 +92,10 @@
       top: -380px;
       left: 96%;
       border-radius: 10px;
+      transition: all 0.3s ease;
       &:hover{
         background-color: rgb(105,210,239);
+        transition: all 0.3s ease;
         span,
         i{
           color: $color-primary;

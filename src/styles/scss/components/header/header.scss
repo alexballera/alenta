@@ -10,14 +10,20 @@
   width: 100%;
   background-color: white;
   z-index: 1000;
+  transition: all 1.2s ease;
   @include respond-to(xl) {
     padding-left: 1rem;
   }
   &__picture{
     width: 100%;
     text-align: center;
+    transition: all 0.3s ease;
     @include respond-to(xl) {
       width: 15%;
+      transition: all 0.3s ease;
+    }
+    >a>img{
+      transition: all 0.7s ease;
     }
   }
   &__nav{
@@ -49,9 +55,11 @@
           font-size: 1.2rem;
           position: relative;
           text-align: center;
+          transition: all 0.3s ease;
           &:hover{
             background-color: $color-primary;
             color: white;
+            transition: all 0.5s ease;
           }
           &:before{
             content: none;
@@ -77,9 +85,11 @@
   }
   &--little{
     height: 5rem;
+    transition: all 1.2s ease;
     >picture.header__picture{
       >a>img{
         width: 80%;
+        transition: all 0.7s ease;
       }
     }
     >nav.header__nav{
