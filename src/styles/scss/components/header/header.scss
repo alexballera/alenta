@@ -44,7 +44,7 @@
           position: relative;
           text-align: center;
           &:hover{
-            background-color: rgb(39,198,193);
+            background-color: $color-primary;
             color: white;
           }
           &:before{

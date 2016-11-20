@@ -1,7 +1,7 @@
 // Background
 @mixin background(
                   $imgpath,
-                  $color:auto,
+                  $color,
                   $size:cover,
                   $position:center,
                   $repeat:no-repeat) {
