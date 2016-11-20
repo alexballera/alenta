@@ -87,6 +87,12 @@
       font-weight: 200;
       line-height: 1.75rem;
     }
+    >img.etapa1{
+      padding: 1rem;
+      border: 1px solid $color-primary;
+      box-sizing: border-box;
+      height: 362px;
+    }
   }
   &__button{
     display: none;
@@ -126,6 +132,12 @@
     }
     &__localizacion{
       top: -560px;
+    }
+    &__proyecto{
+      top: -510px;
+    }
+    &__etapa1{
+      top: -695px;
     }
   }
 }
