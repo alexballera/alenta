@@ -1,4 +1,4 @@
-import menuMobile from './lib/menuMobile'
+import headerLittle from './lib/headerLittle'
 
 (() => {
   'use strict';
@@ -6,6 +6,6 @@ import menuMobile from './lib/menuMobile'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad() {
-    menuMobile()
+    headerLittle()
   }
 })()

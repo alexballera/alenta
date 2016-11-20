@@ -4,6 +4,12 @@
   align-items: center;
   padding: 2rem 1rem;
   padding-left: 0;
+  position: fixed;
+  height: 10rem;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
   @include respond-to(xl) {
     padding-left: 1rem;
   }
@@ -66,6 +72,24 @@
         &:first-child a:before {
 			  	display: none;
       	}
+      }
+    }
+  }
+  &--little{
+    height: 5rem;
+    >picture.header__picture{
+      >a>img{
+        width: 80%;
+      }
+    }
+    >nav.header__nav{
+      >ul>li>a{
+        font-size: 90%;
+        padding: 1.5rem 0;
+        &:before{
+          height: 44%;
+          top: 28%;
+        }
       }
     }
   }
