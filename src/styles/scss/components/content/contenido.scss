@@ -4,7 +4,11 @@
     // height: 100px;
     padding: 3rem;
     box-sizing: border-box;
-    &:nth-child(odd){
+    &.acerca,
+    &.proyecto,
+    &.etapa2,
+    &.promotores,
+    {
       background-color: #F4F3F2;
     }
   }
