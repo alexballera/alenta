@@ -34,53 +34,12 @@
       width: 85%;
     }
     &--responsive{
-      display: block;
-      width: 100%;
-      left: 0;
-      @include respond-to(lg) {
-        list-style-type: none;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      >li{
-        width: 100%;
+      @extend .nav__responsive;
+      >li>a{
+        font-size: 1.2rem;
         @include respond-to(lg) {
-          width: (100%/6)
+          font-size: 1.1rem;
         }
-        >a{
-          display: block;
-          width: 100%;
-          padding: 2rem 0;
-          text-transform: uppercase;
-          font-weight: 300;
-          font-size: 1.2rem;
-          position: relative;
-          text-align: center;
-          transition: all 0.3s ease;
-          &:hover{
-            background-color: $color-primary;
-            color: white;
-            transition: all 0.5s ease;
-          }
-          &:before{
-            content: none;
-          }
-          @include respond-to(lg) {
-            font-size: 1.1rem;
-            &:before {
-          		content: "";
-          		display: block;
-          		width: 2px;
-          		height: 60%;
-              top: 20%;
-          		background-color: darkgrey;
-          		position: absolute;
-          	}
-          }
-        }
-        &:first-child a:before {
-			  	display: none;
-      	}
       }
     }
   }
