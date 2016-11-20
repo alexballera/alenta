@@ -23,17 +23,49 @@
   }
   &__texto{
     &:nth-child(odd){
-      width: 45%;
+      width: 100%;
       border-top: 2px solid $color-primary;
       padding-top: 2rem;
       text-align: center;
+      @include respond-to(lg) {
+        width: 44%;
+      }
+    }
+    &:nth-child(1){
+      order: 2;
+      @include respond-to(lg) {
+        order: 1;
+      }
     }
     &:nth-child(2){
+      display: none;
       width: 6%;
       text-align: center;
       >img{
         position: relative;
         top: -40px;
+      }
+      @include respond-to(lg) {
+        order: 2;
+        display: block;
+      }
+    }
+    &:nth-child(3){
+      order: 1;
+      >img{
+        width: 100%;
+        @include respond-to(md) {
+          width: 672px;
+        }
+        @include respond-to(lg) {
+          width: 100%;
+        }
+        @include respond-to(xl) {
+          width: 521px;
+        }
+      }
+      @include respond-to(lg) {
+        order: 3;
       }
     }
     & h3{
@@ -50,34 +82,38 @@
     }
   }
   &__button{
-    background-color: $color-primary;
-    color: rgb(105,210,239);
-    width: 64px;
-    position: relative;
-    top: -380px;
-    left: 1230px;
-    border-radius: 10px;
-    &:hover{
-      background-color: rgb(105,210,239);
-      span,
-      i{
-        color: $color-primary;
-      }
-    }
-    &:active,
-    &:visited{
+    display: none;
+    @include respond-to(lg) {
+      display: block;
+      background-color: $color-primary;
       color: rgb(105,210,239);
-    }
-    >span{
+      width: 64px;
       position: relative;
-      top: 12px;
-      font-size: 80%;
-      display: block;
-      text-align: center;
-    }
-    >i.fa.fa-caret-down{
-      display: block;
-      text-align: center;
+      top: -380px;
+      left: 96%;
+      border-radius: 10px;
+      &:hover{
+        background-color: rgb(105,210,239);
+        span,
+        i{
+          color: $color-primary;
+        }
+      }
+      &:active,
+      &:visited{
+        color: rgb(105,210,239);
+      }
+      >span{
+        position: relative;
+        top: 12px;
+        font-size: 80%;
+        display: block;
+        text-align: center;
+      }
+      >i.fa.fa-caret-down{
+        display: block;
+        text-align: center;
+      }
     }
   }
 }
