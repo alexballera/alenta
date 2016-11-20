@@ -11,6 +11,7 @@
   background-color: white;
   z-index: 1000;
   transition: all 1.2s ease;
+  // transition: all 1.5s cubic-bezier(0,1,.98,0);
   @include respond-to(xl) {
     padding-left: 1rem;
   }
@@ -85,7 +86,8 @@
   }
   &--little{
     height: 5rem;
-    transition: all 1.2s ease;
+    // transition: all 1.2s ease;
+    transition: all 1.7s cubic-bezier(.08,.62,1,.2);
     >picture.header__picture{
       >a>img{
         width: 80%;
