@@ -1,0 +1,10 @@
+.contacto{
+  >.contenido__container{
+    >.contenido__texto{
+      &:nth-child(1){
+        border-top: none;
+        padding-top: 0;
+      }
+    }
+  }
+}
