@@ -1,0 +1,10 @@
+.contenido__seccion.acerca.localizacion.consultorios.areas-medicas{
+  background-color: white;
+  >.contenido__container{
+    >.contenido__texto{
+      &:nth-child(1){
+
+      }
+    }
+  }
+}
