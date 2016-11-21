@@ -1,0 +1,8 @@
+footer{
+  text-align: center;
+  >picture{
+    &:first-child{
+      margin-right: 3rem;
+    }
+  }
+}

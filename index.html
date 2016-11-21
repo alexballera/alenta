@@ -25,7 +25,7 @@
         <li><a href="#areas">Áreas Médicas</a></li>
         <li><a href="#cirugias">Salas de Cirugía</a></li>
         <li><a href="#hotel">Hotel</a></li>
-        <li><a href="#contactenos">Contactenos</a></li>
+        <li><a href="#contacto">Contactenos</a></li>
       </ul>
     </nav>
   </header>
@@ -513,15 +513,15 @@
                   <img src="images/promotores5.png" alt="">
                 </picture>
                 <p>
-                  Lorem ipsum dolor.
+                  Etapa 1 y 2 - Etapa 3 Fiduciaria
                 </p>
               </div>
-              <div>
-                <div class="promotores__container--uno">
+              <div class="promotores__container--uno">
+                <picture>
                   <img src="images/promotores6.png" alt="">
-                </div>
+                </picture>
                 <p>
-                  Lorem ipsum dolor.
+                  Constructora
                 </p>
               </div>
             </div>
@@ -539,7 +539,7 @@
                   <img src="images/promotores2.png" alt="">
                 </picture>
                 <p>
-                  Lorem ipsum dolor.
+                  Promotores
                 </p>
               </div>
               <div class="promotores__container--uno">
@@ -547,7 +547,8 @@
                   <img src="images/promotores3.png" alt="">
                 </picture>
                 <p>
-                  Lorem ipsum dolor.
+                  Diseño, Gerencia, <br>
+                  Interventoría y Ventas
                 </p>
               </div>
             </div>
@@ -557,7 +558,7 @@
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
-        <nav class="contenido__nav">
+        <nav class="contenido__nav promotores__nav">
           <ul id="navbar" class="contenido__nav--responsive">
             <li><a href="#alenta">Qué es Alenta</a></li>
             <li><a href="#localizacion">Localización</a></li>
@@ -571,8 +572,64 @@
         </nav>
       </section>
       <div id="contactenos" class="contenido__seccion"></div>
-      <section class="contenido__seccion contactenos">
-        <h2 class="contenido__titulo">Contactenos</h2>
+      <section class="contenido__seccion localizacion contactenos">
+        <h2 class="contenido__titulo">Sala de negocios</h2>
+        <div class="contenido__container">
+          <div class="contenido__texto">
+            <div class="formulario">
+              <h3 class="formulario__titulo">Contáctenos</h3>
+              <p class="formulario__texto">
+                Uno de nuestros asesores le orientará y resolver á sus inquietudes.
+              </p>
+              <form id="formulario" action="#" method="post" >
+                <div>
+                  <label for="Nombre"></label>
+                  <input type="text" placeholder="Nombre">
+                </div>
+                <div>
+                  <label for="E-mail"></label>
+                  <input type="email" placeholder="Email">
+                </div>
+                <div>
+                  <label for="Teléfono"></label>
+                  <input type="text"  placeholder="Teléfono">
+                </div>
+                <div>
+                  <textarea name="Mensaje" id="" cols="30" rows="10"  placeholder="Mensaje"></textarea>
+                </div>
+                <p class="formulario__texto politicas">
+                  Acepto políticas de tratamiento de datos personales
+                </p>
+                <div>
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="contenido__texto">
+            <img src="images/logo2.png" alt="" />
+          </div>
+          <div class="contenido__texto">
+            <img src="images/salanegocios.png" alt="" class="etapa1"/>
+            <h3>Horario de Atención</h3>
+            <p>Horario de sala de ventas</p>
+            <p>Lunes a Viernes : 7:30 a.m - 5:30 p.m</p>
+            <p>Sábados y Domingos : 8 a.m - 1:00 p.m</p>
+          </div>
+        </div>
+        <a href="#alenta" id="button-alenta" class="contenido__button contenido__button__contactanos">
+          <span>Regresar</span>
+          <i class="fa fa-caret-up fa-3x"></i>
+        </a>
+      </section>
+      <address class="">
+        CARRERA 18 # 80-64 PBX (057-1) 6 18 59 23 comercial@alenta.co www.alenta.co
+      </address>
+      <section class="contenido__seccion localizacion contenido__footer">
+        <footer>
+          <picture><img src="images/logo.png" alt=""></picture>
+          <picture><img src="images/alenta-medical-care.png" alt=""></picture>
+        </footer>
       </section>
     </article>
     <div id="consultorios"></div>
@@ -583,7 +640,7 @@
     <article>Sala de Cirugía</article>
     <div id="hotel"></div>
     <article>Hotel</article>
-    <div id="contactenos"></div>
+    <div id="contacto"></div>
     <article>Contáctenos</article>
   </section>
   <footer></footer>

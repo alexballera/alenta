@@ -30,13 +30,17 @@ a{
 #etapa2,
 #etapa3,
 #promotores,
-#contactenos{
+#contactenos,
+#contacto{
   box-sizing: border-box;
   position: relative;
   top: -5rem;
   height: 0;
   margin: 0;
   padding: 0;
+}
+#contactenos{
+  top: 0;
 }
 
 

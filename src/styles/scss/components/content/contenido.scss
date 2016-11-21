@@ -125,7 +125,8 @@
         display: block;
         text-align: center;
       }
-      >i.fa.fa-caret-down{
+      >i.fa.fa-caret-down,
+      >i.fa.fa-caret-up{
         display: block;
         text-align: center;
       }
@@ -147,6 +148,9 @@
     }
     &__promotores{
       top: -200px;
+    }
+    &__contactanos{
+      top: -630px;
     }
   }
 }
