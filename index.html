@@ -12,7 +12,7 @@
   <!-- endinject -->
 </head>
 <body>
-  <header class="header--little" style="display:none;">
+  <header class="header--little hide">
     <picture class="header__picture">
       <a href="#">
         <img src="images/logo.png" alt="" class="header__image">
@@ -20,17 +20,17 @@
     </picture>
     <nav class="header__nav">
       <ul class="header__nav--responsive">
-        <li><a href="#alenta">Qué es Alenta</a></li>
-        <li><a href="#consultorios">Consultorios</a></li>
-        <li><a href="#areas">Áreas Médicas</a></li>
-        <li><a href="#cirugias">Salas de Cirugía</a></li>
-        <li><a href="#hotel">Hotel</a></li>
-        <li><a href="#contacto">Contactenos</a></li>
+        <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+        <li><a href="#consultorios" class="gotoconsultorio">Consultorios</a></li>
+        <li><a href="#areas" class="gotomedicas">Áreas Médicas</a></li>
+        <li><a href="#cirugias" class="gotocirugias">Salas de Cirugía</a></li>
+        <li><a href="#hotel" class="gotohotel">Hotel</a></li>
+        <li><a href="#contacto" class="gotocontactanos">Contactenos</a></li>
       </ul>
     </nav>
   </header>
   <header id="header" class="header">
-    <picture class="header__picture">
+    <picture class="header__picture" id="header-picture">
       <a href="#">
         <img src="images/logo.png" alt="" class="header__image">
       </a>
@@ -53,9 +53,9 @@
     <article class="contenido__alenta seccion__alenta">
       <section class="contenido__seccion acerca">
         <div id="alenta" class="contenido__seccion"></div>
-        <h2 class="contenido__titulo">Qué es Alenta?</h2>
+        <h2 class="contenido__titulo" data>Qué es Alenta?</h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <p>Es un Cluster de servicios médicos ambulatorios especializados con un
               alto standard de calidad en sus instalaciones.
             </p>
@@ -74,24 +74,24 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <img src="images/que-es-alenta.png" alt="" />
           </div>
         </div>
-        <a href="#localizacion" id="button-alenta" class="contenido__button">
+        <a href="#localizacion" id="button-alenta" class="gotolocalizacion contenido__button">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta" class="enlace__activo">Qué es Alenta</a></li>
-            <li><a href="#localizacion">Localización</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#etapa1">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="enlace__activo gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -99,7 +99,7 @@
         <div id="localizacion" class="contenido__seccion"></div>
         <h2 class="contenido__titulo">Localización</h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <p>
               <img src="images/logo2.png" alt="">
               <span>ALENTA está localizado en el sector de la salud más importante de
@@ -144,7 +144,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/localizacion.png" alt="" />
             <div class="localizacion__items">
               <p class="localizacion__item">Carrera 15</p>
@@ -157,20 +157,20 @@
             </div>
           </div>
         </div>
-        <a href="#proyecto" id="button-alenta" class="contenido__button contenido__button__localizacion">
+        <a href="#proyecto" id="button-alenta" class="gotoproyectos contenido__button contenido__button__localizacion">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta">Qué es Alenta</a></li>
-            <li><a href="#localizacion" class="enlace__activo">Localización</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#etapa1">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="enlace__activo gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -178,7 +178,7 @@
         <div id="proyecto" class="contenido__seccion"></div>
         <h2 class="contenido__titulo">Proyecto</h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <p>
               El proyecto se desarrolla en 3 etapas, en un lote de terreno
               aproximado de 2.568 m2, un área de construcción total
@@ -235,25 +235,25 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/proyecto.png" alt="" />
             <p>La imagen es una representación grafica y esta sujeta a cambio sin previo aviso</p>
           </div>
         </div>
-        <a href="#etapa1" id="button-alenta" class="contenido__button contenido__button__proyecto">
+        <a href="#etapa1" id="button-alenta" class="gotoetapa1 contenido__button contenido__button__proyecto">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta">Qué es Alenta</a></li>
-            <li><a href="#localizacion">Localización</a></li>
-            <li><a href="#proyecto" class="enlace__activo">Proyecto</a></li>
-            <li><a href="#etapa1">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="enlace__activo gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -261,7 +261,7 @@
         <div id="etapa1" class="contenido__seccion"></div>
         <h2 class="contenido__titulo">Alenta <span>etapa 1</span></h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <img src="images/etapa1-2.png" alt="" class="etapa1"/>
             <h3>Consultorios en venta</h3>
             <ul>
@@ -287,7 +287,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/etapa1-1.png" alt="" class="etapa1"/>
             <h3>Sótano 1 y 2:</h3>
             <ul>
@@ -315,20 +315,20 @@
             </ul>
           </div>
         </div>
-        <a href="#etapa2" id="button-alenta" class="contenido__button contenido__button__etapa1">
+        <a href="#etapa2" id="button-alenta" class="gotoetapa2 contenido__button contenido__button__etapa1">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta">Qué es Alenta</a></li>
-            <li><a href="#localizacion">Localización</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#etapa1" class="enlace__activo">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="enlace__activo gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -336,7 +336,7 @@
         <div id="etapa2" class="contenido__seccion"></div>
         <h2 class="contenido__titulo">Alenta <span>etapa 2</span></h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <img src="images/etapa2-2.png" alt="" class="etapa1"/>
             <h3>Áreas para oficinas <br> y consultorios médicos en arriendo</h3>
             <ul>
@@ -362,7 +362,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/etapa2-1.png" alt="" class="etapa1"/>
             <ul>
               <li>
@@ -389,20 +389,20 @@
             </ul>
           </div>
         </div>
-        <a href="#etapa3" id="button-alenta" class="contenido__button contenido__button__etapa2">
+        <a href="#etapa3" id="button-alenta" class="gotoetapa3 contenido__button contenido__button__etapa2">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta">Qué es Alenta</a></li>
-            <li><a href="#localizacion">Localización</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#etapa1">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2" class="enlace__activo">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="enlace__activo gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -410,7 +410,7 @@
         <div id="etapa3" class="contenido__seccion"></div>
         <h2 class="contenido__titulo">Alenta <span>etapa 3</span></h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <img src="images/etapa3-2.png" alt="" class="etapa1"/>
             <h3>Áreas en venta para oficinas y <br>
               consultorios médicos</h3>
@@ -456,7 +456,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/etapa3-1.png" alt="" class="etapa1"/>
             <ul>
               <li>
@@ -481,20 +481,20 @@
             </ul>
           </div>
         </div>
-        <a href="#promotores" id="button-alenta" class="contenido__button contenido__button__etapa3">
+        <a href="#promotores" id="button-alenta" class="gotopromotores contenido__button contenido__button__etapa3">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta">Qué es Alenta</a></li>
-            <li><a href="#localizacion">Localización</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#etapa1">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3" class="enlace__activo">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="enlace__activo gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -505,10 +505,10 @@
           <div class="contenido__texto">
             <div class="promotores__container">
               <div  class="promotores__container--inner">
-                <picture>
+                <picture class="promotores__picture" data>
                   <img src="images/promotores4.png" alt="">
                 </picture>
-                <picture>
+                <picture class="promotores__picture">
                   <img src="images/promotores5.png" alt="">
                 </picture>
                 <p>
@@ -516,7 +516,7 @@
                 </p>
               </div>
               <div class="promotores__container--uno">
-                <picture>
+                <picture class="promotores__picture">
                   <img src="images/promotores6.png" alt="">
                 </picture>
                 <p>
@@ -531,10 +531,10 @@
           <div class="contenido__texto">
             <div class="promotores__container">
               <div class="promotores__container--inner">
-                <picture>
+                <picture class="promotores__picture">
                   <img src="images/promotores1.png" alt="">
                 </picture>
-                <picture>
+                <picture class="promotores__picture">
                   <img src="images/promotores2.png" alt="">
                 </picture>
                 <p>
@@ -542,7 +542,7 @@
                 </p>
               </div>
               <div class="promotores__container--uno">
-                <picture>
+                <picture class="promotores__picture">
                   <img src="images/promotores3.png" alt="">
                 </picture>
                 <p>
@@ -553,20 +553,20 @@
             </div>
           </div>
         </div>
-        <a href="#contactenos" id="button-alenta" class="contenido__button contenido__button__promotores">
+        <a href="#contactenos" id="button-alenta" class="gotocontacto contenido__button contenido__button__promotores">
           <span>Continuar</span>
           <i class="fa fa-caret-down fa-3x"></i>
         </a>
         <nav class="contenido__nav promotores__nav">
           <ul id="navbar" class="contenido__nav--responsive">
-            <li><a href="#alenta">Qué es Alenta</a></li>
-            <li><a href="#localizacion">Localización</a></li>
-            <li><a href="#proyecto">Proyecto</a></li>
-            <li><a href="#etapa1">Alenta <span>epata 1</span></a></li>
-            <li><a href="#etapa2">Alenta <span>etapa 2</span></a></li>
-            <li><a href="#etapa3">Alenta <span>etapa 3</span></a></li>
-            <li><a href="#promotores" class="enlace__activo">Promotores</a></li>
-            <li><a href="#contactenos">Contactenos</a></li>
+            <li><a href="#alenta" class="gotoalenta">Qué es Alenta</a></li>
+            <li><a href="#localizacion" class="gotolocalizacion">Localización</a></li>
+            <li><a href="#proyecto" class="gotoproyectos">Proyecto</a></li>
+            <li><a href="#etapa1" class="gotoetapa1">Alenta <span>epata 1</span></a></li>
+            <li><a href="#etapa2" class="gotoetapa2">Alenta <span>etapa 2</span></a></li>
+            <li><a href="#etapa3" class="gotoetapa3">Alenta <span>etapa 3</span></a></li>
+            <li><a href="#promotores" class="enlace__activo gotopromotores">Promotores</a></li>
+            <li><a href="#contactenos" class="gotocontacto">Contactenos</a></li>
           </ul>
         </nav>
       </section>
@@ -574,7 +574,7 @@
         <div id="contactenos" class="contenido__seccion"></div>
         <h2 class="contenido__titulo">Sala de negocios</h2>
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <div class="formulario">
               <h3 class="formulario__titulo">Contáctenos</h3>
               <p class="formulario__texto">
@@ -608,7 +608,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/salanegocios.png" alt="" class="etapa1"/>
             <h3>Horario de Atención</h3>
             <p>Horario de sala de ventas</p>
@@ -616,7 +616,7 @@
             <p>Sábados y Domingos : 8 a.m - 1:00 p.m</p>
           </div>
         </div>
-        <a href="#alenta" id="button-alenta" class="contenido__button contenido__button__contactanos">
+        <a href="#alenta" id="button-alenta" class="gototop contenido__button contenido__button__contactanos">
           <span>Regresar</span>
           <i class="fa fa-caret-up fa-3x"></i>
         </a>
@@ -625,15 +625,15 @@
         CARRERA 18 # 80-64 PBX (057-1) 6 18 59 23 comercial@alenta.co www.alenta.co
       </address>
       <footer class="contenido__seccion localizacion contenido__footer">
-        <picture><img src="images/logo.png" alt=""></picture>
-        <picture><img src="images/alenta-medical-care.png" alt=""></picture>
+        <picture class="picture-left"><img src="images/logo.png" alt=""></picture>
+        <picture class="picture-rigth"><img src="images/alenta-medical-care.png" alt=""></picture>
       </footer>
     </article>
     <article class="contenido__alenta seccion__consultorios">
       <div id="consultorios" class="contenido__seccion"></div>
       <section class="contenido__seccion acerca localizacion consultorios">
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth" data>
             <h3>ALENTA, primer centro médico <br>
               ambulatorio de Colombia</h3>
             <ul>
@@ -659,7 +659,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/consultorio.png" alt="Consultorio Img" />
           </div>
         </div>
@@ -669,7 +669,7 @@
       <div id="areas" class="contenido__seccion"></div>
       <section class="contenido__seccion acerca localizacion consultorios areas-medicas">
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <h3>AREAS MEDICAS Y OFICINAS EN VENTA Y ARRIENDO</h3>
             <ul>
               <li>
@@ -690,7 +690,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/areas-medicas.png" alt="Areas Medicas Img" />
           </div>
         </div>
@@ -700,7 +700,7 @@
       <div id="cirugias" class="contenido__seccion"></div>
       <section class="contenido__seccion acerca localizacion consultorios cirugia">
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <h3>SALAS DE CIRUGIA AMBULATORIA</h3>
             <ul>
               <li>
@@ -720,7 +720,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/sala-cirugia.png" alt="Areas Medicas Img" />
           </div>
         </div>
@@ -730,7 +730,7 @@
       <div id="hotel" class="contenido__seccion"></div>
       <section class="contenido__seccion acerca localizacion consultorios areas-medicas">
         <div class="contenido__container">
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-rigth">
             <h3>HOTEL Y LOCALES COMERCIALES</h3>
             <ul>
               <li>
@@ -750,7 +750,7 @@
           <div class="contenido__texto">
             <img src="images/logo2.png" alt="" />
           </div>
-          <div class="contenido__texto">
+          <div class="contenido__texto movex-left">
             <img src="images/hotel.png" alt="Hotel Img" />
           </div>
         </div>
@@ -760,7 +760,7 @@
       <div id="contacto" class="contenido__seccion"></div>
       <h2 class="contenido__titulo">Sala de negocios</h2>
       <div class="contenido__container">
-        <div class="contenido__texto">
+        <div class="contenido__texto movex-rigth">
           <div class="formulario">
             <h3 class="formulario__titulo">Contáctenos</h3>
             <p class="formulario__texto">
@@ -794,7 +794,7 @@
         <div class="contenido__texto">
           <img src="images/logo2.png" alt="" />
         </div>
-        <div class="contenido__texto">
+        <div class="contenido__texto movex-left">
           <img src="images/salanegocios.png" alt="" class="etapa1"/>
           <h3>Horario de Atención</h3>
           <p>Horario de sala de ventas</p>
@@ -808,10 +808,6 @@
     <picture><img src="images/logo.png" alt=""></picture>
     <picture><img src="images/alenta-medical-care.png" alt=""></picture>
   </footer>
-
-
-
-
   <!-- bower:js -->
   <!-- endbower -->
   <!-- inject:js -->

@@ -1,5 +1,6 @@
 import headerLittle from './lib/headerLittle'
-import $ from 'jquery'
+import smoove from './lib/smoove'
+import botonScroll from './lib/botonScroll'
 
 (() => {
   'use strict';
@@ -8,5 +9,7 @@ import $ from 'jquery'
 
   function onDOMLoad() {
     headerLittle()
+    smoove()
+    botonScroll()
   }
 })()
