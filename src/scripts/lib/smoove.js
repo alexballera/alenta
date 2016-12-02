@@ -1,8 +1,7 @@
 import $ from 'jquery'
-import jQuery from 'jquery'
 import smoove from '../vendors/jquery.smoove.js'
 
-export default function (){
+export default function () {
   $('.contenido__texto').smoove({
   })
   $('.movex-rigth').smoove({
@@ -19,5 +18,4 @@ export default function (){
     rotate: '180deg',
     moveX: '600px'
   })
-
 }

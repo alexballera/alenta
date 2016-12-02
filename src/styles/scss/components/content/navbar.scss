@@ -12,7 +12,7 @@
         span{
           text-transform: lowercase;
         }
-        &:active{
+        &:visited{
           background-color: $color-primary;
         }
       }

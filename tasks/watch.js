@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 
 gulp.task('watch', () => {
   gulp.watch('./src/**/*.html', ['build:html'])

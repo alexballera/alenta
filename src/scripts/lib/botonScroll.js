@@ -1,79 +1,78 @@
 import $ from 'jquery'
-import jQuery from 'jquery'
 
-export default function (){
+export default function () {
+  // Con el siguiente código vemos la posicion en el title
   // $(document).scroll(function(e){
   //   document.title = $(document).scrollTop()
   // })
 
-  $('.gotoalenta').click(function(e){
+  $('.gotoalenta').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'713'},500);
+    $('body,html').animate({scrollTop: '676'}, 500)
   })
 
-  $('.gotoconsultorio').click(function(e){
+  $('.gotoconsultorio').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'7429'},500);
+    $('body,html').animate({scrollTop: '7371'}, 500)
   })
 
-  $('.gotomedicas').click(function(e){
+  $('.gotomedicas').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'7981'},500);
+    $('body,html').animate({scrollTop: '7949'}, 500)
   })
 
-  $('.gotocirugias').click(function(e){
+  $('.gotocirugias').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'8523'},500);
+    $('body,html').animate({scrollTop: '8460'}, 500)
   })
 
-  $('.gotohotel').click(function(e){
+  $('.gotohotel').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'9068'},500);
+    $('body,html').animate({scrollTop: '9021'}, 500)
   })
 
-  $('.gotocontactanos').click(function(e){
+  $('.gotocontactanos').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'9710'},500);
+    $('body,html').animate({scrollTop: '9614'}, 500)
   })
 
-  $('.gotolocalizacion').click(function(e){
+  $('.gotolocalizacion').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'1366'},500);
+    $('body,html').animate({scrollTop: '1319'}, 500)
   })
 
-  $('.gotoproyectos').click(function(e){
+  $('.gotoproyectos').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'2157'},500);
+    $('body,html').animate({scrollTop: '2128'}, 500)
   })
 
-  $('.gotoetapa1').click(function(e){
+  $('.gotoetapa1').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'2898'},500);
+    $('body,html').animate({scrollTop: '2853'}, 500)
   })
 
-  $('.gotoetapa2').click(function(e){
+  $('.gotoetapa2').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'3851'},500);
+    $('body,html').animate({scrollTop: '3760'}, 500)
   })
 
-  $('.gotoetapa3').click(function(e){
+  $('.gotoetapa3').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'4745'},500);
+    $('body,html').animate({scrollTop: '4650'}, 500)
   })
 
-  $('.gotopromotores').click(function(e){
+  $('.gotopromotores').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'5870'},500);
+    $('body,html').animate({scrollTop: '5755'}, 500)
   })
 
-  $('.gotocontacto').click(function(e){
+  $('.gotocontacto').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'6301'},500);
+    $('body,html').animate({scrollTop: '6201'}, 500)
   })
 
-  $('.gototop').click(function(e){
+  $('.gototop').click(function (e) {
     e.preventDefault()
-    $('body,html').animate({scrollTop:'0'},1500);
+    $('body,html').animate({scrollTop: '0'}, 1500)
   })
-
 }

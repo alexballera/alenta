@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 require('require-dir')('./tasks')
 
 /* Instalar las siguientes dependencias:
@@ -13,7 +13,7 @@ jquery require-dir vinyl-buffer vinyl-source-stream
 */
 // Build
 gulp.task('build', ['copy'], () => {
-  gulp.start('build:html', 'build:scripts', 'build:images', 'inject', 'build:styles')
+  gulp.start('build:html', 'build:scripts', 'build:images', 'inject', 'styles')
 })
 
 // Default
