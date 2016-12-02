@@ -4,6 +4,7 @@ import botonScroll from './lib/botonScroll'
 import addMenuAlenta from './lib/addMenuAlenta'
 import addFooter from './lib/addFooter'
 import addForm from './lib/addForm'
+import flexslider from './lib/flexslider'
 
 (() => {
   'use strict'
@@ -17,5 +18,6 @@ import addForm from './lib/addForm'
     addMenuAlenta()
     addFooter()
     addForm()
+    flexslider()
   }
 })()
