@@ -9,11 +9,12 @@ footer{
   &.footer{
   	&__section{
   		background-color: rgba(0, 0, 0, 0.7);
-  		position: relative;
-  		z-index: 1;
-  		top: 600px;
-  		height: 120px;
-  		color: white;
+  		position: absolute;
+		z-index: 1;
+		top: 480px;
+		height: 120px;
+		color: #fff;
+		width: 100%;
 		>.footer__container{
 			display: flex;
 			flex-flow: row wrap;
