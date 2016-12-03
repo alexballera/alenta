@@ -1,6 +1,6 @@
 .text{
 	position: absolute;
-	top: 50px;
+	top: 20px;
 	padding-left: 20rem;
 	width: 600px;
 	height: 150px;
@@ -50,18 +50,19 @@
 			}
 			>form.flexslider__form{
 				@extend .text;
-				top: 380px;
+				top: 320px;
 				height: 0;
 				color: grey;
 				margin-left: 4%;
 				& input[type="email"],
 				& input[type="text"],
 				& textarea {
-					padding: 0.4rem;
-					width: 70%;
+					padding: 0.3rem;
+					width: 60%;
 					margin: .10rem;
 					border: 1px solid grey;
 					border-radius: 5px;
+					font-size: 0.9rem;
 				}
 				& button[type="submit"] {
 					height: 100%;
@@ -71,8 +72,7 @@
 					outline: none;
 					border: none;
 					margin-top: 0.5rem;
-					font-size: 1.2rem;
-					line-height: 2rem;
+					line-height: 1.5rem;
 				}
 			}
 		}
