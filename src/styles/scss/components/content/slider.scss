@@ -48,7 +48,33 @@
 					letter-spacing: 0.3px;
 				}
 			}
+			>form.flexslider__form{
+				@extend .text;
+				top: 380px;
+				height: 0;
+				color: grey;
+				margin-left: 4%;
+				& input[type="email"],
+				& input[type="text"],
+				& textarea {
+					padding: 0.4rem;
+					width: 70%;
+					margin: .10rem;
+					border: 1px solid grey;
+					border-radius: 5px;
+				}
+				& button[type="submit"] {
+					height: 100%;
+					width: 150px;
+					color: white;
+					background-color: $color-primary;
+					outline: none;
+					border: none;
+					margin-top: 0.5rem;
+					font-size: 1.2rem;
+					line-height: 2rem;
+				}
+			}
 		}
-		&.slide__alenta{}
 	}
 }

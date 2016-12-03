@@ -5,6 +5,7 @@ import addMenuAlenta from './lib/addMenuAlenta'
 import addFooter from './lib/addFooter'
 import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
+import addFormSlide from './lib/addFormSlide'
 
 (() => {
   'use strict'
@@ -19,5 +20,6 @@ import flexslider from './lib/flexslider'
     addFooter()
     addForm()
     flexslider()
+    addFormSlide()
   }
 })()

@@ -28,7 +28,6 @@ gulp.task('styles', () => {
   var autoprefixerOptions = {
     browsers: ['last 2 versions']
   }
-
   var sassOptions = {
     includePaths: [
     ],
