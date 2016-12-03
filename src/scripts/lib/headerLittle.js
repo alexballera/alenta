@@ -1,4 +1,4 @@
-export default function (){
+export default function () {
   var navbar = document.getElementById('header')
 
   window.onscroll = () => {
@@ -6,7 +6,7 @@ export default function (){
   }
 
   function doHeaderLittle () {
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       navbar.classList.add('header--little')
     } else {
       navbar.classList.remove('header--little')

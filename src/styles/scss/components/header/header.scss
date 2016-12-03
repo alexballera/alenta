@@ -10,7 +10,7 @@
   width: 100%;
   background-color: white;
   z-index: 1000;
-  transition: all 1.2s ease;
+  transition: all 0.7s ease;
   @include respond-to(xl) {
     padding-left: 1rem;
   }
@@ -19,7 +19,7 @@
     text-align: center;
     transition: all 0.3s ease;
     @include respond-to(xl) {
-      width: 15%;
+      width: 18%;
       transition: all 0.3s ease;
     }
     >a>img{
@@ -30,7 +30,7 @@
     width: 100%;
     text-align: center;
     @include respond-to(xl) {
-      width: 85%;
+      width: 82%;
     }
     &--responsive{
       @extend .nav__responsive;
@@ -44,7 +44,7 @@
   }
   &--little{
     height: 5rem;
-    transition: all 1.2s ease;
+    transition: all 0.7s ease;
     >picture.header__picture{
       >a>img{
         width: 15%;
