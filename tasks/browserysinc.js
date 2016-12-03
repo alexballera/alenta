@@ -6,7 +6,7 @@ gulp.task('serve', () => {
     notify: true,
     logPrefix: 'BS',
     server: {
-      baseDir: ['./public']
+      baseDir: ['./build']
     },
     port: 8000,
     ui: {

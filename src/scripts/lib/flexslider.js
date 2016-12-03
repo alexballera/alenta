@@ -6,6 +6,7 @@ export default function () {
     controlNav: false,
     directionNav: true,
     animation: 'slide',
+    pauseOnHover: true,
     maxItems: 6,
     prevText: '',
     nextText: ''
