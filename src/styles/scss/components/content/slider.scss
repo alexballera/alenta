@@ -77,4 +77,12 @@
 			}
 		}
 	}
+	&__mini{
+		margin: 0;
+		&__item{}
+		&__picture{
+			width: 200px;
+		}
+		&__image{}
+	}
 }

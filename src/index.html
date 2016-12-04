@@ -31,73 +31,108 @@
         </nav>
     </header>
     <!-- Slider -->
-    <div class="flexslider flexslider__principal">
-        <ul class="slides">
-              <li class="flexslider__item slide__alenta">
-                    <picture class="flexslider__picture">
-                        <img class="flexslider__image" src="images/slide1.jpg" height="400" alt="Slider Principal" />
-                        <div class="flexslider__text text--right">
-                                <h3>Alenta</h3>
-                                <p>Primer centro médico ambulatorio de Colombia</p>
-                        </div>
-                    </picture>
-              </li>
-              <li class="flexslider__item slide__cirugia">
-                    <picture class="flexslider__picture">
-                        <img class="flexslider__image" src="images/slide2.jpg" height="400" alt="Slider Principal" />
-                        <div class="flexslider__text text--right">
-                                <h3>Salas de Cirugía:</h3>
-                                <p>Podrán acceder los médicos cirujanos <br>
-                                para sus procedimientos ambulatorios <br>
-                                a través de los convenios que se establezcan.
-                                </p>
-                        </div>
-                    </picture>
-              </li>
-              <li class="flexslider__item slide__area-medica">
-                    <picture class="flexslider__picture">
-                        <img class="flexslider__image" src="images/slide3.jpg" height="400" alt="Slider Principal" />
-                        <div class="flexslider__text text--left">
-                                <h3>Áreas médicas y oficinas de servicios médicos</h3>
-                                <p>Hasta 549 m2 por piso en la etapa 2<br>
-                                Hasta 377 m2 por piso en la etapa 3
-                                </p>
-                        </div>
-                    </picture>
-              </li>
-              <li class="flexslider__item slide__hotel">
-                    <picture class="flexslider__picture">
-                        <img class="flexslider__image" src="images/slide4.jpg" height="400" alt="Slider Principal" />
-                        <div class="flexslider__text text--right">
-                                <h3>Hotel</h3>
-                                <p><strong>Diseñado</strong>, especialmente para la estadía corta <br>
-                                de pacientes y familiares que viajan a sus tratamientos médicos.
-                                </p>
-                        </div>
-                    </picture>
-              </li>
-              <li class="flexslider__item slide__consultorio">
-                    <picture class="flexslider__picture">
-                        <img class="flexslider__image" src="images/slide5.jpg" height="400" alt="Slider Principal" />
-                        <div class="flexslider__text text--left">
-                                <h3>Consultorios</h3>
-                                <p>
-                                Primer centro médico ambulatorio de Colombia <br>
-                                Desde 29 m2 en adelante
-                                </p>
-                        </div>
-                    </picture>
-              </li>
-        </ul>
+    <section class="slider__container">
+        <div class="flexslider flexslider__principal">
+            <ul class="slides">
+                  <li class="flexslider__item slide__alenta">
+                        <picture class="flexslider__picture">
+                            <img class="flexslider__image" src="images/slide1.jpg" height="400" alt="Slider Principal" />
+                            <div class="flexslider__text text--right">
+                                    <h3>Alenta</h3>
+                                    <p>Primer centro médico ambulatorio de Colombia</p>
+                            </div>
+                        </picture>
+                  </li>
+                  <li class="flexslider__item slide__cirugia">
+                        <picture class="flexslider__picture">
+                            <img class="flexslider__image" src="images/slide2.jpg" height="400" alt="Slider Principal" />
+                            <div class="flexslider__text text--right">
+                                    <h3>Salas de Cirugía:</h3>
+                                    <p>Podrán acceder los médicos cirujanos <br>
+                                    para sus procedimientos ambulatorios <br>
+                                    a través de los convenios que se establezcan.
+                                    </p>
+                            </div>
+                        </picture>
+                  </li>
+                  <li class="flexslider__item slide__area-medica">
+                        <picture class="flexslider__picture">
+                            <img class="flexslider__image" src="images/slide3.jpg" height="400" alt="Slider Principal" />
+                            <div class="flexslider__text text--left">
+                                    <h3>Áreas médicas y oficinas de servicios médicos</h3>
+                                    <p>Hasta 549 m2 por piso en la etapa 2<br>
+                                    Hasta 377 m2 por piso en la etapa 3
+                                    </p>
+                            </div>
+                        </picture>
+                  </li>
+                  <li class="flexslider__item slide__hotel">
+                        <picture class="flexslider__picture">
+                            <img class="flexslider__image" src="images/slide4.jpg" height="400" alt="Slider Principal" />
+                            <div class="flexslider__text text--right">
+                                    <h3>Hotel</h3>
+                                    <p><strong>Diseñado</strong>, especialmente para la estadía corta <br>
+                                    de pacientes y familiares que viajan a sus tratamientos médicos.
+                                    </p>
+                            </div>
+                        </picture>
+                  </li>
+                  <li class="flexslider__item slide__consultorio">
+                        <picture class="flexslider__picture">
+                            <img class="flexslider__image" src="images/slide5.jpg" height="400" alt="Slider Principal" />
+                            <div class="flexslider__text text--left">
+                                    <h3>Consultorios</h3>
+                                    <p>
+                                    Primer centro médico ambulatorio de Colombia <br>
+                                    Desde 29 m2 en adelante
+                                    </p>
+                            </div>
+                        </picture>
+                  </li>
+            </ul>
+        </div>
         <footer class="footer__section">
-          <div class="footer__container">
-            <div class="footer__item">Offset</div>
-            <div class="footer__item">Mini Slider</div>
-            <div class="footer__item">Sala de negocios</div>
-            <div class="footer__item">Número de Contacto</div>
-          </div>
+            <div class="footer__container">
+              <div class="footer__item">Offset</div>
+              <div class="footer__item flexslider flexslider__mini">
+                  <ul class="slides">
+                      <li class="flexslider__mini__item slide__alenta">
+                            <picture class="flexslider__mini__picture">
+                                <img class="flexslider__mini__image" src="images/slide1.jpg" height="400" alt="Slider Principal" />
+                            </picture>
+                      </li>
+                      <li class="flexslider__mini__item slide__cirugia">
+                            <picture class="flexslider__mini__picture">
+                                <img class="flexslider__mini__image" src="images/slide2.jpg" height="400" alt="Slider Principal" />
+                            </picture>
+                      </li>
+                      <li class="flexslider__mini__item slide__area-medica">
+                            <picture class="flexslider__mini__picture">
+                                <img class="flexslider__mini__image" src="images/slide3.jpg" height="400" alt="Slider Principal" />
+                            </picture>
+                      </li>
+                      <li class="flexslider__mini__item slide__hotel">
+                            <picture class="flexslider__mini__picture">
+                                <img class="flexslider__mini__image" src="images/slide4.jpg" height="400" alt="Slider Principal" />
+                            </picture>
+                      </li>
+                      <li class="flexslider__mini__item slide__consultorio">
+                            <picture class="flexslider__mini__picture">
+                                <img class="flexslider__mini__image" src="images/slide5.jpg" height="400" alt="Slider Principal" />
+                            </picture>
+                      </li>
+                      <li class="flexslider__mini__item slide__consultorio">
+                            <picture class="flexslider__mini__picture">
+                                <img class="flexslider__mini__image" src="images/slide2.jpg" height="400" alt="Slider Principal" />
+                            </picture>
+                      </li>
+                  </ul>
+              </div>
+              <div class="footer__item">Sala de negocios</div>
+              <div class="footer__item">Número de Contacto</div>
+            </div>
         </footer>
-    </div>
+    </section>
     <!-- Contenido -->
     <section class="contenido">
         <!-- Sección Alenta -->
