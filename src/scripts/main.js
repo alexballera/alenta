@@ -1,7 +1,6 @@
 import headerLittle from './lib/headerLittle'
 import smoove from './lib/smoove'
 import botonScroll from './lib/botonScroll'
-import addMenuAlenta from './lib/addMenuAlenta'
 import addFooter from './lib/addFooter'
 import addFooterSection from './lib/addFooterSection'
 import addForm from './lib/addForm'
@@ -18,7 +17,6 @@ import menu from './lib/menu'
     headerLittle()
     smoove()
     botonScroll()
-    addMenuAlenta()
     addFooter()
     addFooterSection()
     addForm()
