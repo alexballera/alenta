@@ -86,9 +86,9 @@ ul.dropdown.second__level,
 ul.dropdown.third__level{
   >li.item{
     border-top: 1px solid $color-hover;
-    &:first-child{
-      border-top: none;
-    }
+    // &:first-child{
+    //   border-top: none;
+    // }
     >a{
       font-size: 1rem;
       height: 3rem;
