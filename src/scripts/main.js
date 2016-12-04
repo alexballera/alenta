@@ -3,6 +3,7 @@ import smoove from './lib/smoove'
 import botonScroll from './lib/botonScroll'
 import addMenuAlenta from './lib/addMenuAlenta'
 import addFooter from './lib/addFooter'
+import addFooterSection from './lib/addFooterSection'
 import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
 import addFormSlide from './lib/addFormSlide'
@@ -18,6 +19,7 @@ import addFormSlide from './lib/addFormSlide'
     botonScroll()
     addMenuAlenta()
     addFooter()
+    addFooterSection()
     addForm()
     flexslider()
     addFormSlide()
