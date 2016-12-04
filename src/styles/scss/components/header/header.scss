@@ -10,7 +10,7 @@
   width: 100%;
   background-color: white;
   z-index: 1000;
-  transition: all 0.7s ease;
+  transition: all 0.3s ease;
   @include respond-to(xl) {
     padding-left: 1rem;
   }
@@ -23,7 +23,7 @@
       transition: all 0.3s ease;
     }
     >a>img{
-      transition: all 0.7s ease;
+      transition: all 0.3s ease;
     }
   }
   &__nav{
@@ -57,7 +57,7 @@
     >picture.header__picture{
       >a>img{
         width: 15%;
-        transition: all 0.7s ease;
+        transition: all 0.3s ease;
         @include respond-to(xl) {
           width: 70%;
         }
@@ -98,9 +98,19 @@ ul.dropdown.third__level{
       color: white;
       display: block;
       &:hover{
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
         background-color: $color-hover;
       }
+    }
+  }
+}
+ul.dropdown.second__level{
+  >li.item{
+    &:last-child{
+      >a:after{
+              content: '\f054';
+              margin-left: 3rem;
+            }
     }
   }
 }

@@ -7,6 +7,7 @@ import addFooterSection from './lib/addFooterSection'
 import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
 import addFormSlide from './lib/addFormSlide'
+import menu from './lib/menu'
 
 (() => {
   'use strict'
@@ -23,5 +24,6 @@ import addFormSlide from './lib/addFormSlide'
     addForm()
     flexslider()
     addFormSlide()
+    menu()
   }
 })()
