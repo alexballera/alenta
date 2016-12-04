@@ -7,7 +7,7 @@ export default function () {
           <p class="formulario__texto">
             Uno de nuestros asesores le orientará y resolver á sus inquietudes.
           </p>
-          <form id="formulario" action="#" method="post" >
+          <form class="formulario__section" id="formulario" action="#" method="post" >
               <div>
                 <label for="Nombre"></label>
                 <input type="text" placeholder="Nombre">

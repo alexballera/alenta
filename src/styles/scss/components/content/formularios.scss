@@ -1,0 +1,60 @@
+form.flexslider__form{
+	@extend .text;
+	height: 0;
+	top: 255px !important;
+	color: grey !important;
+	margin-left: 4%;
+
+	& input[type="email"],
+	& input[type="text"],
+	& textarea {
+		padding: 0.3rem;
+		width: 60%;
+		margin: .10rem;
+		border: 1px solid grey;
+		border-radius: 5px;
+		font-size: 0.9rem;
+	}
+	& button[type="submit"] {
+		height: 100%;
+		width: 150px;
+		color: white;
+		background-color: $color-primary;
+		outline: none;
+		border: none;
+		margin-top: 0.5rem;
+		line-height: 1.5rem;
+		&:hover{
+			background-color: $color-hover;
+		}
+	}
+}
+form.formulario__section{
+	>div>input[type="email"],
+	>div>input[type="text"],
+	>div>textarea {
+		background-color: $color-primary;
+		padding: 0.5rem;
+		width: 90%;
+		height: 100%;
+		margin: .25rem;
+		color: white !important;
+		font-weight: bold;
+		border: 1px solid white;
+	}
+	>div>button[type="submit"] {
+		height: 100%;
+		line-height: 50px;
+		width: 150px;
+		margin: .25rem .25rem .5rem .25rem;
+		color: $color-primary;
+		background-color: white;
+		outline: none;
+		border: none;
+		margin-top: 1rem;
+		font-size: 1.5rem;
+		&:hover{
+			background-color: $color-hover;
+		}
+	}
+}

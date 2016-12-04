@@ -23,30 +23,6 @@
     font-size: 80%;
     line-height: normal;
   }
-  & input[type="email"],
-  & input[type="text"],
-  & textarea {
-    background-color: $color-primary;
-    padding: 0.5rem;
-    width: 90%;
-    height: 100%;
-    margin: .25rem;
-    color: white !important;
-    font-weight: bold;
-    border: 1px solid white;
-  }
-  & button[type="submit"] {
-    height: 100%;
-    line-height: 50px;
-    width: 150px;
-    margin: .25rem .25rem .5rem .25rem;
-    color: $color-primary;
-    background-color: white;
-    outline: none;
-    border: none;
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
 }
 address.alenta__address{
   color: $color-fonts;

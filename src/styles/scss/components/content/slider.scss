@@ -1,6 +1,6 @@
 .text{
 	position: absolute;
-	top: 20px;
+	top: 35px;
 	padding-left: 20rem;
 	width: 600px;
 	height: 150px;
@@ -46,33 +46,6 @@
 					line-height: 1.5rem;
 					margin-top: 8px;
 					letter-spacing: 0.3px;
-				}
-			}
-			>form.flexslider__form{
-				@extend .text;
-				top: 320px;
-				height: 0;
-				color: grey;
-				margin-left: 4%;
-				& input[type="email"],
-				& input[type="text"],
-				& textarea {
-					padding: 0.3rem;
-					width: 60%;
-					margin: .10rem;
-					border: 1px solid grey;
-					border-radius: 5px;
-					font-size: 0.9rem;
-				}
-				& button[type="submit"] {
-					height: 100%;
-					width: 150px;
-					color: white;
-					background-color: $color-primary;
-					outline: none;
-					border: none;
-					margin-top: 0.5rem;
-					line-height: 1.5rem;
 				}
 			}
 		}
