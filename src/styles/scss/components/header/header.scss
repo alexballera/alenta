@@ -31,6 +31,7 @@
     text-align: center;
     @include respond-to(xl) {
       width: 82%;
+      height: 5rem;
     }
     &--responsive{
       @extend .nav__responsive;
@@ -57,7 +58,9 @@
     >nav.header__nav{
       >ul>li>a{
         font-size: 90%;
-        padding: 1.5rem 0;
+        height: 5rem;
+        padding: 0;
+        line-height: 5rem;
         &:before{
           height: 44%;
           top: 28%;
