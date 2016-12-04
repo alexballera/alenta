@@ -5,7 +5,6 @@ export default function () {
   $('.flexslider__principal').flexslider({
     controlNav: false,
     animation: 'slide',
-    // pauseOnHover: true,
     maxItems: 6,
     prevText: '',
     nextText: ''
@@ -18,6 +17,16 @@ export default function () {
     minItems: 3,
     maxItems: 3,
     controlNav: false,
+    directionNav: false,
+    prevText: '',
+    nextText: ''
+  })
+  $('.flexslider__promotores').flexslider({
+    animation: 'slide',
+    itemWidth: 210,
+    minItems: 3,
+    maxItems: 3,
+    // controlNav: false,
     directionNav: false,
     prevText: '',
     nextText: ''
