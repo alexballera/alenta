@@ -7,6 +7,7 @@ import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
 import addFormSlide from './lib/addFormSlide'
 import menu from './lib/menu'
+import addNavbarFloating from './lib/addNavbarFloating'
 
 (() => {
   'use strict'
@@ -23,5 +24,6 @@ import menu from './lib/menu'
     flexslider()
     addFormSlide()
     menu()
+    addNavbarFloating()
   }
 })()
