@@ -1,0 +1,46 @@
+.menu__flotante{
+	position: fixed;
+	top: 200px;
+	z-index: 1000;
+	&__contenedor{
+		>.menu__flotante__item{
+			margin-top: 3px;
+			&:first-child{
+				margin-top: 0;
+			}
+			>a{
+				display: block;
+				height: 40px;
+				width: 50px;
+				padding: 0 10px;
+				line-height: 40px;
+				color: white;
+				box-sizing: border-box;
+				text-align: right;
+				background-color: $color-primary;
+				transition: all .3s ease;
+				>span{
+					display: none;
+					text-transform: uppercase;
+					font-size: 75%;
+				}
+				>i{
+					margin-left: 10px;
+					display: inline-block;
+				}
+				&:hover{
+					background-color: $color-hover;
+					width: 160px;
+					transform: translateX(7px);
+					transition: all .3s ease;
+					>span{
+						display: inline-block;
+						transition: all .3s ease;
+					}
+				}
+				// &:nth-child(1):hover{
+				// }
+			}
+		}
+	}
+}
