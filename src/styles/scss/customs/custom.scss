@@ -51,7 +51,7 @@ a{
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
-    height: 5rem;
+    height: $height-navbar;
   }
   >li{
     width: 100%;
@@ -67,6 +67,8 @@ a{
       position: relative;
       text-align: center;
       transition: all 0.3s ease;
+      line-height: 4rem;
+      box-sizing: border-box;
       &:hover{
         background-color: $color-primary;
         color: white;

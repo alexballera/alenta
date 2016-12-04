@@ -2,10 +2,10 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  padding: 2rem 1rem;
-  padding-left: 0;
+  // padding: 2rem 1rem;
+  // padding-left: 0;
   position: fixed;
-  height: 10rem;
+  height: $height-navbar;
   box-sizing: border-box;
   width: 100%;
   background-color: white;
@@ -31,7 +31,7 @@
     text-align: center;
     @include respond-to(xl) {
       width: 82%;
-      height: 5rem;
+      height: $height-navbar;
     }
     &--responsive{
       @extend .nav__responsive;
@@ -52,7 +52,7 @@
     }
   }
   &--little{
-    height: 5rem;
+    height: $height-navbar-little;
     transition: all 0.7s ease;
     >picture.header__picture{
       >a>img{
@@ -64,13 +64,14 @@
       }
     }
     >nav.header__nav{
+      height: $height-navbar-little;
       >ul.first__level{
         >li.item{
           >a{
             font-size: 90%;
-            height: 5rem;
+            height: $height-navbar-little;
             padding: 0;
-            line-height: 5rem;
+            line-height: $height-navbar-little;
             &:before{
               height: 44%;
               top: 28%;
@@ -105,6 +106,7 @@ ul.dropdown.third__level{
   }
 }
 ul.dropdown.second__level{
+  // margin-top: 42px;
   >li.item{
     &:last-child{
       >a:after{
