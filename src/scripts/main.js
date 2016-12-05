@@ -9,7 +9,7 @@ import addFormSlide from './lib/addFormSlide'
 import menu from './lib/menu'
 import addNavbarFloating from './lib/addNavbarFloating'
 import dinamic from './lib/dinamic'
-// import animateFooterSection from './lib/animateFooterSection'
+import animateFooterSection from './lib/animateFooterSection'
 
 (() => {
   'use strict'
@@ -28,6 +28,6 @@ import dinamic from './lib/dinamic'
     addNavbarFloating()
     dinamic()
     smoove()
-    // animateFooterSection()
+    animateFooterSection()
   }
 })()

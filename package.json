@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp"
+    "start": "gulp",
+    "styles": "gulp styles",
+    "scripts": "gulp build:scripts",
+    "images": "gulp build:images"
   },
   "repository": {
     "type": "git",

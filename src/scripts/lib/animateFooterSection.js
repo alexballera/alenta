@@ -1,16 +1,36 @@
 import $ from 'jquery'
 
 export default function () {
-  $(document).scroll(function (e) {
-    document.title = $(document).scrollTop()
-  })
-  $('.slider__container>.footer__section').hide()
+  // $(document).scroll(function (e) {
+  //   document.title = $(document).scrollTop()
+  // })
+
+  $('.barra-alenta, .barra-localizacion, .barra-proyectos').hide()
+
   $(document).on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
-    if (desplazamiento > 100) {
-      $('.footer__section').show('slow')
+    if (desplazamiento >= 830) {
+      $('.barra-alenta').show('slow')
     } else {
-      $('.footer__section').hide('slow')
+      $('.barra-alenta').hide('slow')
+    }
+  })
+
+  $(document).on('scroll', function () {
+    var desplazamiento = $(document).scrollTop()
+    if (desplazamiento >= 1630) {
+      $('.barra-localizacion').show('slow')
+    } else {
+      $('.barra-localizacion').hide('slow')
+    }
+  })
+
+  $(document).on('scroll', function () {
+    var desplazamiento = $(document).scrollTop()
+    if (desplazamiento >= 2300) {
+      $('.barra-proyectos').show('slow')
+    } else {
+      $('.barra-proyectos').hide('slow')
     }
   })
 }
