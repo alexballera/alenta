@@ -1,0 +1,383 @@
+commit d7c7a73e736019a0d430b9de4b6bce68f56e5a00
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 19:25:25 2016 -0400
+
+    Optimizando vistas
+
+commit df6581d324f14a7b6a5dd9c35267570d188fc9a4
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 18:57:11 2016 -0400
+
+    Arreglando slide promotores
+
+commit b50054ef05159aa53829c8bbd17d5eb3506a5b81
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 18:00:19 2016 -0400
+
+    Cambiando imagenes
+
+commit b3a9c47bb7db526c1212bcba768c43dd894bb2a4
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 17:08:24 2016 -0400
+
+    Optimizando enlaces de menu
+
+commit 21b2ceae74a95357eae73fada192c1d7928fcd99
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 16:21:12 2016 -0400
+
+    Cambiado menu flotante
+
+commit 538e0c5d3d1583a5b49a457cf4db5f4f7e1e57ee
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 13:41:40 2016 -0400
+
+    Agregado mane flotante
+
+commit eed5dc10636f44b64b03ecb262ea9c0e335791b2
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 13:39:11 2016 -0400
+
+    Agregado mane flotante
+
+commit cf66dd1c569388cb913e5a2c567e6aa82d8a3fd1
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 11:36:23 2016 -0400
+
+    Mejorando codigo
+
+commit b026c674b2440647abc4ce0e48649c8799696f44
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 11:21:20 2016 -0400
+
+    Mejorado menu
+
+commit e39b743129bb523f55ac08036f641a85cdc13c70
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 09:58:31 2016 -0400
+
+    Terminado menu
+
+commit c79e6f40ae918b72221df260ac5434de728e1d4d
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 08:49:43 2016 -0400
+
+    Optimizando codigo
+
+commit dc9fab9802bcd81cf65d2467250a4774be9bdbaa
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 08:31:54 2016 -0400
+
+    Optimizando contacto
+
+commit 576eeb3a1c2d485b65b8bc47487a92aa32630ea1
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Dec 4 01:08:22 2016 -0400
+
+    Iniciando submenu
+
+commit a04e3427d2717d10b23b5eef2b859b0e8ec33caf
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 23:07:13 2016 -0400
+
+    Mejorando top navbar
+
+commit ae2fc7bd2e5e42559b900118ca367f2407edd6ea
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 22:35:15 2016 -0400
+
+    Agregado footer desde JS
+
+commit 1e7b46002b622250a6364ad58c3f047c8a8c6177
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 22:27:59 2016 -0400
+
+    Terminado Footer
+
+commit 686337419d03810fe9424365f9c43e6b81e4b4e5
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 20:34:13 2016 -0400
+
+    Mejorado footer slider
+
+commit 5439ebf2fc0723eaea9a1f3cebedc22989a696d6
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 01:45:47 2016 -0400
+
+    iniciando footer section
+
+commit b632d905067dfca5fd008330bcb65af27d192d4c
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 01:41:41 2016 -0400
+
+    iniciando footer section
+
+commit a70a8d70ed8649cee44b0e74276af6e2c8b1013b
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 01:00:23 2016 -0400
+
+    Optimizando
+
+commit de3adb4114be871d53820d5dacd74b7e4619c9b1
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 00:34:04 2016 -0400
+
+    Agregado form slider
+
+commit 4bd7edd5df0d6949be25d99504978e0007409f14
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Dec 3 00:12:25 2016 -0400
+
+    Agregado form slider
+
+commit eaa8182cd21c218ec43aff15a37b8364929a7625
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 22:48:46 2016 -0400
+
+    Cambiado logo del navbar
+
+commit dea205c74649feb6e25b4d9dae841f534731c915
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 22:25:05 2016 -0400
+
+    Agregado textos al slider
+
+commit ad3a53f10e2fb8a9073d768c1448c61a8883faeb
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 19:08:47 2016 -0400
+
+    Agregando textos al slider
+
+commit 296ddadd85ed505bdfb0b1559b676d5d1e568512
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 18:57:57 2016 -0400
+
+    Agregando textos al slider
+
+commit f5841bc7387c89ab1ca085a99566ddaaa2a87e7c
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 16:56:33 2016 -0400
+
+    Agregado flexslider
+
+commit 39e25868fb1f2c67aeb4b257fa406c0215cfcadc
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 11:10:28 2016 -0400
+
+    Optimizando index.html
+
+commit 5d0d5ba8efd3645789e37625c28d314e6b4e9e76
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Fri Dec 2 00:03:18 2016 -0400
+
+    Optimizando codigo
+
+commit 80c108887d546792df0b06d4835768f20c902a20
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Thu Dec 1 23:17:39 2016 -0400
+
+    Optimizando codigo
+
+commit eb3f7f4f5ed63e2397fe3655594c6cb17a1e34b1
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Thu Dec 1 23:05:40 2016 -0400
+
+    Optimizando codigo
+
+commit 40ab7b703ca1da1c24c949224d06ef36fb3068c9
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Tue Nov 22 18:40:19 2016 -0400
+
+    Agregada animaciones
+
+commit b68879cb0d6c9925619c3d04061d70a397dfbe16
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Tue Nov 22 17:34:40 2016 -0400
+
+    Agregada animaciones
+
+commit 0215fe54346c3da24a800dc57619f7bfd77b7316
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 12:15:24 2016 -0400
+
+    Agregado footer
+
+commit f299ebbd502643feb8067b7dba5f0cf5ea20e48e
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 12:10:32 2016 -0400
+
+    Optimizando codigo
+
+commit 1ce3b070b4bc68443a7ba2a45bb928893038cdef
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 11:32:18 2016 -0400
+
+    Terminada seccion Contactanos
+
+commit 1df220b4acbef76ca326db8694ebffd23b4b1cfe
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 11:05:05 2016 -0400
+
+    Terminada seccion Hotel
+
+commit 75e1eeadfa15ba5f7d741410c37960b042250e85
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 10:55:12 2016 -0400
+
+    Terminada seccion cirugias
+
+commit 58b043fdee54fd0c2c434d12fef6dfd435034747
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 10:45:58 2016 -0400
+
+    Terminada seccion areas medicas
+
+commit 5266c097a78d1b8a7878e54b5b618a76998becae
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 10:30:20 2016 -0400
+
+    Terminada seccion consultorio
+
+commit e657a552e3d0d8056e5b450f78b774946eaae365
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Mon Nov 21 09:48:21 2016 -0400
+
+    Agregado jquery y mejorado navbar responsive
+
+commit 5278f4d7e195a045bc7e449a3b510fc2de7b1a19
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 21:54:11 2016 -0400
+
+    boton de regresar
+
+commit 51311637739cf270ff2f601653578dceed7e3238
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 21:49:02 2016 -0400
+
+    Corregido url de imagenes
+
+commit c9bc369f07226e2a232dbc28e375e82568e51ba5
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 21:28:58 2016 -0400
+
+    Terminado contactame
+
+commit 0d36de2a0fad4a5d3155c2ea4326205d91423453
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 18:59:08 2016 -0400
+
+    Finalizada promotores
+
+commit 6b26df0fd0a528c56cc33b5831ab0a4e3be8cef8
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 17:46:34 2016 -0400
+
+    Finalizada etapa3
+
+commit e84e7d1c8d1b6a07f35b1c75e92143fa74469bd8
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 17:13:36 2016 -0400
+
+    Finalizada etapa1
+
+commit a64793147660db1583a3a3a4f46147fbd38f89b4
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 15:41:07 2016 -0400
+
+    Terminado localizacion
+
+commit ac7a8d0128c43873ac64d578123189bc05e38d40
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 13:49:59 2016 -0400
+
+    Mejorada anclas
+
+commit 087fff9f5476af153c773ecb7bf4543779f48b21
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 13:07:51 2016 -0400
+
+    Agregado navbar a que es alenta
+
+commit 74053cac03e49d224c1c492bd778163697d78669
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 12:12:08 2016 -0400
+
+    agregado transicion a navbar
+
+commit cc29035f72188c04ddfa0c1a5a88b1c2d92029b9
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 09:13:55 2016 -0400
+
+    Agregada transiciones
+
+commit b1bad22867b4a898f25e212cd27f699f653fe134
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 08:58:24 2016 -0400
+
+    Agregada animacion al navbar con js
+
+commit 93a551c9dceef182a86374da45dd4033164c79fd
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 07:04:09 2016 -0400
+
+    Haciendo responsivo el que es alenta
+
+commit 34920859430890f65c4d0ccbcaf120bfc4de8a11
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 01:15:00 2016 -0400
+
+    Terminado boton
+
+commit 4179338337589b9b02fec145dd465bd5635e6075
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 00:58:32 2016 -0400
+
+    Agregado boton
+
+commit 3a6e2136bfbb37375b6ce97745dd8a1ea6d5c576
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sun Nov 20 00:03:46 2016 -0400
+
+    Iniciando que es alenta
+
+commit 33458c6139febfa69d812dbad770e3f82c1deeee
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 21:39:03 2016 -0400
+
+    Terminando navbar
+
+commit 7840b15a2b7cbbdc6b2f77368a620ef43b2f6fa6
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 17:37:07 2016 -0400
+
+    Finalizado navbar desktop
+
+commit d5eb3bf2dc1d3ce8abacb7e7a179834e329adde2
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 14:48:14 2016 -0400
+
+    Agregada estructura HTML
+
+commit 21c454987de6ac19edf10bbde66521638d3d2c41
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 13:28:28 2016 -0400
+
+    Fin de Configuracion de Gulp
+
+commit 1b51264dc14e2884b6c8f1059f4ef9dbc026aeb2
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 13:18:42 2016 -0400
+
+    Inicio de Configuracion de Gulp
+
+commit 6854dbc4497eba5fea39296e2f54e1fb01fdac7b
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 13:08:36 2016 -0400
+
+    Instalando dependencias de npm
+
+commit 2f6ff173aaa33ec09fab5b11d56283c1657e249f
+Author: Alex Ballera <alexballera@gmail.com>
+Date:   Sat Nov 19 12:07:03 2016 -0400
+
+    Commit inicial

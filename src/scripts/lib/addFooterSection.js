@@ -57,4 +57,8 @@ export default function () {
       </div>
 </footer>`
   $('.slider__container').append(template)
+  // $('.seccion__consultorios').append(template)
+  // $('.seccion__areas').append(template)
+  // $('.seccion__cirugia').append(template)
+  // $('.seccion__hotel').append(template)
 }

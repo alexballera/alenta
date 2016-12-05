@@ -5,7 +5,6 @@ export default function () {
   $('.flexslider__principal').flexslider({
     controlNav: false,
     animation: 'slide',
-    maxItems: 6,
     prevText: '',
     nextText: ''
   })
