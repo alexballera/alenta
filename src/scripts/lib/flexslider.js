@@ -6,7 +6,7 @@ export default function () {
     controlNav: false,
     animation: 'slide',
     slideshowSpeed: 9000,
-    animationSpeed: 800,
+    animationSpeed: 900,
     prevText: '',
     nextText: ''
   })
