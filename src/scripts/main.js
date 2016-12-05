@@ -8,6 +8,7 @@ import flexslider from './lib/flexslider'
 import addFormSlide from './lib/addFormSlide'
 import menu from './lib/menu'
 import addNavbarFloating from './lib/addNavbarFloating'
+import dinamic from './lib/dinamic'
 
 (() => {
   'use strict'
@@ -16,7 +17,6 @@ import addNavbarFloating from './lib/addNavbarFloating'
 
   function onDOMLoad () {
     headerLittle()
-    smoove()
     botonScroll()
     addFooter()
     addFooterSection()
@@ -25,5 +25,7 @@ import addNavbarFloating from './lib/addNavbarFloating'
     addFormSlide()
     menu()
     addNavbarFloating()
+    dinamic()
+    smoove()
   }
 })()
