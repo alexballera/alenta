@@ -1,7 +1,8 @@
 .seccion__consultorios,
 .seccion__areas,
 .seccion__cirugia,
-.seccion__hotel{
+.seccion__hotel,
+.seccion__contacto{
 	padding-top: 132px;
 	>footer.footer__section{
 		top: 520px;
@@ -24,5 +25,21 @@
 				}
 			}
 		}
+	}
+}
+
+.seccion__contacto{
+	margin-top: 0;
+	padding-left: 0;
+	>.contenido__container{
+		>.contenido__texto{
+			>h3,
+			>p{
+				padding-left: 3rem;
+			}
+		}
+	}
+	>footer.footer__section{
+		top: 850px;
 	}
 }

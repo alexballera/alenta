@@ -57,11 +57,11 @@ import $ from 'jquery'
 </footer>`
 
 export default function () {
-	// $('.slider__container').append(template)
 	$('article.contenido__alenta.seccion__consultorios').hide('slow')
 	$('article.contenido__alenta.seccion__areas').hide('slow')
 	$('article.contenido__alenta.seccion__cirugia').hide('slow')
 	$('article.contenido__alenta.seccion__hotel').hide('slow')
+	$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 
 	$('.gotoalenta').click(function (e) {
 		e.preventDefault()
@@ -71,6 +71,7 @@ export default function () {
 		$('article.contenido__alenta.seccion__areas').hide('slow')
 		$('article.contenido__alenta.seccion__cirugia').hide('slow')
 		$('article.contenido__alenta.seccion__hotel').hide('slow')
+		$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 	})
 
 	$('.gotoconsultorio').click(function (e) {
@@ -82,6 +83,7 @@ export default function () {
 		$('article.contenido__alenta.seccion__areas').hide('slow')
 		$('article.contenido__alenta.seccion__cirugia').hide('slow')
 		$('article.contenido__alenta.seccion__hotel').hide('slow')
+		$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 	})
 
 	$('.gotomedicas').click(function (e) {
@@ -93,6 +95,7 @@ export default function () {
 		$('article.contenido__alenta.seccion__areas').show('slow')
 		$('article.contenido__alenta.seccion__cirugia').hide('slow')
 		$('article.contenido__alenta.seccion__hotel').hide('slow')
+		$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 	})
 
 	$('.gotocirugias').click(function (e) {
@@ -104,6 +107,7 @@ export default function () {
 		$('article.contenido__alenta.seccion__areas').hide('slow')
 		$('article.contenido__alenta.seccion__cirugia').show('slow')
 		$('article.contenido__alenta.seccion__hotel').hide('slow')
+		$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 	})
 
 	$('.gotohotel').click(function (e) {
@@ -115,15 +119,18 @@ export default function () {
 		$('article.contenido__alenta.seccion__areas').hide('slow')
 		$('article.contenido__alenta.seccion__cirugia').hide('slow')
 		$('article.contenido__alenta.seccion__hotel').show('slow')
+		$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 	})
 
-	// $('.gotocontacto').click(function (e) {
-	// 	e.preventDefault()
-	// 	$('section.slider__container').hide('slow')
-	// 	$('article.contenido__alenta.seccion__alenta').hide('slow')
-	// 	$('article.contenido__alenta.seccion__consultorios').hide('slow')
-	// 	$('article.contenido__alenta.seccion__areas').hide('slow')
-	// 	$('article.contenido__alenta.seccion__cirugia').hide('slow')
-	// 	$('article.contenido__alenta.seccion__hotel').hide('slow')
-	// })
+	$('.gotocontactanos').click(function (e) {
+		e.preventDefault()
+		$('.seccion__contacto').append(template)
+		$('section.slider__container').hide('slow')
+		$('article.contenido__alenta.seccion__alenta').hide('slow')
+		$('article.contenido__alenta.seccion__consultorios').hide('slow')
+		$('article.contenido__alenta.seccion__areas').hide('slow')
+		$('article.contenido__alenta.seccion__cirugia').hide('slow')
+		$('article.contenido__alenta.seccion__hotel').hide('slow')
+		$('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').show('slow')
+	})
 }
