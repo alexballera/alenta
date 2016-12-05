@@ -5,6 +5,8 @@ export default function () {
   $('.flexslider__principal').flexslider({
     controlNav: false,
     animation: 'slide',
+    slideshowSpeed: 9000,
+    animationSpeed: 800,
     prevText: '',
     nextText: ''
   })
