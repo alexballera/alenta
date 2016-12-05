@@ -8,6 +8,21 @@
 	}
 }
 
-// .seccion__areas{
-// 	img width: 510px
-// }
+.seccion__areas{
+	padding-bottom: 0;
+	>.areas-medicas{
+		>.contenido__container{
+			height: 0;
+			>.contenido__texto{
+				&:first-child{
+					padding-top: 0;
+				}
+				&:last-child{
+					>img{
+						width: 480px;
+					}
+				}
+			}
+		}
+	}
+}
