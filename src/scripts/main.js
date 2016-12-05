@@ -1,5 +1,5 @@
 import headerLittle from './lib/headerLittle'
-// import smoove from './lib/smoove'
+import smoove from './lib/smoove'
 import botonScroll from './lib/botonScroll'
 import addFooter from './lib/addFooter'
 import addFooterSection from './lib/addFooterSection'
@@ -17,7 +17,6 @@ import dinamic from './lib/dinamic'
 
   function onDOMLoad () {
     headerLittle()
-    // smoove()
     botonScroll()
     addFooter()
     addFooterSection()
@@ -27,5 +26,6 @@ import dinamic from './lib/dinamic'
     menu()
     addNavbarFloating()
     dinamic()
+    smoove()
   }
 })()

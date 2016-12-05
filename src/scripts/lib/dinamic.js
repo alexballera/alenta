@@ -65,7 +65,6 @@ export default function () {
 
 	$('.gotoalenta').click(function (e) {
 		e.preventDefault()
-		$('.slider__container').append(template)
 		$('section.slider__container').show('slow')
 		$('article.contenido__alenta.seccion__alenta').show('slow')
 		$('article.contenido__alenta.seccion__consultorios').hide('slow')
