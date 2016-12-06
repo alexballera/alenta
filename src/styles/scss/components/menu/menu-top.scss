@@ -37,10 +37,6 @@
     &--responsive{
       @extend .nav__responsive;
       >li>a{
-        font-size: 1.2rem;
-        @include respond-to(lg) {
-          font-size: 1.1rem;
-        }
       }
       >li.item{
           &:first-child{

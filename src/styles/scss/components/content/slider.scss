@@ -27,8 +27,8 @@
 .flexslider{
 	&__principal{
 		border: none;
-		top: $height-navbar;
-		margin-bottom: $height-navbar;
+		top: ($height-navbar)-22px;
+		margin-bottom: ($height-navbar)-22px;
 	}
 	&__item{
 		>picture{
