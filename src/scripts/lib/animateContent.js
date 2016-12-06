@@ -1,20 +1,22 @@
 import $ from 'jquery'
+var documento = $(document)
 
 export default function () {
-  $(document).scroll(function (e) {
+
+  documento.scroll(function (e) {
     document.title = $(document).scrollTop()
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 465) {
-      $('#alenta-right').hide('slow')
+      $('#alenta-left').hide('slow')
     } else {
-      $('#alenta-right').show('slow')
+      $('#alenta-left').show('slow')
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 1237) {
       $('#localizacion-left').hide('slow')
@@ -23,7 +25,7 @@ export default function () {
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 2228) {
       $('#proyecto-left').hide('slow')
@@ -32,7 +34,7 @@ export default function () {
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 2963) {
       $('#etapa1-left').hide('slow')
@@ -41,7 +43,7 @@ export default function () {
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 3935) {
       $('#etapa2-left').hide('slow')
@@ -50,7 +52,7 @@ export default function () {
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 4775) {
       $('#etapa3-left').hide('slow')

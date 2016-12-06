@@ -1,11 +1,13 @@
 import $ from 'jquery'
+var documento = $(document)
 
 export default function () {
-  // $(document).scroll(function (e) {
+
+  // documento.scroll(function (e) {
   //   document.title = $(document).scrollTop()
   // })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 830) {
       $('.barra-alenta').hide('slow')
@@ -14,7 +16,7 @@ export default function () {
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 1630) {
       $('.barra-localizacion').hide('slow')
@@ -23,7 +25,7 @@ export default function () {
     }
   })
 
-  $(document).on('scroll', function () {
+  documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
     if (desplazamiento <= 2300) {
       $('.barra-proyectos').hide('slow')
