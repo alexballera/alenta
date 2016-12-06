@@ -3,9 +3,9 @@ var documento = $(document)
 
 export default function () {
 
-  documento.scroll(function (e) {
-    document.title = $(document).scrollTop()
-  })
+  // documento.scroll(function (e) {
+  //   document.title = $(document).scrollTop()
+  // })
 
   documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()

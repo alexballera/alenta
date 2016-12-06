@@ -5,6 +5,7 @@ import addFooter from './lib/addFooter'
 import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
 import addFormSlide from './lib/addFormSlide'
+import downTextSlide from './lib/downTextSlide'
 import menu from './lib/menu'
 import addNavbarFloating from './lib/addNavbarFloating'
 import dinamicSection from './lib/dinamicSection'
@@ -23,6 +24,7 @@ import animateContent from './lib/animateContent'
     addFooter()
     addForm()
     addFormSlide()
+    downTextSlide()
     menu()
     addNavbarFloating()
     dinamicSection()
