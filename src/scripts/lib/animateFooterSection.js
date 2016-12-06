@@ -5,32 +5,30 @@ export default function () {
   //   document.title = $(document).scrollTop()
   // })
 
-  $('.barra-alenta, .barra-localizacion, .barra-proyectos').hide()
-
   $(document).on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
-    if (desplazamiento >= 830) {
-      $('.barra-alenta').show('slow')
-    } else {
+    if (desplazamiento <= 830) {
       $('.barra-alenta').hide('slow')
+    } else {
+      $('.barra-alenta').show('slow')
     }
   })
 
   $(document).on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
-    if (desplazamiento >= 1630) {
-      $('.barra-localizacion').show('slow')
-    } else {
+    if (desplazamiento <= 1630) {
       $('.barra-localizacion').hide('slow')
+    } else {
+      $('.barra-localizacion').show('slow')
     }
   })
 
   $(document).on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
-    if (desplazamiento >= 2300) {
-      $('.barra-proyectos').show('slow')
-    } else {
+    if (desplazamiento <= 2300) {
       $('.barra-proyectos').hide('slow')
+    } else {
+      $('.barra-proyectos').show('slow')
     }
   })
 }
