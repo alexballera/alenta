@@ -24,6 +24,7 @@
     }
     >a>img{
       transition: all 0.3s ease;
+      width: 50%;
     }
   }
   &__nav{
@@ -115,6 +116,6 @@ ul.dropdown.second__level{
 }
 ul.dropdown.third__level{
   position: relative;
-  left: 180px;
+  left: 183px;
   top: -3rem;
 }

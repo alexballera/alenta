@@ -4,7 +4,7 @@ var slide = $('#flexslider__principal')
 var consultorio = slide.find('.slide__consultorio')
 var area_medica = slide.find('.slide__area-medica')
 var navbar = $('#navbar')
-var link_alenta = navbar.find('.gotoalenta')
+var link_alenta = navbar.find('#dropdown__firstlevel')
 
 export default function () {
 	link_alenta.mouseover(function (event) {
