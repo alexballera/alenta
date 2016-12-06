@@ -56,7 +56,7 @@
         width: 15%;
         transition: all 0.3s ease;
         @include respond-to(xl) {
-          width: 70%;
+          width: 40%;
         }
       }
     }
