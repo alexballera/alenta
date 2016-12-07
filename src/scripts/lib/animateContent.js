@@ -3,13 +3,13 @@ var documento = $(document)
 
 export default function () {
 
-  // documento.scroll(function (e) {
-  //   document.title = $(document).scrollTop()
-  // })
+  documento.scroll(function (e) {
+    document.title = $(document).scrollTop()
+  })
 
   documento.on('scroll', function () {
     var desplazamiento = $(document).scrollTop()
-    if (desplazamiento <= 465) {
+    if (desplazamiento <= 485) {
       $('#alenta-left').hide('slow')
     } else {
       $('#alenta-left').show('slow')
