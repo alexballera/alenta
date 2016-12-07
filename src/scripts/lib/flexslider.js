@@ -7,6 +7,7 @@ export default function () {
     animation: 'slide',
     slideshowSpeed: 9000,
     animationSpeed: 900,
+    pauseOnHover: true,
     prevText: '',
     nextText: ''
   })

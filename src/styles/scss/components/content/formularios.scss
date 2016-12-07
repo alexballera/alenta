@@ -2,7 +2,7 @@ form.flexslider__form{
 	@extend .text;
 	height: 0;
 	top: 275px !important;
-	color: grey !important;
+	color: $color-hover !important;
 	margin-left: 4%;
 
 	& input[type="email"],
@@ -14,6 +14,9 @@ form.flexslider__form{
 		border: 1px solid grey;
 		border-radius: 5px;
 		font-size: 0.9rem;
+		&:placeholder{
+			color: blue;
+		}
 	}
 	& button[type="submit"] {
 		height: 100%;

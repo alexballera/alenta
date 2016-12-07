@@ -2,10 +2,10 @@ import $ from 'jquery'
 
 var navbar = $('#navbar')
 
-var item_alenta = `
+var itemAlenta = `
 <li class="item dropdown_firstlevel"><a href="" class="gotoalenta">Qué es Alenta</a></li>
 `
-var itemAlentaAll = `
+var itemAlentaDropdown = `
 <li class="item dropdown_firstlevel" id="dropdown__firstlevel"><a href="" class="gotoalenta">Qué es Alenta <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       <ul class="dropdown second__level" id="dropdown__secondlevel">
         <li class="item"><a href="#localizacion">Localización</a></li>
@@ -78,14 +78,14 @@ var footer = `
       </div>
 </footer>`
 
-var hideItemAlenta = function () {
+var hideItemAlentaDropdown = function () {
   navbar.find('.dropdown_firstlevel').hide()
-  navbar.prepend(item_alenta)
+  navbar.prepend(itemAlenta)
 }
 
-var showItemAlenta = function () {
+var showItemAlentaDropdown = function () {
   navbar.find('.dropdown_firstlevel').hide()
-  navbar.prepend(itemAlentaAll)
+  navbar.prepend(itemAlentaDropdown)
 }
 
 export default function () {
@@ -97,7 +97,7 @@ export default function () {
 
   $('.gotoalenta').click(function (e) {
     e.preventDefault()
-    showItemAlenta()
+    showItemAlentaDropdown()
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
     $('article.contenido__alenta.seccion__consultorios').hide('slow')
@@ -109,7 +109,7 @@ export default function () {
 
   $('.gotoconsultorio').click(function (e) {
     e.preventDefault()
-    hideItemAlenta()
+    hideItemAlentaDropdown()
     $('.seccion__consultorios').append(footer)
     $('section.slider__container').hide('slow')
     $('article.contenido__alenta.seccion__alenta').hide('slow')
@@ -122,7 +122,7 @@ export default function () {
 
   $('.gotomedicas').click(function (e) {
     e.preventDefault()
-    hideItemAlenta()
+    hideItemAlentaDropdown()
     $('.seccion__areas').append(footer)
     $('section.slider__container').hide('slow')
     $('article.contenido__alenta.seccion__alenta').hide('slow')
@@ -135,7 +135,7 @@ export default function () {
 
   $('.gotocirugias').click(function (e) {
     e.preventDefault()
-    hideItemAlenta()
+    hideItemAlentaDropdown()
     $('.seccion__cirugia').append(footer)
     $('section.slider__container').hide('slow')
     $('article.contenido__alenta.seccion__alenta').hide('slow')
@@ -148,7 +148,7 @@ export default function () {
 
   $('.gotohotel').click(function (e) {
     e.preventDefault()
-    hideItemAlenta()
+    hideItemAlentaDropdown()
     $('.seccion__hotel').append(footer)
     $('section.slider__container').hide('slow')
     $('article.contenido__alenta.seccion__alenta').hide('slow')
@@ -161,7 +161,7 @@ export default function () {
 
   $('.gotocontactanos').click(function (e) {
     e.preventDefault()
-    hideItemAlenta()
+    hideItemAlentaDropdown()
     $('.seccion__contacto').append(footer)
     $('section.slider__container').hide('slow')
     $('article.contenido__alenta.seccion__alenta').hide('slow')

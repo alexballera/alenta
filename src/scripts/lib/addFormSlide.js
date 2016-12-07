@@ -5,15 +5,15 @@ export default function () {
       <form class="flexslider__form" id="slider-form" action="#" method="post" >
             <div>
               <label for="Nombre"></label>
-              <input type="text" placeholder="Nombre Completo" required="required">
+              <input type="text" placeholder="Nombre Completo" required="required" title="Introduzca su Nombre">
             </div>
             <div>
               <label for="Nombre"></label>
-              <input type="text" placeholder="Apellido Completo" required="required">
+              <input type="text" placeholder="Apellido Completo" required="required" title="Introduzca su Apellido">
             </div>
             <div>
               <label for="E-mail"></label>
-              <input type="email" placeholder="Email" required="required">
+              <input type="email" placeholder="Email" required="required" title="Introduzca su email">
             </div>
             <div>
               <label for="Teléfono"></label>
