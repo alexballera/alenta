@@ -5,6 +5,23 @@ var navbar = $('#navbar')
 var item_alenta = `
 <li class="item dropdown_firstlevel"><a href="" class="gotoalenta">Qué es Alenta</a></li>
 `
+var itemAlentaAll = `
+<li class="item dropdown_firstlevel" id="dropdown__firstlevel"><a href="" class="gotoalenta">Qué es Alenta <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+      <ul class="dropdown second__level" id="dropdown__secondlevel">
+        <li class="item"><a href="#localizacion">Localización</a></li>
+        <li class="item"><a href="#proyecto">El Proyecto</a></li>
+        <li class="item"><a href="#promotores">Promotores</a></li>
+        <li class="item" id="item__dropdown"><a href="#proyecto">Alenta Etapas</a>
+              <ul class="dropdown third__level" id="dropdown__thirdlevel">
+                    <li class="item"><a href="#etapa1">Etapa 1</a></li>
+                    <li class="item"><a href="#etapa2">Etapa 2</a></li>
+                    <li class="item"><a href="#etapa3">Etapa 3</a></li>
+              </ul>
+        </li>
+      </ul>
+</li>
+`
+
 var footer = `
 <footer class="footer__section">
       <div class="footer__container">
@@ -65,6 +82,12 @@ var hideItemAlenta = function () {
   navbar.find('.dropdown_firstlevel').hide()
   navbar.prepend(item_alenta)
 }
+
+var showItemAlenta = function () {
+  navbar.find('.dropdown_firstlevel').hide()
+  navbar.prepend(itemAlentaAll)
+}
+
 export default function () {
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
@@ -74,6 +97,7 @@ export default function () {
 
   $('.gotoalenta').click(function (e) {
     e.preventDefault()
+    showItemAlenta()
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
     $('article.contenido__alenta.seccion__consultorios').hide('slow')

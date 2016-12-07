@@ -73,7 +73,7 @@
       width: 18%;
       transition: all 0.3s ease;
     }
-    >a>img{
+    >img{
       transition: all 0.3s ease;
       width: 50%;
     }
@@ -93,7 +93,7 @@
     height: $height-navbar-little;
     transition: all 0.7s ease;
     >picture.header__picture{
-      >a>img{
+      >img{
         width: 15%;
         transition: all 0.3s ease;
         @include respond-to(xl) {
