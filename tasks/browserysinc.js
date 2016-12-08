@@ -13,8 +13,8 @@ gulp.task('serve', () => {
       port: 8001
     },
     browser: [
-      // 'chromium-browser'
-      'google-chrome',
+      // 'chromium-browser',
+      // 'google-chrome',
       'firefox'
     ]
   })

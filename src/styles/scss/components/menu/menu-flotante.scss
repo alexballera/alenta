@@ -8,25 +8,30 @@
 		display: flex;
 		flex-direction: column;
 		>span{
-			color: $color-primary;
 			display: block;
 			&:first-child{
+				color: $color-primary;
 				width: 175px;
 				text-align: right;
 				background-color: rgba(0,0,0,0.01);
+				transition: all ease 0.3s;
 				&:hover{
-					background-color: rgba(0,0,0,0.05);
-					color: rgba(0,0,0,0.5);
+					// background-color: rgba(0,0,0,0.05);
+					transition: all ease 0.3s;
+					color: $color-secondary;
 				}
 			}
 			&:last-child{
 				color: white;
-				display: flex;
-				flex-direction: column;
 				background-color: $color-primary;
-				padding: 8px;
 				box-sizing: border-box;
-				width: 24px;
+				width: 16px;
+				height: 70px;
+				transition: all ease 0.3s;
+				&:hover{
+					background-color: $color-secondary;
+					transition: all ease 0.3s;
+				}
 			}
 		}
 	}

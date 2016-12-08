@@ -25,7 +25,7 @@ export default function () {
 
   documento.on('scroll', function () {
     var desplazamiento = documento.scrollTop()
-    if (desplazamiento >= 600 && desplazamiento <= 1600) {
+    if (desplazamiento >= 600 && desplazamiento <= 2000) {
       showMenu()
     } else {
       hideMenu()
