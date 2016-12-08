@@ -1,8 +1,14 @@
 import $ from 'jquery'
 import flexslider from '../vendors/jquery.flexslider.js'
 
+var slider = {
+    principal: $('.flexslider__principal'),
+    mini: $('.flexslider__mini'),
+    promotores: $('.flexslider__promotores')
+}
+
 export default function () {
-  $('.flexslider__principal').flexslider({
+  slider.principal.flexslider({
     controlNav: false,
     animation: 'slide',
     slideshowSpeed: 9000,
@@ -11,7 +17,7 @@ export default function () {
     prevText: '',
     nextText: ''
   })
-  $('.flexslider__mini').flexslider({
+  slider.mini.flexslider({
     animation: 'slide',
     slideshowSpeed: 5000,
     animationSpeed: 700,
@@ -23,7 +29,7 @@ export default function () {
     prevText: '',
     nextText: ''
   })
-  $('.flexslider__promotores').flexslider({
+  slider.promotores.flexslider({
     animation: 'slide',
     itemWidth: 210,
     minItems: 3,

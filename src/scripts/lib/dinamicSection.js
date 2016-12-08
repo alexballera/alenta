@@ -1,6 +1,7 @@
 import $ from 'jquery'
 
 var navbar = $('#navbar')
+var firstLevel = navbar.find('.dropdown_firstlevel')
 
 var itemAlenta = `
 <li class="item dropdown_firstlevel"><a href="" class="gotoalenta">Qué es Alenta</a></li>
@@ -79,12 +80,12 @@ var footer = `
 </footer>`
 
 var hideItemAlentaDropdown = function () {
-  navbar.find('.dropdown_firstlevel').hide()
+  firstLevel.hide()
   navbar.prepend(itemAlenta)
 }
 
 var showItemAlentaDropdown = function () {
-  navbar.find('.dropdown_firstlevel').hide()
+  firstLevel.hide()
   navbar.prepend(itemAlentaDropdown)
 }
 

@@ -5,7 +5,6 @@ var second__level = navbar.find('.second__level')
 var third__level = navbar.find('.third__level')
 
 export default function () {
-  $('.third__level, .second__level').hide()
   second__level.hide()
   third__level.hide()
 
