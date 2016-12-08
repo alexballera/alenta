@@ -1,36 +1,38 @@
 import $ from 'jquery'
 var documento = $(document)
+var barra_alenta = documento.find('.barra-alenta')
+var barra_localizacion = documento.find('.barra-localizacion')
+var barra_proyectos = documento.find('.barra-proyectos')
 
 export default function () {
-
   // documento.scroll(function (e) {
-  //   document.title = $(document).scrollTop()
+  //   document.title = documento.scrollTop()
   // })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 830) {
-      $('.barra-alenta').hide('slow')
+      barra_alenta.hide('slow')
     } else {
-      $('.barra-alenta').show('slow')
+      barra_alenta.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 1630) {
-      $('.barra-localizacion').hide('slow')
+      barra_localizacion.hide('slow')
     } else {
-      $('.barra-localizacion').show('slow')
+      barra_localizacion.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 2300) {
-      $('.barra-proyectos').hide('slow')
+      barra_proyectos.hide('slow')
     } else {
-      $('.barra-proyectos').show('slow')
+      barra_proyectos.show('slow')
     }
   })
 }

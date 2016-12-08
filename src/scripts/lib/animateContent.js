@@ -1,63 +1,68 @@
 import $ from 'jquery'
 var documento = $(document)
+var alenta_left = documento.find('#alenta-left')
+var localizacion_left = documento.find('#localizacion-left')
+var proyecto_left = documento.find('#proyecto-left')
+var etapa1_left = documento.find('#etapa1-left')
+var etapa2_left = documento.find('#etapa2-left')
+var etapa3_left = documento.find('#etapa3-left')
 
 export default function () {
-
   // documento.scroll(function (e) {
-  //   document.title = $(document).scrollTop()
+  //   document.title = documento.scrollTop()
   // })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 485) {
-      $('#alenta-left').hide('slow')
+      alenta_left.hide('slow')
     } else {
-      $('#alenta-left').show('slow')
+      alenta_left.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 1237) {
-      $('#localizacion-left').hide('slow')
+      localizacion_left.hide('slow')
     } else {
-      $('#localizacion-left').show('slow')
+      localizacion_left.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 2228) {
-      $('#proyecto-left').hide('slow')
+      proyecto_left.hide('slow')
     } else {
-      $('#proyecto-left').show('slow')
+      proyecto_left.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 2963) {
-      $('#etapa1-left').hide('slow')
+      etapa1_left.hide('slow')
     } else {
-      $('#etapa1-left').show('slow')
+      etapa1_left.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 3935) {
-      $('#etapa2-left').hide('slow')
+      etapa2_left.hide('slow')
     } else {
-      $('#etapa2-left').show('slow')
+      etapa2_left.show('slow')
     }
   })
 
   documento.on('scroll', function () {
-    var desplazamiento = $(document).scrollTop()
+    var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 4775) {
-      $('#etapa3-left').hide('slow')
+      etapa3_left.hide('slow')
     } else {
-      $('#etapa3-left').show('slow')
+      etapa3_left.show('slow')
     }
   })
 }

@@ -4,6 +4,35 @@
 	z-index: 1000;
 	background-image: url('../images/background-menu-flotante.png');
 	background-repeat: no-repeat;
+	width: 250px;
+	&__boton{
+		position: absolute;
+		top: -30px;
+		display: flex;
+		flex-direction: column;
+		>span{
+			color: $color-primary;
+			display: block;
+			&:first-child{
+				width: 175px;
+				text-align: right;
+				background-color: rgba(0,0,0,0.01);
+				&:hover{
+					background-color: rgba(0,0,0,0.05);
+					color: rgba(0,0,0,0.5);
+				}
+			}
+			&:last-child{
+				color: white;
+				display: flex;
+				flex-direction: column;
+				background-color: $color-primary;
+				padding: 8px;
+				box-sizing: border-box;
+				width: 24px;
+			}
+		}
+	}
 	&__contenedor{
 		>.menu__flotante__item{
 			margin-top: 1px;
@@ -13,19 +42,19 @@
 			>a{
 				display: block;
 				height: 38px;
-				width: 250px;
+				width: 175px;
 				padding-left: 30px;
 				line-height: 38px;
 				color: white;
 				box-sizing: border-box;
-				// background-color: rgba(0,0,0,0.2);
+				// background-color: rgba(0,0,0,0.01);
 				transition: all .5s ease;
 				font-size: 85%;
 				>span{
 					text-transform: uppercase;
 				}
 				&:hover{
-					// background-color: rgba(0,0,0,0.5);
+					// background-color: rgba(0,0,0,0.05);
 					color: rgba(0,0,0,0.5);
 				}
 			}
