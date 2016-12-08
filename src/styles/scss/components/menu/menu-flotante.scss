@@ -2,9 +2,6 @@
 	position: fixed;
 	top: 200px;
 	z-index: 1000;
-	background-image: url('../images/background-menu-flotante.png');
-	background-repeat: no-repeat;
-	width: 250px;
 	&__boton{
 		position: absolute;
 		top: -30px;
@@ -34,6 +31,9 @@
 		}
 	}
 	&__contenedor{
+		background-image: url('../images/background-menu-flotante.png');
+		background-repeat: no-repeat;
+		width: 250px;
 		>.menu__flotante__item{
 			margin-top: 1px;
 			&:first-child{
