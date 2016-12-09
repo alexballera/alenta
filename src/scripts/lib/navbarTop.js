@@ -10,7 +10,6 @@ var third__level = navbar.find('.third__level')
 var mediaQuery = window.matchMedia('screen and (min-width: 768px)')
 
 export default function () {
-  top__navbar.hide()
   boton_hide.hide()
   second__level.hide()
   third__level.hide()
