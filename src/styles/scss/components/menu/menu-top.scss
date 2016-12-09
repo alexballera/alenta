@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
   left: 0;
-  @include respond-to(lg) {
+  @include respond-to(md) {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
@@ -10,7 +10,7 @@
   }
   >li{
     width: 100%;
-    @include respond-to(lg) {
+    @include respond-to(md) {
       width: (100%/6);
     }
     >a{
@@ -23,6 +23,12 @@
       transition: all 0.3s ease;
       line-height: $height-navbar;
       box-sizing: border-box;
+      @include respond-to(md) {
+        font-size: 80%;
+      }
+      @include respond-to(xl) {
+        font-size: 100%;
+      }
       &:hover{
         background-color: $color-primary;
         color: white;
@@ -31,7 +37,7 @@
       &:before{
         content: none;
       }
-      @include respond-to(lg) {
+      @include respond-to(md) {
         &:before {
           content: "";
           display: block;
@@ -62,27 +68,65 @@
   background-color: white;
   z-index: 1000;
   transition: all 0.3s ease;
-  @include respond-to(xl) {
+  @include respond-to(lg) {
     padding-left: 1rem;
   }
   &__picture{
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    box-sizing: border-box;
     transition: all 0.3s ease;
-    @include respond-to(xl) {
-      width: 18%;
+    @include respond-to(md) {
+      width: 100%;
+      text-align: center;
+    }
+    @include respond-to(lg) {
+      width: 10%;
       transition: all 0.3s ease;
     }
     >img{
+      margin-left: 10%;
       transition: all 0.3s ease;
-      width: 50%;
+      width: 35%;
+      @include respond-to(md) {
+        transition: all 0.3s ease;
+        margin: 0;
+        width: 14%;
+      }
+      @include respond-to(lg) {
+        width: 100%;
+      }
+    }
+  }
+  &__boton{
+    background-color: transparent;
+    box-sizing: border-box;
+    width: 50%;
+    >span{
+      >i{
+        &.fa-bars{
+          &:hover{
+            color: grey;
+          }
+        }
+        &.fa-window-close-o{
+          color: #dd1616;
+          &:hover{
+            color: #bf3737;
+          }
+        }
+      }
+    }
+    @include respond-to(md) {
+      display: none;
     }
   }
   &__nav{
     width: 100%;
     text-align: center;
-    @include respond-to(xl) {
-      width: 82%;
+    // display: none;
+    @include respond-to(md) {}
+    @include respond-to(lg) {
+      width: 90%;
       height: $height-navbar;
     }
     &--responsive{
@@ -94,9 +138,9 @@
     transition: all 0.7s ease;
     >picture.header__picture{
       >img{
-        width: 15%;
+        width: 14%;
         transition: all 0.3s ease;
-        @include respond-to(xl) {
+        @include respond-to(lg) {
           width: 40%;
         }
       }
