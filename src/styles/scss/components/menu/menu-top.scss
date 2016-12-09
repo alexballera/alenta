@@ -75,6 +75,7 @@
     width: 50%;
     box-sizing: border-box;
     transition: all 0.3s ease;
+    text-align: center;
     @include respond-to(md) {
       width: 100%;
       text-align: center;
@@ -92,26 +93,33 @@
         margin: 0;
         width: 14%;
       }
+      @media screen and (min-width: 970px) { 
+        width: 13%;
+      }
       @include respond-to(lg) {
         width: 100%;
       }
     }
   }
   &__boton{
-    background-color: transparent;
     box-sizing: border-box;
+    text-align: center;
     width: 50%;
-    >span{
-      >i{
-        &.fa-bars{
-          &:hover{
-            color: grey;
+    >button{
+        background-color: transparent;
+        outline: none;
+        >span{
+        >i{
+          &.fa-bars{
+            &:hover{
+              color: grey;
+            }
           }
-        }
-        &.fa-window-close-o{
-          color: #dd1616;
-          &:hover{
-            color: #bf3737;
+          &.fa-window-close-o{
+            color: #dd1616;
+            &:hover{
+              color: #bf3737;
+            }
           }
         }
       }
@@ -141,7 +149,7 @@
         width: 14%;
         transition: all 0.3s ease;
         @include respond-to(lg) {
-          width: 40%;
+          width: 80%;
         }
       }
     }
