@@ -87,7 +87,13 @@
     >img{
       margin-left: 10%;
       transition: all 0.3s ease;
-      width: 35%;
+      width: 60%;
+      @media screen and (min-width: 415px) { 
+        width: 45%;
+      }
+      @media screen and (min-width: 575px) { 
+        width: 37%;
+      }
       @include respond-to(md) {
         transition: all 0.3s ease;
         margin: 0;
