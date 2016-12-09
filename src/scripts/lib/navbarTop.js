@@ -9,14 +9,16 @@ var second__level = navbar.find('.second__level')
 var third__level = navbar.find('.third__level')
 var mediaQuery = window.matchMedia('screen and (min-width: 768px)')
 
-export default function () {
+export default () => {
   boton_hide.hide()
   second__level.hide()
   third__level.hide()
 
-  var responsive = function () {
+  var responsive = () => {
     if (mediaQuery.matches) {
       top__navbar.show()
+    } else {
+      top__navbar.hide()
     }
   }
   mediaQuery.addListener(responsive)
@@ -36,19 +38,19 @@ export default function () {
   })
 
   navbar.find('#dropdown__firstlevel').on({
-    'mouseover': function () {
+    'mouseover': () => {
       second__level.show('400')
     },
-    'mouseleave': function () {
+    'mouseleave': () => {
       second__level.hide('400')
     }
   })
 
   navbar.find('#item__dropdown').on({
-    'mouseover': function () {
+    'mouseover': () => {
       third__level.show('400')
     },
-    'mouseleave': function () {
+    'mouseleave': () => {
       third__level.hide('400')
     }
   })

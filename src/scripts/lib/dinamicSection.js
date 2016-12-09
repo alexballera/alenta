@@ -79,17 +79,17 @@ var footer = `
       </div>
 </footer>`
 
-var hideItemAlentaDropdown = function () {
+var hideItemAlentaDropdown = () => {
   firstLevel.hide()
   navbar.prepend(itemAlenta)
 }
 
-var showItemAlentaDropdown = function () {
+var showItemAlentaDropdown = () => {
   firstLevel.hide()
   navbar.prepend(itemAlentaDropdown)
 }
 
-export default function () {
+export default () => {
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
   $('article.contenido__alenta.seccion__cirugia').hide('slow')

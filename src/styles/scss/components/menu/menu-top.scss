@@ -10,8 +10,18 @@
   }
   >li{
     width: 100%;
+    background-color: $background-color-topnav;
+    border-top: 1px solid rgba(0,0,0,0.5);
+    color: white;
+    &:first-child{
+      border-top: none;
+    }
     @include respond-to(md) {
       width: (100%/6);
+    }
+    @include respond-to(lg) {
+      background-color: transparent;
+      border-top: none;
     }
     >a{
       display: block;
@@ -23,16 +33,20 @@
       transition: all 0.3s ease;
       line-height: $height-navbar;
       box-sizing: border-box;
+      color: white;
       @include respond-to(md) {
         font-size: 80%;
       }
+      @include respond-to(lg) {
+        color: rgba(0,0,0,0.5);
+        font-size: 90%;
+      }
       @include respond-to(xl) {
-        font-size: 100%;
       }
       &:hover{
         background-color: $color-primary;
-        color: white;
         transition: all 0.5s ease;
+        color: white;
       }
       &:before{
         content: none;
@@ -157,6 +171,7 @@
     height: $height-navbar-little;
     transition: all 0.7s ease;
     >picture.header__picture{
+      height: $height-navbar-little;
       >img{
         width: 14%;
         transition: all 0.3s ease;
@@ -168,15 +183,21 @@
     >nav.header__nav{
       height: $height-navbar-little;
       >ul.first__level{
+        height: $height-navbar-little;
         >li.item{
+          // background-color: $background-color-topnav;
           >a{
             font-size: 90%;
             height: $height-navbar-little;
             padding: 0;
             line-height: $height-navbar-little;
+            color: rgba(0,0,0,0.5);
             &:before{
               height: 44%;
               top: 28%;
+            }
+            &:hover{
+              color: white;
             }
           }
         }

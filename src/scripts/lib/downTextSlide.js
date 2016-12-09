@@ -6,7 +6,7 @@ var area_medica = slide.find('.slide__area-medica')
 var navbar = $('#navbar')
 var link_alenta = navbar.find('#dropdown__firstlevel')
 
-export default function () {
+export default () => {
   link_alenta.mouseover(function (event) {
     consultorio.find('.flexslider__text').animate({top: '200px'}, 700)
   })

@@ -7,12 +7,12 @@ var etapa1_left = documento.find('#etapa1-left')
 var etapa2_left = documento.find('#etapa2-left')
 var etapa3_left = documento.find('#etapa3-left')
 
-export default function () {
+export default () => {
   // documento.scroll(function (e) {
   //   document.title = documento.scrollTop()
   // })
 
-  documento.on('scroll', function () {
+  documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 485) {
       alenta_left.hide('slow')
@@ -21,7 +21,7 @@ export default function () {
     }
   })
 
-  documento.on('scroll', function () {
+  documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 1237) {
       localizacion_left.hide('slow')
@@ -30,7 +30,7 @@ export default function () {
     }
   })
 
-  documento.on('scroll', function () {
+  documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 2228) {
       proyecto_left.hide('slow')
@@ -39,7 +39,7 @@ export default function () {
     }
   })
 
-  documento.on('scroll', function () {
+  documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 2963) {
       etapa1_left.hide('slow')
@@ -48,7 +48,7 @@ export default function () {
     }
   })
 
-  documento.on('scroll', function () {
+  documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 3935) {
       etapa2_left.hide('slow')
@@ -57,7 +57,7 @@ export default function () {
     }
   })
 
-  documento.on('scroll', function () {
+  documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 4775) {
       etapa3_left.hide('slow')

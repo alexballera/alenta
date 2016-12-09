@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export default function () {
+export default () => {
   var template = `
       <form class="flexslider__form" id="slider-form" action="#" method="post" >
             <div>

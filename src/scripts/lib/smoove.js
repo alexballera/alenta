@@ -1,7 +1,7 @@
 import $ from 'jquery'
 import smoove from '../vendors/jquery.smoove.js'
 
-export default function () {
+export default () => {
   $('.error').smoove({
   })
 }

@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export default function () {
+export default () => {
   var template = `
       <div class="formulario">
           <h3 class="formulario__titulo">Contáctenos</h3>
