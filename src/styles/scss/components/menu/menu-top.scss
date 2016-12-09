@@ -131,8 +131,10 @@
   &__nav{
     width: 100%;
     text-align: center;
-    // display: none;
-    @include respond-to(md) {}
+    display: none;
+    @include respond-to(md) {
+      display: block;
+    }
     @include respond-to(lg) {
       width: 90%;
       height: $height-navbar;

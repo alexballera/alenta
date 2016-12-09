@@ -10,7 +10,6 @@ var third__level = navbar.find('.third__level')
 var mediaQuery = window.matchMedia('screen and (min-width: 768px)')
 
 export default function () {
-  // top__navbar.hide()
   boton_hide.hide()
   second__level.hide()
   third__level.hide()
@@ -18,22 +17,20 @@ export default function () {
   var responsive = function () {
     if (mediaQuery.matches) {
       top__navbar.show()
-    } else {
-      top__navbar.hide()
     }
   }
   mediaQuery.addListener(responsive)
 
   boton_show.click(function (e) {
     e.preventDefault()
-    top__navbar.toggle('slide', {direction: 'up'}, 1000)
+    top__navbar.show('slide', {direction: 'up'}, 1000)
     boton_hide.show()
     boton_show.hide()
   })
 
   boton_hide.click(function (e) {
     e.preventDefault()
-    top__navbar.toggle('slide', {direction: 'up'}, 1000)
+    top__navbar.hide('slide', {direction: 'up'}, 1000)
     boton_hide.hide()
     boton_show.show()
   })
