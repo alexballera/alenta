@@ -76,6 +76,7 @@
     box-sizing: border-box;
     transition: all 0.3s ease;
     text-align: center;
+    height: $height-navbar;
     @include respond-to(md) {
       width: 100%;
       text-align: center;
@@ -93,6 +94,9 @@
       }
       @media screen and (min-width: 575px) { 
         width: 37%;
+      }
+      @media screen and (min-width: 728px) { 
+        width: 35%;
       }
       @include respond-to(md) {
         transition: all 0.3s ease;
