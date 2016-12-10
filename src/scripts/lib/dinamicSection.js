@@ -29,33 +29,6 @@ var footer = `
       <div class="footer__container">
         <div class="footer__item"></div>
         <div class="footer__item flexslider flexslider__mini">
-                <ul class="slides">
-                    <li class="flexslider__mini__item slide__alenta">
-                          <picture class="flexslider__mini__picture">
-                              <img class="flexslider__mini__image" src="images/slide1.jpg" height="400" alt="Slider Principal" />
-                          </picture>
-                    </li>
-                    <li class="flexslider__mini__item slide__cirugia">
-                          <picture class="flexslider__mini__picture">
-                              <img class="flexslider__mini__image" src="images/slide2.jpg" height="400" alt="Slider Principal" />
-                          </picture>
-                    </li>
-                    <li class="flexslider__mini__item slide__area-medica">
-                          <picture class="flexslider__mini__picture">
-                              <img class="flexslider__mini__image" src="images/slide3.jpg" height="400" alt="Slider Principal" />
-                          </picture>
-                    </li>
-                    <li class="flexslider__mini__item slide__hotel">
-                          <picture class="flexslider__mini__picture">
-                              <img class="flexslider__mini__image" src="images/slide4.jpg" height="400" alt="Slider Principal" />
-                          </picture>
-                    </li>
-                    <li class="flexslider__mini__item slide__consultorio">
-                          <picture class="flexslider__mini__picture">
-                              <img class="flexslider__mini__image" src="images/slide5.jpg" height="400" alt="Slider Principal" />
-                          </picture>
-                    </li>
-                </ul>
         </div>
         <div class="footer__item footer__item__contact">
               <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
@@ -92,87 +65,130 @@ var showItemAlentaDropdown = () => {
   navbar.prepend(itemAlentaDropdown)
 }
 
-export default () => {
+var removeFooter = () => {
+  $('.footer_areas').remove()
+  $('.footer_consultorios').remove()
+  $('.footer_cirugia').remove()
+  $('.footer_hotel').remove()
+  $('.footer_contacto').remove()
+}
+
+var addFooterConsultorio = () => {
+  $('.seccion__consultorios').append(footer)
+  $('.footer__section').addClass('footer_consultorios')
+}
+
+var addFooterAreas = () => {
+  $('.seccion__areas').append(footer)
+  $('.footer__section').addClass('footer_areas')
+}
+
+var addFooterCirugia = () => {
+  $('.seccion__cirugia').append(footer)
+  $('.footer__section').addClass('footer_cirugia')
+}
+
+var addFooterHotel = () => {
+  $('.seccion__hotel').append(footer)
+  $('.footer__section').addClass('footer_hotel')
+}
+
+var addFooterContacto = () => {
+  $('.seccion__contacto').append(footer)
+  $('.footer__section').addClass('footer_consultorios')
+}
+
+var hideSections = () => {
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
   $('article.contenido__alenta.seccion__cirugia').hide('slow')
   $('article.contenido__alenta.seccion__hotel').hide('slow')
   $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
+}
+
+var hideSlideAlentaSection = () => {
+  $('section.slider__container').hide('slow')
+  $('article.contenido__alenta.seccion__alenta').hide('slow')
+}
+
+export default () => {
+  hideSections()
 
   $('.gotoalenta').click(function (e) {
     e.preventDefault()
     showItemAlentaDropdown()
+    hideSections()
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
-    $('article.contenido__alenta.seccion__consultorios').hide('slow')
-    $('article.contenido__alenta.seccion__areas').hide('slow')
-    $('article.contenido__alenta.seccion__cirugia').hide('slow')
-    $('article.contenido__alenta.seccion__hotel').hide('slow')
-    $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
   })
 
   $('.gotoconsultorio').click(function (e) {
     e.preventDefault()
     hideItemAlentaDropdown()
-    $('.seccion__consultorios').append(footer)
-    $('section.slider__container').hide('slow')
-    $('article.contenido__alenta.seccion__alenta').hide('slow')
+    hideSections()
+    hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__consultorios').show('slow')
-    $('article.contenido__alenta.seccion__areas').hide('slow')
-    $('article.contenido__alenta.seccion__cirugia').hide('slow')
-    $('article.contenido__alenta.seccion__hotel').hide('slow')
-    $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
+    if (!$('.footer__section').length) {
+      addFooterConsultorio()
+    } else {
+      removeFooter()
+      addFooterConsultorio()
+    }
   })
 
   $('.gotomedicas').click(function (e) {
     e.preventDefault()
     hideItemAlentaDropdown()
-    $('.seccion__areas').append(footer)
-    $('section.slider__container').hide('slow')
-    $('article.contenido__alenta.seccion__alenta').hide('slow')
-    $('article.contenido__alenta.seccion__consultorios').hide('slow')
+    hideSections()
+    hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__areas').show('slow')
-    $('article.contenido__alenta.seccion__cirugia').hide('slow')
-    $('article.contenido__alenta.seccion__hotel').hide('slow')
-    $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
+    if (!$('.footer__section').length) {
+      addFooterAreas()
+    } else {
+      removeFooter()
+      addFooterAreas()
+    }
   })
 
   $('.gotocirugias').click(function (e) {
     e.preventDefault()
     hideItemAlentaDropdown()
-    $('.seccion__cirugia').append(footer)
-    $('section.slider__container').hide('slow')
-    $('article.contenido__alenta.seccion__alenta').hide('slow')
-    $('article.contenido__alenta.seccion__consultorios').hide('slow')
-    $('article.contenido__alenta.seccion__areas').hide('slow')
+    hideSections()
+    hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__cirugia').show('slow')
-    $('article.contenido__alenta.seccion__hotel').hide('slow')
-    $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
+    if (!$('.footer__section').length) {
+      addFooterCirugia()
+    } else {
+      removeFooter()
+      addFooterCirugia()
+    }
   })
 
   $('.gotohotel').click(function (e) {
     e.preventDefault()
     hideItemAlentaDropdown()
-    $('.seccion__hotel').append(footer)
-    $('section.slider__container').hide('slow')
-    $('article.contenido__alenta.seccion__alenta').hide('slow')
-    $('article.contenido__alenta.seccion__consultorios').hide('slow')
-    $('article.contenido__alenta.seccion__areas').hide('slow')
-    $('article.contenido__alenta.seccion__cirugia').hide('slow')
+    hideSections()
+    hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__hotel').show('slow')
-    $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
+    if (!$('.footer__section').length) {
+      addFooterHotel()
+    } else {
+      removeFooter()
+      addFooterHotel()
+    }
   })
 
   $('.gotocontactanos').click(function (e) {
     e.preventDefault()
     hideItemAlentaDropdown()
-    $('.seccion__contacto').append(footer)
-    $('section.slider__container').hide('slow')
-    $('article.contenido__alenta.seccion__alenta').hide('slow')
-    $('article.contenido__alenta.seccion__consultorios').hide('slow')
-    $('article.contenido__alenta.seccion__areas').hide('slow')
-    $('article.contenido__alenta.seccion__cirugia').hide('slow')
-    $('article.contenido__alenta.seccion__hotel').hide('slow')
+    hideSections()
+    hideSlideAlentaSection()
     $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').show('slow')
+    if (!$('.footer__section').length) {
+      addFooterContacto()
+    } else {
+      removeFooter()
+      addFooterContacto()
+    }
   })
 }

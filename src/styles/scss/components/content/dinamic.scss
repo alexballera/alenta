@@ -3,28 +3,43 @@
 .seccion__cirugia,
 .seccion__hotel,
 .seccion__contacto{
-	padding-top: 132px;
+	padding-top: $height-navbar;
+	background-color: #F4F3F2;
+	>section.contenido__seccion{
+		>.contenido__container{
+			height: 489px;
+		}
+	}
 	>footer.footer__section{
 		top: 520px;
 	}
 }
 
+.seccion__contacto{
+	// >.contenido__seccion{
+		>.contenido__container{
+			height: 840px;
+			// background-color: #F4F3F2;
+		}
+	// }
+}
+
 .seccion__areas{
 	padding-bottom: 0;
 	>.areas-medicas{
-		>.contenido__container{
-			height: 0;
-			>.contenido__texto{
-				&:first-child{
-					padding-top: 0;
-				}
-				&:last-child{
-					>img{
-						width: 480px;
-					}
-				}
-			}
-		}
+		// >.contenido__container{
+		// 	// height: 0;
+		// 	>.contenido__texto{
+		// 		&:first-child{
+		// 			padding-top: 0;
+		// 		}
+		// 		&:last-child{
+		// 			>img{
+		// 				width: 480px;
+		// 			}
+		// 		}
+		// 	}
+		// }
 	}
 }
 
