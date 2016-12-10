@@ -207,6 +207,9 @@ ul.dropdown.second__level,
 ul.dropdown.third__level{
   >li.item{
     border-top: 1px solid $color-hover;
+    &.dropdown_firstlevel{
+      position: relative;
+    }
     >a{
       font-size: 1rem;
       height: 3rem;
@@ -234,7 +237,10 @@ ul.dropdown.second__level{
   }
 }
 ul.dropdown.third__level{
-  position: relative;
-  left: 183px;
-  top: -3rem;
+  >li.item{
+    width: 200px;
+  }
+  position: absolute;
+  left: 200px;
+  top: 0;
 }
