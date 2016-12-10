@@ -5,7 +5,7 @@ gulp.task('build:html', ['copy:html'], () => {
   gulp.start('html')
 })
 gulp.task('html', () => {
-  return gulp.src('./src/**/*.html')
+  return gulp.src('./src/index.html')
     .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest('./public'))
 })

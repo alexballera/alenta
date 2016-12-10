@@ -15,8 +15,15 @@ gulp.task('copy', () => {
     .pipe(gulp.dest('./public/styles/fonts/fonts')) // Comentar si se va a usar el cdnjs
     .pipe(gulp.dest('./build/styles/fonts/fonts'))
   gulp.src([
-    './src/robots.txt',
-    './src/sitemap.xml',
+    './src/scripts/vendors/modernizr.js',
+    './src/scripts/vendors/selectivizr.js'
+  ]).pipe(gulp.dest('./public/scripts/vendors'))
+  gulp.src([
+    './src/*.txt',
+    './src/sitemap.*',
+    './src/404.html',
+    './src/enviando.php',
+    './src/*.xml',
     './src/.htaccess'
   ]).pipe(gulp.dest('./public'))
 })
