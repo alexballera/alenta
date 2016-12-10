@@ -30,7 +30,7 @@ footer{
           &:nth-child(1){
             display: none;
             @include respond-to(md) {
-              width: (100%/4);
+              width: 20%;
             }
           }
           &:nth-child(2){
@@ -38,11 +38,15 @@ footer{
             @include respond-to(md) {
               border: none;
               display: block;
-              width: (100%/4);
+              width: 30%;
             }
           }
           &:nth-child(3){
             border-left: none;
+            @include respond-to(md) {
+                border-left: 1px solid grey;
+                margin-left: 1rem;
+            }
           }
           &:nth-child(4){
             border-left: none;
