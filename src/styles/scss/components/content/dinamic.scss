@@ -25,6 +25,11 @@ footer.footer__section.dinamic{
 }
 
 .seccion__contacto{
+  >h2.contenido__titulo{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+  }
   >.contenido__container{
     height: 1300px;
       @include respond-to(lg) {
