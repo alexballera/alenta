@@ -1,71 +1,102 @@
 form.flexslider__form{
-	@extend .text;
-	@include respond-to(lg) {
-		height: 0;
-		top: 275px !important;
-		color: black !important;
-		display: flex !important;
-		flex-direction: column;
-		justify-content: center;
-		margin-left: 4.2%;
-		@include transition-all(0.3s)
-	}
-	@include respond-to(xl) {
-		margin-left: 4.7%;
-		@include transition-all(0.3s)
-	}
+  @extend .text;
+  @include respond-to(lg) {
+    height: 0;
+    top: 275px !important;
+    color: black !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 4.2%;
+    @include transition-all(0.3s)
+  }
+  @include respond-to(xl) {
+    margin-left: 4.7%;
+    @include transition-all(0.3s)
+  }
 
-	& input[type="email"],
-	& input[type="text"],
-	& textarea {
-		padding: 0.3rem;
-		width: 60%;
-		margin: .10rem;
-		border: 1px solid grey;
-		border-radius: 5px;
-		font-size: 0.9rem;
-	}
-	& button[type="submit"] {
-		height: 100%;
-		width: 150px;
-		color: white;
-		background-color: $color-primary;
-		outline: none;
-		border: none;
-		margin-top: 0.5rem;
-		line-height: 1.5rem;
-		&:hover{
-			background-color: $color-hover;
-		}
-	}
+  & input[type="email"],
+  & input[type="text"],
+  & textarea {
+    padding: 0.3rem;
+    width: 60%;
+    margin: .10rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+    font-size: 0.9rem;
+  }
+  & button[type="submit"] {
+    height: 100%;
+    width: 150px;
+    color: white;
+    background-color: $color-primary;
+    outline: none;
+    border: none;
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+    &:hover{
+      background-color: $color-hover;
+    }
+  }
+  ::-webkit-input-placeholder {
+     color: black;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: black;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: black;  
+  }
+
+  :-ms-input-placeholder {  
+     color: black;  
+  }
 }
 
 form.formulario__section{
-	& input[type="email"],
-	& input[type="text"],
-	& textarea {
-		background-color: $color-primary;
-		padding: 0.5rem;
-		width: 90%;
-		height: 100%;
-		margin: .25rem;
-		color: white !important;
-		font-weight: bold;
-		border: 1px solid white;
-	}
-	& button[type="submit"] {
-		height: 100%;
-		line-height: 50px;
-		width: 150px;
-		margin: .25rem .25rem .5rem .25rem;
-		color: $color-primary;
-		background-color: white;
-		outline: none;
-		border: none;
-		margin-top: 1rem;
-		font-size: 1.5rem;
-		&:hover{
-			background-color: $color-hover;
-		}
-	}
+  & input[type="email"],
+  & input[type="text"],
+  & textarea {
+    background-color: $color-primary;
+    padding: 0.5rem;
+    width: 90%;
+    height: 100%;
+    margin: .25rem;
+    color: white !important;
+    font-weight: bold;
+    border: 1px solid white;
+  }
+  & button[type="submit"] {
+    height: 100%;
+    line-height: 50px;
+    width: 150px;
+    margin: .25rem .25rem .5rem .25rem;
+    color: $color-primary;
+    background-color: white;
+    outline: none;
+    border: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    &:hover{
+      background-color: $color-hover;
+    }
+  }
+  ::-webkit-input-placeholder {
+     color: white;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: white;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: white;  
+  }
+
+  :-ms-input-placeholder {  
+     color: white;  
+  }
 }
+
