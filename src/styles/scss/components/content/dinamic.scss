@@ -7,7 +7,16 @@
   background-color: #F4F3F2;
   >section.contenido__seccion{
     >.contenido__container{
-      height: 369px;
+      height: 600px;
+      @include respond-to(sm) {
+          height: 650px;
+      }
+      @include respond-to(mm) {
+          height: 700px;
+      }
+      @include respond-to(lg) {
+          height: 369px;
+      }
     }
   }
 }
@@ -17,12 +26,32 @@ footer.footer__section.dinamic{
 
 .seccion__contacto{
   >.contenido__container{
-    height: 680px;
+    height: 1300px;
+      @include respond-to(lg) {
+          height: 700px;
+      }
   }
 }
 
 .seccion__areas{
   padding-bottom: 0;
+  >section.contenido__seccion{
+    >.contenido__container{
+      height: 700px;
+      @include respond-to(sm) {
+          height: 775px;
+      }
+      @include respond-to(mm) {
+          height: 830px;
+      }
+      @include respond-to(md) {
+          height: 900px;
+      }
+      @include respond-to(lg) {
+          height: 369px;
+      }
+    }
+  }
 }
 
 .seccion__contacto{
