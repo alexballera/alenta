@@ -53,7 +53,9 @@
     top: ($height-navbar)-22px;
     margin-bottom: ($height-navbar)-22px;
     >.flex-viewport{
-      height: 600px;
+      @include respond-to(md) {
+        height: 600px;
+      }
     }
     >ul.flex-direction-nav{
       display: none;
