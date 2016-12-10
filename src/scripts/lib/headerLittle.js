@@ -1,7 +1,7 @@
-export default () => {
-  var navbar = document.getElementById('header')
-  var mediaQuery = window.matchMedia('screen and (min-width: 1024px)')
+var navbar = document.getElementById('header')
+var mediaQuery = window.matchMedia('screen and (min-width: 1024px)')
 
+export default () => {
   var responsive = () => {
     if (mediaQuery.matches) {
       window.onscroll = () => {

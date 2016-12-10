@@ -30,7 +30,7 @@
       font-weight: 300;
       position: relative;
       text-align: center;
-      transition: all 0.3s ease;
+      @include transition-all(0.3s)
       line-height: $height-navbar;
       box-sizing: border-box;
       color: white;
@@ -45,7 +45,7 @@
       }
       &:hover{
         background-color: $color-primary;
-        transition: all 0.5s ease;
+        @include transition-all(0.5s)
         color: white;
       }
       &:before{
@@ -73,22 +73,20 @@
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  // padding: 2rem 1rem;
-  // padding-left: 0;
   position: fixed;
   height: $height-navbar;
   box-sizing: border-box;
   width: 100%;
   background-color: white;
   z-index: 1000;
-  transition: all 0.3s ease;
+  @include transition-all(0.3s)
   @include respond-to(lg) {
     padding-left: 1rem;
   }
   &__picture{
     width: 50%;
     box-sizing: border-box;
-    transition: all 0.3s ease;
+    @include transition-all(0.3s)
     text-align: center;
     height: $height-navbar;
     @include respond-to(md) {
@@ -97,11 +95,11 @@
     }
     @include respond-to(lg) {
       width: 10%;
-      transition: all 0.3s ease;
+      @include transition-all(0.3s)
     }
     >img{
       margin-left: 10%;
-      transition: all 0.3s ease;
+      @include transition-all(0.3s)
       width: 60%;
       @media screen and (min-width: 415px) { 
         width: 45%;
@@ -113,7 +111,7 @@
         width: 35%;
       }
       @include respond-to(md) {
-        transition: all 0.3s ease;
+        @include transition-all(0.3s)
         margin: 0;
         width: 14%;
       }
@@ -219,7 +217,7 @@ ul.dropdown.third__level{
       color: white;
       display: block;
       &:hover{
-        transition: all 0.3s ease;
+        @include transition-all(0.3s)
         background-color: $color-hover;
       }
     }

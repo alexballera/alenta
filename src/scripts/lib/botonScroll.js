@@ -1,6 +1,6 @@
 import $ from 'jquery'
 
-export default function () {
+export default () => {
   // Con el siguiente código vemos la posicion en el title
   // $(document).scroll(function (e) {
   //   document.title = $(document).scrollTop()

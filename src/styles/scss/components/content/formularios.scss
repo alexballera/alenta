@@ -1,9 +1,19 @@
 form.flexslider__form{
 	@extend .text;
-	height: 0;
-	top: 275px !important;
-	color: black !important;
-	margin-left: 4.7%;
+	@include respond-to(lg) {
+		height: 0;
+		top: 275px !important;
+		color: black !important;
+		display: flex !important;
+		flex-direction: column;
+		justify-content: center;
+		margin-left: 4.2%;
+		@include transition-all(0.3s)
+	}
+	@include respond-to(xl) {
+		margin-left: 4.7%;
+		@include transition-all(0.3s)
+	}
 
 	& input[type="email"],
 	& input[type="text"],
@@ -14,9 +24,6 @@ form.flexslider__form{
 		border: 1px solid grey;
 		border-radius: 5px;
 		font-size: 0.9rem;
-		&:placeholder{
-			color: blue;
-		}
 	}
 	& button[type="submit"] {
 		height: 100%;
@@ -32,6 +39,7 @@ form.flexslider__form{
 		}
 	}
 }
+
 form.formulario__section{
 	& input[type="email"],
 	& input[type="text"],

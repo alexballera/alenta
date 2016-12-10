@@ -14,6 +14,10 @@ background: {
     }
 }
 
+@mixin transition-all($duration) {
+  transition: all $duration ease;
+}
+
 // Breakpoints
 $screen-xs: 30em; // 480px
 $screen-sm: 37.5em; // 600px
