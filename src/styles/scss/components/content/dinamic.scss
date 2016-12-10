@@ -3,58 +3,40 @@
 .seccion__cirugia,
 .seccion__hotel,
 .seccion__contacto{
-	padding-top: $height-navbar;
-	background-color: #F4F3F2;
-	>section.contenido__seccion{
-		>.contenido__container{
-			height: 489px;
-		}
-	}
-	>footer.footer__section{
-		top: 520px;
-	}
+  padding-top: $height-navbar;
+  background-color: #F4F3F2;
+  >section.contenido__seccion{
+    >.contenido__container{
+      height: 369px;
+    }
+  }
+}
+footer.footer__section.dinamic{
+  position: static;
 }
 
 .seccion__contacto{
-	// >.contenido__seccion{
-		>.contenido__container{
-			height: 840px;
-			// background-color: #F4F3F2;
-		}
-	// }
+  >.contenido__container{
+    height: 680px;
+  }
 }
 
 .seccion__areas{
-	padding-bottom: 0;
-	>.areas-medicas{
-		// >.contenido__container{
-		// 	// height: 0;
-		// 	>.contenido__texto{
-		// 		&:first-child{
-		// 			padding-top: 0;
-		// 		}
-		// 		&:last-child{
-		// 			>img{
-		// 				width: 480px;
-		// 			}
-		// 		}
-		// 	}
-		// }
-	}
+  padding-bottom: 0;
 }
 
 .seccion__contacto{
-	margin-top: 0;
-	padding-left: 0;
-	>.contenido__container{
-		>.contenido__texto{
-			>h3,
-			>p{
-				padding-left: 3rem;
-			}
-		}
-	}
-	>footer.footer__section{
-		top: 850px;
-	}
+  margin-top: 0;
+  padding-left: 0;
+  >.contenido__container{
+    >.contenido__texto{
+      >h3,
+      >p{
+        padding-left: 3rem;
+      }
+    }
+  }
+  >footer.footer__section{
+    top: 850px;
+  }
 }

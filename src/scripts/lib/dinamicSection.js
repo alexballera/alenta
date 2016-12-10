@@ -1,6 +1,8 @@
 import $ from 'jquery'
 
-var navbar = $('#navbar')
+var body = $('body')
+
+var navbar = body.find('#navbar')
 
 var firstLevel = navbar.find('#dropdown__firstlevel')
 
@@ -25,7 +27,7 @@ var itemAlentaDropdown = `
 `
 
 var footer = `
-<footer class="footer__section">
+<footer class="footer__section dinamic">
       <div class="footer__container">
         <div class="footer__item"></div>
         <div class="footer__item flexslider flexslider__mini">
@@ -73,28 +75,32 @@ var removeFooter = () => {
   $('.footer_contacto').remove()
 }
 
+var appendFooter = () => {
+  body.append(footer)
+}
+
 var addFooterConsultorio = () => {
-  $('.seccion__consultorios').append(footer)
+  appendFooter()
   $('.footer__section').addClass('footer_consultorios')
 }
 
 var addFooterAreas = () => {
-  $('.seccion__areas').append(footer)
+  appendFooter()
   $('.footer__section').addClass('footer_areas')
 }
 
 var addFooterCirugia = () => {
-  $('.seccion__cirugia').append(footer)
+  appendFooter()
   $('.footer__section').addClass('footer_cirugia')
 }
 
 var addFooterHotel = () => {
-  $('.seccion__hotel').append(footer)
+  appendFooter()
   $('.footer__section').addClass('footer_hotel')
 }
 
 var addFooterContacto = () => {
-  $('.seccion__contacto').append(footer)
+  appendFooter()
   $('.footer__section').addClass('footer_consultorios')
 }
 
