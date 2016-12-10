@@ -207,7 +207,7 @@ ul.dropdown.second__level,
 ul.dropdown.third__level{
   >li.item{
     border-top: 1px solid $color-hover;
-    &.dropdown_firstlevel{
+    &.dropdown__firstlevel{
       position: relative;
     }
     >a{
