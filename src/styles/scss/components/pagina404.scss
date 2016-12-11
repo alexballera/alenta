@@ -1,7 +1,11 @@
 .contenido{
   &__error{
     >h2{
-      font-size: 6rem;
+      font-size: 8rem;
+      color: red;
+      font-weight: bolder;
+      margin-top: 5rem;
+      text-align: center;
     }
   }
 }
