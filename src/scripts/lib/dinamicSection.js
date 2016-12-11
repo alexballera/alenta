@@ -11,7 +11,6 @@ var secondLevel = navbar.find('#dropdown__secondlevel')
 var caretDown = navbar.find('.fa-caret-down')
 
 var itemAlentaDropdown = `
-<li class="item dropdown__firstlevel" id="dropdown__firstlevel"><a href="" class="gotoalenta">Qué es Alenta <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       <ul class="dropdown second__level" id="dropdown__secondlevel">
         <li class="item"><a href="#localizacion">Localización</a></li>
         <li class="item"><a href="#proyecto">El Proyecto</a></li>
@@ -24,7 +23,6 @@ var itemAlentaDropdown = `
               </ul>
         </li>
       </ul>
-</li>
 `
 
 var footer = `
@@ -57,8 +55,7 @@ var footer = `
 </footer>`
 
 var showItemAlentaDropdown = () => {
-  firstLevel.hide()
-  navbar.prepend(itemAlentaDropdown)
+  firstLevel.append(itemAlentaDropdown)
 }
 
 var removeFooter = () => {
@@ -118,8 +115,8 @@ export default () => {
 
   $('.gotoalenta').click(function (e) {
     e.preventDefault()
-    showItemAlentaDropdown()
     hideSections()
+    showItemAlentaDropdown()
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
   })
