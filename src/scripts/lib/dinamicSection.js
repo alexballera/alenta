@@ -6,9 +6,10 @@ var navbar = body.find('#navbar')
 
 var firstLevel = navbar.find('#dropdown__firstlevel')
 
-var itemAlenta = `
-<li class="item dropdown__firstlevel" id="itemAlenta"><a href="" class="gotoalenta">Qué es Alenta</a></li>
-`
+var secondLevel = navbar.find('#dropdown__secondlevel')
+
+var caretDown = navbar.find('.fa-caret-down')
+
 var itemAlentaDropdown = `
 <li class="item dropdown__firstlevel" id="dropdown__firstlevel"><a href="" class="gotoalenta">Qué es Alenta <i class="fa fa-caret-down" aria-hidden="true"></i></a>
       <ul class="dropdown second__level" id="dropdown__secondlevel">
@@ -55,13 +56,6 @@ var footer = `
       </div>
 </footer>`
 
-var hideItemAlentaDropdown = () => {
-  if (!$('#itemAlenta').length) {
-    firstLevel.hide()
-    navbar.prepend(itemAlenta)
-  }
-}
-
 var showItemAlentaDropdown = () => {
   firstLevel.hide()
   navbar.prepend(itemAlentaDropdown)
@@ -73,6 +67,8 @@ var removeFooter = () => {
   $('.footer_cirugia').remove()
   $('.footer_hotel').remove()
   $('.footer_contacto').remove()
+  secondLevel.remove()
+  caretDown.remove()
 }
 
 var appendFooter = () => {
@@ -130,7 +126,6 @@ export default () => {
 
   $('.gotoconsultorio').click(function (e) {
     e.preventDefault()
-    hideItemAlentaDropdown()
     hideSections()
     hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__consultorios').show('slow')
@@ -144,7 +139,6 @@ export default () => {
 
   $('.gotomedicas').click(function (e) {
     e.preventDefault()
-    hideItemAlentaDropdown()
     hideSections()
     hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__areas').show('slow')
@@ -158,7 +152,6 @@ export default () => {
 
   $('.gotocirugias').click(function (e) {
     e.preventDefault()
-    hideItemAlentaDropdown()
     hideSections()
     hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__cirugia').show('slow')
@@ -172,7 +165,6 @@ export default () => {
 
   $('.gotohotel').click(function (e) {
     e.preventDefault()
-    hideItemAlentaDropdown()
     hideSections()
     hideSlideAlentaSection()
     $('article.contenido__alenta.seccion__hotel').show('slow')
@@ -186,7 +178,6 @@ export default () => {
 
   $('.gotocontactanos').click(function (e) {
     e.preventDefault()
-    hideItemAlentaDropdown()
     hideSections()
     hideSlideAlentaSection()
     $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').show('slow')
