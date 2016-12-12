@@ -1,7 +1,7 @@
 import $ from 'jquery'
 
 var template = `
-    <form class="flexslider__form flexslider__form__principal" id="slider-form" action="#" method="post" >
+    <form class="flexslider__form flexslider__form__principal" id="slider-form" action="enviando.php" method="post" >
           <div>
             <label for="Nombre"></label>
             <input type="text" placeholder="Nombre Completo" required="required" title="Introduzca su Nombre">
