@@ -5,24 +5,30 @@ export default () => {
   $('#success').hide()
   $('#err').hide()
 
-  $('#botonenviar').click(function() {
-    var data = {
-      name: $("#form_name").val(),
-      email: $("#form_email").val(),
-      message: $("#message").val()
-    };
+  var data = {
+    name: $("#form_name").val(),
+    email: $("#form_email").val(),
+    message: $("#form_msg").val()
+  };
+
+
+  $('button#submit').click(function() {
+    console.log('Me hicieron click')
+
     $.ajax({
         type: "POST",
         url: "send.php",
         data: data,
         success: function(){
             // $('#success').show('slow');
-            console.log('Éxito')
+            alert('Éxito')
+            console.log(data)
         },
         error: function(){
-          console.log('Error')
+          alert('Error')
         }
     })
+    return false;
   })
 
 
