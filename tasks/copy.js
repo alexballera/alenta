@@ -22,7 +22,7 @@ gulp.task('copy', () => {
     './src/*.txt',
     './src/sitemap.*',
     './src/404.html',
-    './src/enviando.php',
+    './src/*.php',
     './src/*.xml',
     './src/.htaccess'
   ]).pipe(gulp.dest('./public'))

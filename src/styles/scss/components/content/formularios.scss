@@ -17,6 +17,7 @@ form.flexslider__form{
 
   & input[type="email"],
   & input[type="text"],
+  & input[type="tel"],
   & textarea {
     padding: 0.3rem;
     width: 60%;
@@ -58,6 +59,7 @@ form.flexslider__form{
 form.formulario__section{
   & input[type="email"],
   & input[type="text"],
+  & input[type="tel"],
   & textarea {
     background-color: $color-primary;
     padding: 0.5rem;
