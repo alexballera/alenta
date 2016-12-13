@@ -1,7 +1,8 @@
 import $ from 'jquery'
 
 var template = `
-    <form name="contactform"  class="flexslider__form flexslider__form__principal form_test" id="slider-form" action="sendEmailSectionForm.php" method="post" >
+<div id="formularioslide">
+    <form name="contactform"  class="flexslider__form flexslider__form__principal form_test" id="slider-form" method="post" >
           <div>
             <label for="form_name"></label>
             <input id="form_name" type="text" placeholder="Nombre Completo" name="name" required="required" title="Introduzca su Nombre">
@@ -19,8 +20,15 @@ var template = `
             <input id="form_phone" type="tel"  placeholder="Teléfono" name="telephone">
           </div>
           <div><textarea id="" cols="20" rows="3"  placeholder="Mensaje" name="message"></textarea></div>
-          <div><button type="submit">Enviar</button></div>
-    </form>`
+          <div><button type="submit" id="botonenviar">Enviar</button></div>
+    </form>
+</div>
+<div id="success">
+    Sus datos han sido recibidos con éxito.
+</div>
+<div id="err">
+    Se ha producido un error durante el envío de datos.
+</div>`
 export default () => {
   $('.flexslider__picture').append(template)
 }
