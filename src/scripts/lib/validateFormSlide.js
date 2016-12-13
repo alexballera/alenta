@@ -2,30 +2,33 @@ import $ from 'jquery'
 
 export default () => {
 
-  $('#success').hide()
-  $('#err').hide()
+  var form = $('#slider-form')
 
   var data = {
-    name: $("#form_name").val(),
-    email: $("#form_email").val(),
-    message: $("#form_msg").val()
+    name: form.find("#form_name").val(),
+    lastname: form.find("#form_lastname").val(),
+    telephone: form.find("#form_phone").val(),
+    email: form.find("#form_email").val(),
+    message: form.find("#form_msg").val()
   };
 
+  form.find('#success').hide()
+  form.find('#err').hide()
 
-  $('button#submit').click(function() {
+
+  $('input#submit').click(function() {
     console.log('Me hicieron click')
-
     $.ajax({
         type: "POST",
-        url: "send.php",
+        url: "./send.php",
         data: data,
         success: function(){
             // $('#success').show('slow');
-            alert('Éxito')
+            console.log('Éxito')
             console.log(data)
         },
         error: function(){
-          alert('Error')
+          console.log('Error')
         }
     })
     return false;

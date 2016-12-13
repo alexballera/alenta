@@ -2,7 +2,7 @@ import $ from 'jquery'
 
 var template = `
 <div id="formularioslide">
-    <form name="contactform"  class="flexslider__form flexslider__form__principal form_test" id="slider-form" method="post" >
+    <form name="contactform" action="send.php"  class="flexslider__form flexslider__form__principal form_test" id="slider-form" method="post" >
           <div>
             <label for="form_name"></label>
             <input id="form_name" type="text" placeholder="Nombre Completo" name="form_name" required="required" title="Introduzca su Nombre">
@@ -26,10 +26,10 @@ var template = `
           <div><button type="submit" id="submit" name="submit">Enviar</button></div>
     </form>
 </div>
-<div id="success">
+<div id="success" style="display:none;">
     Sus datos han sido recibidos con éxito.
 </div>
-<div id="err">
+<div id="err" style="display:none;">
     Se ha producido un error durante el envío de datos.
 </div>`
 export default () => {
