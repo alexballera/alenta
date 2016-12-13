@@ -36,7 +36,7 @@ var footer = `
               <div class="footer__item__title">
                     <h3>Sala de negocios:</h3>
                     <address>
-                      <strong>Dirección:</strong> Carrera 18N* 80-68 <br>
+                      <strong>Dirección:</strong> Carrera 18 # 80-74<br>
                       Bogota-Colombia
                     </address>
               </div>
@@ -46,8 +46,8 @@ var footer = `
               <div class="footer__item__title">
                     <h3>Números de contacto:</h3>
                     <address>
-                      <strong>Teléfono:</strong> 6185923 <br>
-                      <strong>Celular:</strong> 320 233 9218
+                      <strong>Teléfono:</strong> 6949729 <br>
+                      <strong>Celular:</strong> 310 2 47 62 54
                     </address>
               </div>
         </div>
