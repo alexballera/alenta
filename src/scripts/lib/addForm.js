@@ -8,21 +8,22 @@ var template = `
   <p class="formulario__texto">
     Uno de nuestros asesores le orientará y resolver á sus inquietudes.
   </p>
-  <form name="contactform" class="formulario__section form_test" id="formulario" action="send.php" method="post" >
+  <form name="contactform" class="formulario__section form_test" id="formulario" action="mail.php" method="post" >
       <div>
-        <label for=""></label>
-        <input type="text" placeholder="Nombre" name="" required="required" id="">
+        <label for="contactName"></label>
+        <input type="text" placeholder="Nombre" name="contactName" required="required" id="contactName">
       </div>
       <div>
-        <label for=""></label>
-        <input type="email" placeholder="Email" name="" required="required" id="">
+        <label for="contactEmail"></label>
+        <input type="email" placeholder="Email" name="contactEmail" required="required" id="contactEmail">
       </div>
       <div>
-        <label for=""></label>
-        <input type="tel"  placeholder="Teléfono" name="" id="">
+        <label for="contactPhone"></label>
+        <input type="tel"  placeholder="Teléfono" name="contactPhone" id="contactPhone">
       </div>
       <div>
-        <textarea id="" cols="30" rows="10"  placeholder="Mensaje" name=""></textarea>
+        <label for="contactMessage"></label>
+        <textarea id="contactMessage" cols="30" rows="10"  placeholder="Mensaje" name="contactMessage"></textarea>
       </div>
       <p class="formulario__texto politicas">
         Acepto políticas de tratamiento de datos personales

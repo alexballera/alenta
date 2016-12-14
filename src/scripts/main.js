@@ -11,7 +11,6 @@ import navbarFloating from './lib/navbarFloating'
 import dinamicSection from './lib/dinamicSection'
 import animateFooterSection from './lib/animateFooterSection'
 import animateContent from './lib/animateContent'
-// import validateFormSlide from './lib/validateFormSlide'
 
 (() => {
   'use strict'
@@ -32,6 +31,5 @@ import animateContent from './lib/animateContent'
     smoove()
     animateFooterSection()
     animateContent()
-    // validateFormSlide()
   }
 })()
