@@ -1,24 +1,20 @@
 <?php
 
-$name = $_POST["name"];
-$lastname = $_POST["lastname"];
-$email = $_POST["email"];
-$phone = $_POST["phone"];
-$message = $_POST["message"];
-$nombre = strip_tags($_POST['name']);
+$name = $_POST["contactName"];
+$email = $_POST["contactEmail"];
+$phone = $_POST["contactPhone"];
+$message = $_POST["contactMessage"];
+$nombre = strip_tags($name);
 
 $fecha = time();
 $fechaFormateada = date("j/n/Y", $fecha);
 
-// $emailTo = "alexballera@gmail.com";
 $emailTo = "omayraospina@acciconsultores.com";
 $subject = "Nuevo mensaje de $nombre";
 
 $body .= "Mensaje Desde El Formulario Web Alenta.\n";
 $body .= "\n";
 $body .= "Nombre: " . $name ."\n";
-$body .= "\n";
-$body .= "Apellido: " . $lastname ."\n";
 $body .= "\n";
 $body .= "Correo: " . $email ."\n";
 $body .= "\n";
@@ -31,8 +27,9 @@ $body .= "Fecha: " . $fechaFormateada ."\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain; charset=iso-8859-1 \r\n";
-$header .= 'From:' . $email. "\r\n";
-$header .= 'Cc:' . 'direccioncomercial@acciconsultores.com' . '\r\n';
+$header .= 'From:' . $email. '\r\n'; // Sender's Email
+$header .= 'Cc:' . 'direccioncomercial@acciconsultores.com' . '\r\n'; // Carbon copy to Sender
+// $header .= 'Cc:' . $email. '\r\n'; // Carbon copy to Sender
 
 
 // send email
