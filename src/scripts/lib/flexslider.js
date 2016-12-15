@@ -34,7 +34,7 @@ export default function () {
     itemWidth: 210,
     minItems: 3,
     maxItems: 3,
-    // controlNav: false,
+    itemMargin: 5,
     directionNav: false,
     prevText: '',
     nextText: ''
