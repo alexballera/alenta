@@ -64,6 +64,7 @@ var removeFooter = () => {
   $('.footer_cirugia').remove()
   $('.footer_hotel').remove()
   $('.footer_contacto').remove()
+  $('.footer__creditos').remove()
   secondLevel.remove()
   caretDown.remove()
 }

@@ -1,7 +1,6 @@
 import headerLittle from './lib/headerLittle'
 import smoove from './lib/smoove'
 import botonScroll from './lib/botonScroll'
-import addFooter from './lib/addFooter'
 import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
 import addFormSlide from './lib/addFormSlide'
@@ -21,7 +20,6 @@ import animateContent from './lib/animateContent'
     flexslider()
     headerLittle()
     botonScroll()
-    addFooter()
     addForm()
     addFormSlide()
     downTextSlide()
