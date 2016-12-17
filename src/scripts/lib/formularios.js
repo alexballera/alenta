@@ -3,7 +3,7 @@ import queryUi from '../vendors/jquery-ui.js'
 
 var template = `
 <div class="formulario">
-  <form name="formulario" class="formulario__form" id="formulario" method="post" action="formularios.php" >
+  <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formulario" method="post" action="formularios.php" >
       <div id="name-group" class="formulario__item">
         <label for="name"></label>
         <input type="text" placeholder="Nombre" name="name" id="name">
@@ -33,7 +33,7 @@ var template = `
   </div>
 </div>`
 export default () => {
-  $('body').prepend(template)
+  $('.flexslider__picture').append(template)
 
   $('#dialog').hide()
 
@@ -45,11 +45,11 @@ export default () => {
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
-            'name'  : $('input[name=name]').val(),
-            'lastname'  : $('input[name=lastname]').val(),
-            'email' : $('input[name=email]').val(),
-            'phone' : $('input[name=phone]').val(),
-            'msg'   : $('textarea[name=msg]').val()
+            'name'      : $('input#name').val(),
+            'lastname'  : $('input#lastname').val(),
+            'email'     : $('input#email').val(),
+            'phone'     : $('input#phone').val(),
+            'msg'       : $('textarea#msg').val()
         };
 
         // process the form

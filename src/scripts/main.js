@@ -3,13 +3,14 @@ import smoove from './lib/smoove'
 import botonScroll from './lib/botonScroll'
 import addForm from './lib/addForm'
 import flexslider from './lib/flexslider'
-import addFormSlide from './lib/addFormSlide'
+// import addFormSlide from './lib/addFormSlide'
 import downTextSlide from './lib/downTextSlide'
 import navbarTop from './lib/navbarTop'
 import navbarFloating from './lib/navbarFloating'
 import dinamicSection from './lib/dinamicSection'
 import animateFooterSection from './lib/animateFooterSection'
 import animateContent from './lib/animateContent'
+import formularios from './lib/formularios'
 
 (() => {
   'use strict'
@@ -17,11 +18,12 @@ import animateContent from './lib/animateContent'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
+    formularios()
     flexslider()
     headerLittle()
     botonScroll()
     addForm()
-    addFormSlide()
+    // addFormSlide()
     downTextSlide()
     navbarTop()
     navbarFloating()
