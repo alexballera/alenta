@@ -32,11 +32,8 @@ var template = `
         <button type="submit" class="botonenviar">Enviar</button>
       </div>
   </form>
-  <div id="success" style="display:none">
-      Sus datos han sido recibidos con éxito.
-  </div>
-  <div id="fracaso" style="display:none">
-      Se ha producido un error durante el envío de datos.
+  <div id="dialog" title="Alenta" class="formulario__dialog">
+    <p>Tu mensaje ha sido enviado, a la brevedad posible uno de nuestros agentes se estará comunicando con usted</p>
   </div>
 </div>`
 export default () => {

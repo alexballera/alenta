@@ -1,39 +1,40 @@
 import $ from 'jquery'
 import queryUi from '../vendors/jquery-ui.js'
 
-var template = `
+var formSection = `
 <div class="formulario">
-  <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formulario" method="post" action="formularios.php" >
-      <div id="name-group" class="formulario__item">
+  <h3 class="formulario__titulo">Contáctenos</h3>
+  <p class="formulario__texto">
+    Uno de nuestros asesores le orientará y resolver a sus inquietudes.
+  </p>
+  <form name="formulario" class="formulario__section form_test" id="formulario" action="formularios.php" method="post" >
+      <div>
         <label for="name"></label>
-        <input type="text" placeholder="Nombre" name="name" id="name">
+        <input type="text" placeholder="Nombre" name="name" required="required" id="nameSeccion">
       </div>
-      <div id="lastname-group" class="formulario__item">
-        <label for="lastname"></label>
-        <input type="text" placeholder="Apellido" name="lastname" id="lastname">
-      </div>
-      <div id="email-group" class="formulario__item">
+      <div>
         <label for="email"></label>
-        <input type="email" placeholder="Email" name="email" id="email">
+        <input type="email" placeholder="Email" name="email" required="required" id="emailSeccion">
       </div>
-      <div id="phone-group" class="formulario__item">
+      <div>
         <label for="phone"></label>
-        <input type="tel"  placeholder="Teléfono" name="phone" id="phone">
+        <input type="tel"  placeholder="Teléfono" name="phone" id="phoneSeccion">
       </div>
-      <div id="msg-group" class="formulario__item">
+      <div>
         <label for="msg"></label>
-        <textarea id="msg" cols="30" rows="10"  placeholder="Mensaje" name="msg"></textarea>
+        <textarea id="msg" cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion"></textarea>
       </div>
-      <div class="formulario__item">
-        <button type="submit" class="submit" id="submit">Enviar</button>
+      <p class="formulario__texto politicas">
+        Acepto políticas de tratamiento de datos personales
+      </p>
+      <div>
+        <button type="submit" class="botonenviar">Enviar</button>
       </div>
   </form>
-  <div id="dialog" title="Alenta" class="formulario__dialog">
-    <p>Tu mensaje ha sido enviado, a la brevedad posible uno de nuestros agentes se estará comunicando con usted</p>
-  </div>
 </div>`
+
 export default () => {
-  $('.flexslider__picture').append(template)
+  $('.add_form').append(formSection)
 
   $('#dialog').hide()
 
@@ -45,11 +46,11 @@ export default () => {
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
-            'name'      : $('input#name').val(),
-            'lastname'  : $('input#lastname').val(),
-            'email'     : $('input#email').val(),
-            'phone'     : $('input#phone').val(),
-            'msg'       : $('textarea#msg').val()
+            'name'      : $('input#nameSeccion').val(),
+            'lastname'  : $('input#lastnameSeccion').val(),
+            'email'     : $('input#emailSeccion').val(),
+            'phone'     : $('input#phoneSeccion').val(),
+            'msg'       : $('textarea#msgSeccion').val()
         };
 
         // process the form
