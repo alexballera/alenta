@@ -11,7 +11,6 @@ import animateContent from './lib/animateContent'
 import formSlide from './lib/formSlide'
 import formSeccion from './lib/formSeccion'
 import formAlenta from './lib/formAlenta'
-// import addForm from './lib/addForm'
 
 
 (() => {
@@ -23,7 +22,6 @@ import formAlenta from './lib/formAlenta'
     formSlide()
     formSeccion()
     formAlenta()
-    // addForm()
     flexslider()
     headerLittle()
     botonScroll()
