@@ -32,9 +32,6 @@ var template = `
         <button type="submit" class="botonenviar">Enviar</button>
       </div>
   </form>
-  <div id="dialog" title="Alenta" class="formulario__dialog">
-    <p>Tu mensaje ha sido enviado, a la brevedad posible uno de nuestros agentes se estará comunicando con usted</p>
-  </div>
 </div>`
 export default () => {
   addForm.append(template)

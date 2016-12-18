@@ -7,22 +7,22 @@ var formSection = `
   <p class="formulario__texto">
     Uno de nuestros asesores le orientará y resolver a sus inquietudes.
   </p>
-  <form name="formulario" class="formulario__section form_test" id="formulario" action="formularios.php" method="post" >
+  <form name="formulario" class="formulario__section form_test" id="formulario" action="formSeccion.php" method="post" >
       <div>
-        <label for="name"></label>
-        <input type="text" placeholder="Nombre" name="name" required="required" id="nameSeccion">
+        <label for="nameSeccion"></label>
+        <input type="text" placeholder="Nombre" name="nameSeccion" required="required" id="nameSeccion">
       </div>
       <div>
-        <label for="email"></label>
-        <input type="email" placeholder="Email" name="email" required="required" id="emailSeccion">
+        <label for="emailSeccion"></label>
+        <input type="email" placeholder="Email" name="emailSeccion" required="required" id="emailSeccion">
       </div>
       <div>
-        <label for="phone"></label>
-        <input type="tel"  placeholder="Teléfono" name="phone" id="phoneSeccion">
+        <label for="phoneSeccion"></label>
+        <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
       </div>
       <div>
-        <label for="msg"></label>
-        <textarea id="msg" cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion"></textarea>
+        <label for="msgSeccion"></label>
+        <textarea id="msgSeccion" cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion"></textarea>
       </div>
       <p class="formulario__texto politicas">
         Acepto políticas de tratamiento de datos personales
@@ -36,9 +36,9 @@ var formSection = `
 export default () => {
   $('.add_form').append(formSection)
 
-  $('#dialog').hide()
+  // $('#dialogSeccion').hide()
 
-  $('form').submit(function(event) {
+  $('form.formulario__section').submit(function(event) {
 
     $('.form-group').removeClass('has-error'); // remove the error class
     $('.help-block').remove(); // remove the error text
@@ -47,7 +47,6 @@ export default () => {
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
             'name'      : $('input#nameSeccion').val(),
-            'lastname'  : $('input#lastnameSeccion').val(),
             'email'     : $('input#emailSeccion').val(),
             'phone'     : $('input#phoneSeccion').val(),
             'msg'       : $('textarea#msgSeccion').val()
@@ -56,7 +55,7 @@ export default () => {
         // process the form
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'formularios.php', // the url where we want to POST
+            url         : 'formSeccion.php', // the url where we want to POST
             data        : formData, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
             encode      : true
@@ -90,7 +89,7 @@ export default () => {
                   // usually after form submission, you'll want to redirect
                   // window.location = '/thank-you'; // redirect a user to another page
                   console.log(data.message)
-                  $( "#dialog" ).dialog({
+                  $( "#dialogSeccion" ).dialog({
                     show: {
                       effect: "explode",
                       duration: 1000

@@ -3,7 +3,7 @@ import queryUi from '../vendors/jquery-ui.js'
 
 var formSlide = `
 <div class="formulario">
-  <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formulario" method="post" action="formularios.php" >
+  <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formulario" method="post" action="formSlide.php" >
       <div id="name-group" class="formulario__item">
         <label for="name"></label>
         <input type="text" placeholder="Nombre" name="name" id="name">
@@ -56,7 +56,7 @@ export default () => {
         // process the form
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'formularios.php', // the url where we want to POST
+            url         : 'formSlide.php', // the url where we want to POST
             data        : formData, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
             encode      : true

@@ -10,6 +10,7 @@ $fecha = time();
 $fechaFormateada = date("j/n/Y", $fecha);
 
 $emailTo = "omayraospina@acciconsultores.com";
+// $emailTo = "alexballera@gmail.com";
 $subject = "Nuevo mensaje de $nombre";
 
 $body .= "Mensaje Desde El Formulario Web Alenta.\n";
