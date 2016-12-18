@@ -69,17 +69,17 @@ $header .= 'From:' . $email. '\r\n'; // Sender's Email
 
         if ($correo) {
           $data['success'] = true;
-          $enlace = mysqli_connect("localhost", "aballera_alex", "Juan03:16", "aballera_formularios");
-          if (mysqli_connect_errno()) {
-              echo "Error: No se pudo conectar a MySQL. \r\n" . "\r\n";
-              echo "errno de depuración: " . mysqli_connect_errno() . "\r\n";
-              echo "error de depuración: " . mysqli_connect_error() . "\r\n";
-              exit;
-          } else {
-              // mysqli_query($enlace, "INSERT INTO tabla (campo1, campo2, ... campon) VALUES ('val1, val2, ... valn)");
-            mysqli_query($enlace, "INSERT INTO form_element (name, lastname, phone, email, message) VALUES ('$name', '$lastname', '$phone', '$email','$msg')"); //Insert Query
-            mysqli_close($enlace);
-          }
+          // $enlace = mysqli_connect("localhost", "aballera_alex", "Juan03:16", "aballera_formularios");
+          // if (mysqli_connect_errno()) {
+          //     echo "Error: No se pudo conectar a MySQL. \r\n" . "\r\n";
+          //     echo "errno de depuración: " . mysqli_connect_errno() . "\r\n";
+          //     echo "error de depuración: " . mysqli_connect_error() . "\r\n";
+          //     exit;
+          // } else {
+          //     // mysqli_query($enlace, "INSERT INTO tabla (campo1, campo2, ... campon) VALUES ('val1, val2, ... valn)");
+          //   mysqli_query($enlace, "INSERT INTO form_element (name, lastname, phone, email, message) VALUES ('$name', '$lastname', '$phone', '$email','$msg')"); //Insert Query
+          //   mysqli_close($enlace);
+          // }
         } else {
           $data['errors']  = 'Correo no enviado';
         }
