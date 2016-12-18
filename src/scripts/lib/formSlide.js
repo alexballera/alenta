@@ -2,40 +2,38 @@ import $ from 'jquery'
 import queryUi from '../vendors/jquery-ui.js'
 
 var formSlide = `
-<div class="formulario">
-  <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formulario" method="post" action="sendMail.php" >
-      <div id="name-group" class="formulario__item">
-        <label for="name"></label>
-        <input type="text" placeholder="Nombre" name="name" id="name">
-      </div>
-      <div id="lastname-group" class="formulario__item">
-        <label for="lastname"></label>
-        <input type="text" placeholder="Apellido" name="lastname" id="lastname">
-      </div>
-      <div id="email-group" class="formulario__item">
-        <label for="email"></label>
-        <input type="email" placeholder="Email" name="email" id="email">
-      </div>
-      <div id="phone-group" class="formulario__item">
-        <label for="phone"></label>
-        <input type="tel"  placeholder="Teléfono" name="phone" id="phone">
-      </div>
-      <div id="msg-group" class="formulario__item">
-        <label for="msg"></label>
-        <textarea id="msg" cols="30" rows="10"  placeholder="Mensaje" name="msg"></textarea>
-      </div>
-      <div class="formulario__item">
-        <button type="submit" class="submit" id="submit">Enviar</button>
-      </div>
-  </form>
-</div>`
+<form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formularioSlide" method="post" action="sendMail.php" >
+    <div id="name-group" class="formulario__item">
+      <label for="name"></label>
+      <input type="text" placeholder="Nombre" name="name" id="name">
+    </div>
+    <div id="lastname-group" class="formulario__item">
+      <label for="lastname"></label>
+      <input type="text" placeholder="Apellido" name="lastname" id="lastname">
+    </div>
+    <div id="email-group" class="formulario__item">
+      <label for="email"></label>
+      <input type="email" placeholder="Email" name="email" id="email">
+    </div>
+    <div id="phone-group" class="formulario__item">
+      <label for="phone"></label>
+      <input type="tel"  placeholder="Teléfono" name="phone" id="phone">
+    </div>
+    <div id="msg-group" class="formulario__item">
+      <label for="msg"></label>
+      <textarea id="msg" cols="30" rows="4"  placeholder="Mensaje" name="msg"></textarea>
+    </div>
+    <div class="formulario__item">
+      <button type="submit" class="submit" id="submit">Enviar</button>
+    </div>
+</form>`
 
 export default () => {
-  $('.flexslider__picture').append(formSlide)
+  $('.flexslider__picture>.formulario').append(formSlide)
 
   $('#dialog').hide()
 
-  $('form').submit(function(event) {
+  $('#formularioSlide').submit(function(event) {
 
     $('.form-group').removeClass('has-error'); // remove the error class
     $('.help-block').remove(); // remove the error text

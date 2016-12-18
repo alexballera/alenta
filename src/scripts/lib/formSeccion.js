@@ -2,40 +2,34 @@ import $ from 'jquery'
 import queryUi from '../vendors/jquery-ui.js'
 
 var formSection = `
-<div class="formulario">
-  <h3 class="formulario__titulo">Contáctenos</h3>
-  <p class="formulario__texto">
-    Uno de nuestros asesores le orientará y resolver a sus inquietudes.
-  </p>
-  <form name="formulario" class="formulario__section" id="formularioSeccion" action="sendMail.php" method="post" >
-      <div id="nameSeccion-group">
-        <label for="nameSeccion"></label>
-        <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
-      </div>
-      <div id="lastnameSeccion-group" style="display:none;">
-        <label for="lastnameSeccion"></label>
-        <input type="text" placeholder="Apellido" name="lastnameSeccion" id="lastnameSeccion">
-      </div>
-      <div id="emailSeccion-group">
-        <label for="emailSeccion"></label>
-        <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">
-      </div>
-      <div id="phoneSeccion-group">
-        <label for="phoneSeccion"></label>
-        <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
-      </div>
-      <div id="msgSeccion-group">
-        <label for="msgSeccion"></label>
-        <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion" id="msgSeccion" ></textarea>
-      </div>
-      <p class="formulario__texto politicas">
-        Acepto políticas de tratamiento de datos personales
-      </p>
-      <div class="formulario__item">
-        <button type="submit" class="submit" id="submit">Enviar</button>
-      </div>
-  </form>
-</div>`
+<form name="formulario" class="formulario__section" id="formularioSeccion" action="sendMail.php" method="post" >
+    <div id="nameSeccion-group">
+      <label for="nameSeccion"></label>
+      <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
+    </div>
+    <div id="lastnameSeccion-group" style="display:none;">
+      <label for="lastnameSeccion"></label>
+      <input type="text" placeholder="Apellido" name="lastnameSeccion" id="lastnameSeccion">
+    </div>
+    <div id="emailSeccion-group">
+      <label for="emailSeccion"></label>
+      <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">
+    </div>
+    <div id="phoneSeccion-group">
+      <label for="phoneSeccion"></label>
+      <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
+    </div>
+    <div id="msgSeccion-group">
+      <label for="msgSeccion"></label>
+      <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion" id="msgSeccion" ></textarea>
+    </div>
+    <p class="formulario__texto politicas">
+      Acepto políticas de tratamiento de datos personales
+    </p>
+    <div class="formulario__item">
+      <button type="submit" class="submit" id="submit">Enviar</button>
+    </div>
+</form>`
 
 export default () => {
   $('#formulario_contacto').append(formSection)

@@ -10,10 +10,10 @@ form.flexslider__form{
     margin-left: 4.2%;
     @include transition-all(0.3s)
   }
-  @include respond-to(xl) {
-    margin-left: 4.7%;
-    @include transition-all(0.3s)
-  }
+  // @include respond-to(xl) {
+  //   margin-left: 4.7%;
+  //   @include transition-all(0.3s)
+  // }
 
   & input[type="email"],
   & input[type="text"],
