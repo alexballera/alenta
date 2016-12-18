@@ -7,38 +7,36 @@ var formSection = `
   <p class="formulario__texto">
     Uno de nuestros asesores le orientará y resolver a sus inquietudes.
   </p>
-  <form name="formulario" class="formulario__section form_test" id="formulario" action="formSeccion.php" method="post" >
-      <div>
+  <form name="formulario" class="formulario__section" id="formularioSeccion" action="formSeccion.php" method="post" >
+      <div id="nameSeccion-group">
         <label for="nameSeccion"></label>
-        <input type="text" placeholder="Nombre" name="nameSeccion" required="required" id="nameSeccion">
+        <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
       </div>
-      <div>
+      <div id="emailSeccion-group">
         <label for="emailSeccion"></label>
-        <input type="email" placeholder="Email" name="emailSeccion" required="required" id="emailSeccion">
+        <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">
       </div>
-      <div>
+      <div id="phoneSeccion-group">
         <label for="phoneSeccion"></label>
         <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
       </div>
-      <div>
+      <div id="msgSeccion-group">
         <label for="msgSeccion"></label>
-        <textarea id="msgSeccion" cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion"></textarea>
+        <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion" id="msgSeccion" ></textarea>
       </div>
       <p class="formulario__texto politicas">
         Acepto políticas de tratamiento de datos personales
       </p>
-      <div>
-        <button type="submit" class="botonenviar">Enviar</button>
+      <div class="formulario__item">
+        <button type="submit" class="submit" id="submit">Enviar</button>
       </div>
   </form>
 </div>`
 
 export default () => {
-  $('.add_form').append(formSection)
+  $('#formulario_contacto').append(formSection)
 
-  // $('#dialogSeccion').hide()
-
-  $('form.formulario__section').submit(function(event) {
+  $('#formularioSeccion').submit(function(event) {
 
     $('.form-group').removeClass('has-error'); // remove the error class
     $('.help-block').remove(); // remove the error text
@@ -71,14 +69,14 @@ export default () => {
 
                   // handle errors for name ---------------
                   if (data.errors.name) {
-                      $('#name-group').addClass('has-error'); // add the error class to show red input
-                      $('#name-group').append('<div class="help-block">' + data.errors.name + '</div>'); // add the actual error message under our input
+                      $('#nameSeccion-group').addClass('has-error'); // add the error class to show red input
+                      $('#nameSeccion-group').append('<div class="help-block">' + data.errors.name + '</div>'); // add the actual error message under our input
                   }
 
                   // handle errors for email ---------------
                   if (data.errors.email) {
-                      $('#email-group').addClass('has-error'); // add the error class to show red input
-                      $('#email-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
+                      $('#emailSeccion-group').addClass('has-error'); // add the error class to show red input
+                      $('#emailSeccion-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
                   }
 
                 } else {
@@ -89,7 +87,7 @@ export default () => {
                   // usually after form submission, you'll want to redirect
                   // window.location = '/thank-you'; // redirect a user to another page
                   console.log(data.message)
-                  $( "#dialogSeccion" ).dialog({
+                  $( "#dialog" ).dialog({
                     show: {
                       effect: "explode",
                       duration: 1000

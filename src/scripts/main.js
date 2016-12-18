@@ -9,7 +9,7 @@ import dinamicSection from './lib/dinamicSection'
 import animateFooterSection from './lib/animateFooterSection'
 import animateContent from './lib/animateContent'
 import formSlide from './lib/formSlide'
-// import formSeccion from './lib/formSeccion'
+import formSeccion from './lib/formSeccion'
 import addForm from './lib/addForm'
 
 
@@ -20,7 +20,7 @@ import addForm from './lib/addForm'
 
   function onDOMLoad () {
     formSlide()
-    // formSeccion()
+    formSeccion()
     addForm()
     flexslider()
     headerLittle()

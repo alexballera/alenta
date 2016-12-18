@@ -1,7 +1,5 @@
 import $ from 'jquery'
 
-var addForm = $('.add_form')
-
 var template = `
 <div class="formulario">
   <h3 class="formulario__titulo">Contáctenos</h3>
@@ -34,5 +32,5 @@ var template = `
   </form>
 </div>`
 export default () => {
-  addForm.append(template)
+  $('#formulario_alenta').append(template)
 }
