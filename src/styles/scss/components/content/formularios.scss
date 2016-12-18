@@ -51,7 +51,7 @@ form.flexslider__form{
      color: #302b2b;
   }
 
-  :-ms-input-placeholder {  
+  :-ms-input-placeholder {
      color: #302b2b;
   }
 }
@@ -90,15 +90,27 @@ form.formulario__section{
   }
 
   :-moz-placeholder { /* Firefox 18- */
-     color: white;  
+     color: white;
   }
 
   ::-moz-placeholder {  /* Firefox 19+ */
-     color: white;  
+     color: white;
   }
 
-  :-ms-input-placeholder {  
-     color: white;  
+  :-ms-input-placeholder {
+     color: white;
   }
 }
 
+.has-error{
+  & input[type="email"],
+  & input[type="text"],
+  & input[type="tel"]{
+    background-color: pink;
+  }
+}
+>.help-block{
+  padding: 0.25rem;
+  margin-top: 5px;
+  color: red;
+}

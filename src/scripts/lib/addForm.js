@@ -1,7 +1,5 @@
 import $ from 'jquery'
 
-var addForm = $('.add_form')
-
 var template = `
 <div class="formulario">
   <h3 class="formulario__titulo">Contáctenos</h3>
@@ -32,13 +30,7 @@ var template = `
         <button type="submit" class="botonenviar">Enviar</button>
       </div>
   </form>
-  <div id="success" style="display:none">
-      Sus datos han sido recibidos con éxito.
-  </div>
-  <div id="fracaso" style="display:none">
-      Se ha producido un error durante el envío de datos.
-  </div>
 </div>`
 export default () => {
-  addForm.append(template)
+  $('#formulario_alenta').append(template)
 }
