@@ -95,6 +95,11 @@ export default () => {
                       duration: 1000
                     }
                   });
+                  $('input#name').val('')
+                  $('input#lastname').val('')
+                  $('input#email').val('')
+                  $('input#phone').val('')
+                  $('textarea#msg').val('')
 
               }
 
