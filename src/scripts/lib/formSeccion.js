@@ -7,7 +7,7 @@ var formSection = `
   <p class="formulario__texto">
     Uno de nuestros asesores le orientará y resolver a sus inquietudes.
   </p>
-  <form name="formulario" class="formulario__section" id="formularioSeccion" action="formSeccion.php" method="post" >
+  <form name="formulario" class="formulario__section" id="formularioSeccion" action="sendMail.php" method="post" >
       <div id="nameSeccion-group">
         <label for="nameSeccion"></label>
         <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
@@ -38,7 +38,7 @@ var formSection = `
 </div>`
 
 export default () => {
-  $('#formulario_contacto').append(formSection)
+  $('.addForm').append(formSection)
 
   $('#formularioSeccion').submit(function(event) {
 
@@ -57,7 +57,7 @@ export default () => {
         // process the form
         $.ajax({
             type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-            url         : 'formSeccion.php', // the url where we want to POST
+            url         : 'sendMail.php', // the url where we want to POST
             data        : formData, // our data object
             dataType    : 'json', // what type of data do we expect back from the server
             encode      : true
