@@ -7,26 +7,26 @@ var formSection = `
   <p class="formulario__texto">
     Uno de nuestros asesores le orientará y resolver a sus inquietudes.
   </p>
-  <form name="formulario" class="formulario__section" id="formularioSeccion" action="sendMail.php" method="post" >
-      <div id="nameSeccion-group">
-        <label for="nameSeccion"></label>
-        <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
+  <form name="formulario" class="formulario__section" id="formularioAlenta" action="sendMail.php" method="post" >
+      <div id="nameAlenta-group">
+        <label for="nameAlenta"></label>
+        <input type="text" placeholder="Nombre" name="nameAlenta" id="nameAlenta">
       </div>
-      <div id="lastnameSeccion-group" style="display:none;">
-        <label for="lastnameSeccion"></label>
-        <input type="text" placeholder="Apellido" name="lastnameSeccion" id="lastnameSeccion">
+      <div id="lastnameAlenta-group" style="display:none;">
+        <label for="lastnameAlenta"></label>
+        <input type="text" placeholder="Apellido" name="lastnameAlenta" id="lastnameAlenta">
       </div>
-      <div id="emailSeccion-group">
-        <label for="emailSeccion"></label>
-        <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">
+      <div id="emailAlenta-group">
+        <label for="emailAlenta"></label>
+        <input type="email" placeholder="Email" name="emailAlenta" id="emailAlenta">
       </div>
-      <div id="phoneSeccion-group">
-        <label for="phoneSeccion"></label>
-        <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
+      <div id="phoneAlenta-group">
+        <label for="phoneAlenta"></label>
+        <input type="tel"  placeholder="Teléfono" name="phoneAlenta" id="phoneAlenta">
       </div>
-      <div id="msgSeccion-group">
-        <label for="msgSeccion"></label>
-        <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion" id="msgSeccion" ></textarea>
+      <div id="msgAlenta-group">
+        <label for="msgAlenta"></label>
+        <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgAlenta" id="msgAlenta" ></textarea>
       </div>
       <p class="formulario__texto politicas">
         Acepto políticas de tratamiento de datos personales
@@ -38,9 +38,9 @@ var formSection = `
 </div>`
 
 export default () => {
-  $('#formulario_contacto').append(formSection)
+  $('#formulario_alenta').append(formSection)
 
-  $('#formularioSeccion').submit(function(event) {
+  $('#formularioAlenta').submit(function(event) {
 
     $('.form-group').removeClass('has-error'); // remove the error class
     $('.help-block').remove(); // remove the error text
@@ -48,10 +48,10 @@ export default () => {
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
-            'name'      : $('input#nameSeccion').val(),
-            'email'     : $('input#emailSeccion').val(),
-            'phone'     : $('input#phoneSeccion').val(),
-            'msg'       : $('textarea#msgSeccion').val()
+            'name'      : $('input#nameAlenta').val(),
+            'email'     : $('input#emailAlenta').val(),
+            'phone'     : $('input#phoneAlenta').val(),
+            'msg'       : $('textarea#msgAlenta').val()
         };
 
         // process the form
@@ -73,14 +73,14 @@ export default () => {
 
                   // handle errors for name ---------------
                   if (data.errors.name) {
-                      $('#nameSeccion-group').addClass('has-error'); // add the error class to show red input
-                      $('#nameSeccion-group').append('<div class="help-block">' + data.errors.name + '</div>'); // add the actual error message under our input
+                      $('#nameAlenta-group').addClass('has-error'); // add the error class to show red input
+                      $('#nameAlenta-group').append('<div class="help-block">' + data.errors.name + '</div>'); // add the actual error message under our input
                   }
 
                   // handle errors for email ---------------
                   if (data.errors.email) {
-                      $('#emailSeccion-group').addClass('has-error'); // add the error class to show red input
-                      $('#emailSeccion-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
+                      $('#emailAlenta-group').addClass('has-error'); // add the error class to show red input
+                      $('#emailAlenta-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
                   }
 
                 } else {

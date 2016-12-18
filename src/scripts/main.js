@@ -10,7 +10,8 @@ import animateFooterSection from './lib/animateFooterSection'
 import animateContent from './lib/animateContent'
 import formSlide from './lib/formSlide'
 import formSeccion from './lib/formSeccion'
-import addForm from './lib/addForm'
+import formAlenta from './lib/formAlenta'
+// import addForm from './lib/addForm'
 
 
 (() => {
@@ -21,7 +22,8 @@ import addForm from './lib/addForm'
   function onDOMLoad () {
     formSlide()
     formSeccion()
-    addForm()
+    formAlenta()
+    // addForm()
     flexslider()
     headerLittle()
     botonScroll()
