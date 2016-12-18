@@ -3,25 +3,25 @@ import queryUi from '../vendors/jquery-ui.js'
 
 var formSection = `
 <form name="formulario" class="formulario__section" id="formularioSeccion" action="sendMail.php" method="post" >
-    <div id="name-group">
-      <label for="name"></label>
-      <input type="text" placeholder="Nombre" name="name" id="name">
+    <div id="nameSeccion-group">
+      <label for="nameSeccion"></label>
+      <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
     </div>
-    <div id="lastname-group" style="display:none;">
-      <label for="lastname></label>
-      <input type="text" placeholder="Apellido" name="lastname" id="lastname">
+    <div id="lastnameSeccion-group" style="display:none;">
+      <label for="lastnameSeccion"></label>
+      <input type="text" placeholder="Apellido" name="lastnameSeccion" id="lastnameSeccion">
     </div>
-    <div id="email-group">
-      <label for="email"></label>
-      <input type="email" placeholder="Email" name="email" id="email">
+    <div id="emailSeccion-group">
+      <label for="emailSeccion"></label>
+      <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">
     </div>
-    <div id="phone-group">
-      <label for="phone"></label>
-      <input type="tel"  placeholder="Teléfono" name="phone" id="phone">
+    <div id="phoneSeccion-group">
+      <label for="phoneSeccion"></label>
+      <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
     </div>
-    <div id="msg-group">
-      <label for="msg"></label>
-      <textarea cols="30" rows="10"  placeholder="Mensaje" name="msg" id="msg" ></textarea>
+    <div id="msgSeccion-group">
+      <label for="msgSeccion"></label>
+      <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion" id="msgSeccion" ></textarea>
     </div>
     <p class="formulario__texto politicas">
       Acepto políticas de tratamiento de datos personales
@@ -42,10 +42,10 @@ export default () => {
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var formData = {
-            'name'      : $('input#name').val(),
-            'email'     : $('input#email').val(),
-            'phone'     : $('input#phone').val(),
-            'msg'       : $('textarea#msg').val()
+            'name'      : $('input#nameSeccion').val(),
+            'email'     : $('input#emailSeccion').val(),
+            'phone'     : $('input#phoneSeccion').val(),
+            'msg'       : $('textarea#msgSeccion').val()
         };
 
         // process the form
@@ -67,14 +67,14 @@ export default () => {
 
                   // handle errors for name ---------------
                   if (data.errors.name) {
-                      $('#name-group').addClass('has-error'); // add the error class to show red input
-                      $('#name-group').append('<div class="help-block">' + data.errors.name + '</div>'); // add the actual error message under our input
+                      $('#nameSeccion-group').addClass('has-error'); // add the error class to show red input
+                      $('#nameSeccion-group').append('<div class="help-block">' + data.errors.name + '</div>'); // add the actual error message under our input
                   }
 
                   // handle errors for email ---------------
                   if (data.errors.email) {
-                      $('#email-group').addClass('has-error'); // add the error class to show red input
-                      $('#email-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
+                      $('#emailSeccion-group').addClass('has-error'); // add the error class to show red input
+                      $('#emailSeccion-group').append('<div class="help-block">' + data.errors.email + '</div>'); // add the actual error message under our input
                   }
 
                 } else {
