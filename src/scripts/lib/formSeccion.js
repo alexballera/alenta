@@ -12,6 +12,10 @@ var formSection = `
         <label for="nameSeccion"></label>
         <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
       </div>
+      <div id="lastnameSeccion-group" style="display:none;">
+        <label for="lastnameSeccion"></label>
+        <input type="text" placeholder="Apellido" name="lastnameSeccion" id="lastnameSeccion">
+      </div>
       <div id="emailSeccion-group">
         <label for="emailSeccion"></label>
         <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">

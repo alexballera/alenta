@@ -5,6 +5,7 @@ $errors         = array();      // array to hold validation errors
 $data           = array();      // array to pass back data
 
 $name = $_POST["name"];
+$lastname = $_POST["lastname"];
 $email = $_POST["email"];
 $phone = $_POST["phone"];
 $msg = $_POST["msg"];
@@ -20,6 +21,8 @@ $subject = "Nuevo mensaje de $nombre";
 $body .= "Mensaje Desde El Formulario Web Alenta.\n";
 $body .= "\n";
 $body .= "Nombre: " . $name ."\n";
+$body .= "\n";
+$body .= "Apellido: " . $lastname ."\n";
 $body .= "\n";
 $body .= "Correo: " . $email ."\n";
 $body .= "\n";
@@ -62,22 +65,27 @@ $header .= 'From:' . $email. '\r\n'; // Sender's Email
         // THIS CAN BE WHATEVER YOU WANT TO DO (LOGIN, SAVE, UPDATE, WHATEVER)
 
         // show a message of success and provide a true success variable
-        $data['success'] = true;
-        mail($emailTo, $subject, $body, $header);
 
-        // Base de Datos
-        // mysqli_connect("localhost", "usuario", "password", "base de datos");
-        $enlace = mysqli_connect("localhost", "aballera_alex", "Juan03:16", "aballera_formularios");
-        if (mysqli_connect_errno()) {
-            echo "Error: No se pudo conectar a MySQL. \r\n" . "\r\n";
-            echo "errno de depuración: " . mysqli_connect_errno() . "\r\n";
-            echo "error de depuración: " . mysqli_connect_error() . "\r\n";
-            exit;
+        $correo = mail($emailTo, $subject, $body, $header);
+
+        if ($correo) {
+          $data['success'] = true;
+          $enlace = mysqli_connect("localhost", "aballera_alex", "Juan03:16", "aballera_formularios");
+          if (mysqli_connect_errno()) {
+              echo "Error: No se pudo conectar a MySQL. \r\n" . "\r\n";
+              echo "errno de depuración: " . mysqli_connect_errno() . "\r\n";
+              echo "error de depuración: " . mysqli_connect_error() . "\r\n";
+              exit;
+          } else {
+              // mysqli_query($enlace, "INSERT INTO tabla (campo1, campo2, ... campon) VALUES ('val1, val2, ... valn)");
+            mysqli_query($enlace, "INSERT INTO form_element (name, lastname, phone, email, message) VALUES ('$name', '$lastname', '$phone', '$email','$msg')"); //Insert Query
+            mysqli_close($enlace);
+          }
         } else {
-            // mysqli_query($enlace, "INSERT INTO tabla (campo1, campo2, ... campon) VALUES ('val1, val2, ... valn)");
-          mysqli_query($enlace, "INSERT INTO form_element (name, phone, email, message) VALUES ('$name', '$lastname', '$phone', '$email','$msg')"); //Insert Query
-          mysqli_close($enlace);
+          // $data['errors']  = 'Correo no enviado';
+          alert('Correo No enviado')
         }
+
     }
 
     // return all our data to an AJAX call
