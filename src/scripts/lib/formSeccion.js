@@ -88,11 +88,11 @@ export default () => {
                   $( "#dialog" ).dialog({
                     show: {
                       effect: "explode",
-                      duration: 1000
+                      duration: 700
                     },
                     hide: {
                       effect: "explode",
-                      duration: 1000
+                      duration: 700
                     }
                   });
                   $('input#nameSeccion').val('')
