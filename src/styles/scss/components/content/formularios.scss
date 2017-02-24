@@ -61,7 +61,7 @@ form.formulario__section{
   & input[type="text"],
   & input[type="tel"],
   & textarea {
-    background-color: $color-primary;
+    background-color: $color-secondary;
     padding: 0.5rem;
     width: 90%;
     height: 100%;
@@ -75,7 +75,7 @@ form.formulario__section{
     line-height: 50px;
     width: 150px;
     margin: .25rem .25rem .5rem .25rem;
-    color: $color-primary;
+    color: $color-secondary;
     background-color: white;
     outline: none;
     border: none;
