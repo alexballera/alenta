@@ -11,11 +11,11 @@ gulp.task('serve', () => {
     port: 8000,
     ui: {
       port: 8001
-    },
-    browser: [
+    }
+    // browser: [
       // 'chromium-browser',
-      'google-chrome'
+      // 'google-chrome'
       // 'firefox'
-    ]
+    // ]
   })
 })
