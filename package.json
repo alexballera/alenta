@@ -8,7 +8,8 @@
     "start": "gulp",
     "styles": "gulp styles",
     "scripts": "gulp build:scripts",
-    "images": "gulp build:images"
+    "images": "gulp build:images",
+    "deploy": "gulp deploy"
   },
   "repository": {
     "type": "git",

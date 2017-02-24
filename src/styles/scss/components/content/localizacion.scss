@@ -21,6 +21,11 @@
       }
       &:nth-child(3){
         order: 1;
+        img.imagen-localizacion {
+          @include respond-to(xl) {
+            width: 100%;
+          }
+        }
       }
       >.localizacion__items{
         display: flex;
