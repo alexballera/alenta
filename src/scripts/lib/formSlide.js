@@ -26,6 +26,22 @@ var formSlide = `
     <div class="formulario__item">
       <button type="submit" class="submit" id="submit">Enviar</button>
     </div>
+    <div class="formulario-slider-contacto">
+      <div class="formulario-slider-contacto-item">
+        <h3>Sala de negocios:</h3>
+        <address>
+          Carrera 18 # 80-74<br>
+          Bogota-Colombia
+        </address>
+      </div>
+      <div class="formulario-slider-contacto-item">
+        <h3>Números de contacto:</h3>
+        <address>
+          Teléfono: 6949729 <br>
+          Celular: 310 2 47 62 54
+        </address>
+      </div>
+    </div>
 </form>`
 
 export default () => {
