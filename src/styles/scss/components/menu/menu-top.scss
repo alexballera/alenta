@@ -36,22 +36,6 @@
       color: white;
       @include respond-to(md) {
         font-size: 80%;
-      }
-      @include respond-to(lg) {
-        color: rgba(0,0,0,0.5);
-        font-size: 90%;
-      }
-      @include respond-to(xl) {
-      }
-      &:hover{
-        background-color: $color-primary;
-        @include transition-all(0.5s)
-        color: white;
-      }
-      &:before{
-        content: none;
-      }
-      @include respond-to(md) {
         &:before {
           content: "";
           display: block;
@@ -62,6 +46,31 @@
           position: absolute;
         }
       }
+      @include respond-to(lg) {
+        color: rgba(0,0,0,0.5);
+        font-size: 90%;
+      }
+      @include respond-to(xl) {
+      }
+      &:hover{
+        background-color: $color-secondary;
+        @include transition-all(0.5s)
+        color: white;
+      }
+      &:before{
+        content: none;
+      }
+      /*@include respond-to(md) {
+        &:before {
+          content: "";
+          display: block;
+          width: 2px;
+          height: 60%;
+          top: 20%;
+          background-color: darkgrey;
+          position: absolute;
+        }
+      }*/
     }
     &:first-child a:before {
       display: none;
@@ -206,7 +215,7 @@
 ul.dropdown.second__level,
 ul.dropdown.third__level{
   >li.item{
-    border-top: 1px solid $color-hover;
+    border-top: 1px solid white;
     &.dropdown__firstlevel{
       position: relative;
     }
@@ -216,12 +225,12 @@ ul.dropdown.third__level{
       padding: 0 0 0 0.5rem;
       line-height: 3rem;
       text-align: left;
-      background-color: $color-primary;
+      background-color: rgba(0, 121, 192, .5);
       color: white;
       display: block;
       &:hover{
-        @include transition-all(0.3s)
-        background-color: $color-hover;
+        @include transition-all(0.3s);
+        background-color: rgba(0, 121, 192, .9);
       }
     }
   }
