@@ -5,13 +5,13 @@ var barra_localizacion = documento.find('.barra-localizacion')
 var barra_proyectos = documento.find('.barra-proyectos')
 
 export default () => {
-  // documento.scroll(function (e) {
-  //   document.title = documento.scrollTop()
-  // })
+  /*documento.scroll(function (e) {
+    document.title = documento.scrollTop()
+  })*/
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
-    if (desplazamiento <= 830) {
+    if (desplazamiento <= 600) {
       barra_alenta.hide('slow')
     } else {
       barra_alenta.show('slow')
@@ -20,7 +20,7 @@ export default () => {
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
-    if (desplazamiento <= 1630) {
+    if (desplazamiento <= 1400) {
       barra_localizacion.hide('slow')
     } else {
       barra_localizacion.show('slow')
