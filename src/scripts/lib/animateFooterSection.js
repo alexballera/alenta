@@ -5,9 +5,9 @@ var barraLocalizacion = documento.find('.barra-localizacion')
 var barraProyectos = documento.find('.barra-proyectos')
 
 export default () => {
-  documento.scroll(function (e) {
+  /* documento.scroll(function (e) {
     document.title = documento.scrollTop()
-  })
+  }) */
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
