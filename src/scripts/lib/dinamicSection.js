@@ -6,24 +6,7 @@ var navbar = body.find('#navbar')
 
 var firstLevel = navbar.find('#dropdown__firstlevel')
 
-/*var secondLevel = navbar.find('#dropdown__secondlevel')
-
-var caretDown = navbar.find('.fa-caret-down')*/
-
-/*var itemAlentaDropdown = `
-      <ul class="dropdown second__level" id="dropdown__secondlevel">
-        <li class="item"><a href="#localizacion">Localización</a></li>
-        <li class="item"><a href="#proyecto">El Proyecto</a></li>
-        <li class="item"><a href="#promotores">Promotores</a></li>
-        <li class="item" id="item__dropdown"><a href="#proyecto">Alenta Etapas</a>
-              <ul class="dropdown third__level" id="dropdown__thirdlevel">
-                    <li class="item"><a href="#etapa1">Etapa 1</a></li>
-                    <li class="item"><a href="#etapa2">Etapa 2</a></li>
-                    <li class="item"><a href="#etapa3">Etapa 3</a></li>
-              </ul>
-        </li>
-      </ul>
-`*/
+var linkAlenta = navbar.find('#link-alenta')
 
 var footer = `
 <footer class="footer__section dinamic">
@@ -54,10 +37,6 @@ var footer = `
       </div>
 </footer>`
 
-/*var showItemAlentaDropdown = () => {
-  firstLevel.append(itemAlentaDropdown)
-}*/
-
 var removeFooter = () => {
   $('.footer_areas').remove()
   $('.footer_consultorios').remove()
@@ -65,8 +44,6 @@ var removeFooter = () => {
   $('.footer_hotel').remove()
   $('.footer_contacto').remove()
   $('.footer__creditos').remove()
-/*  secondLevel.remove()
-  caretDown.remove()*/
 }
 
 var appendFooter = () => {
@@ -99,7 +76,7 @@ var addFooterContacto = () => {
 }
 
 var hideSections = () => {
-  $('#link-alenta').hide()
+  linkAlenta.hide()
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
   $('article.contenido__alenta.seccion__cirugia').hide('slow')
@@ -111,7 +88,7 @@ var hideSlideAlentaSection = () => {
   $('section.slider__container').hide('slow')
   $('article.contenido__alenta.seccion__alenta').hide('slow')
   firstLevel.hide()
-  $('#link-alenta').show()
+  linkAlenta.show()
 }
 
 export default () => {
