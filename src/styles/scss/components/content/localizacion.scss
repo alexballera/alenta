@@ -1,5 +1,7 @@
 .localizacion{
-  >.contenido__container{
+  >.contenido__container {
+    margin: 0 auto;
+    width: 88%;
     >.contenido__texto{
       >p{
         margin-top: 1rem;
@@ -30,6 +32,8 @@
       &.localizacion-mapa {
         position: relative;
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
 
         img {
           width: 100%;
