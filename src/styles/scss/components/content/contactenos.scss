@@ -2,7 +2,7 @@
   margin-top: 50px;
   padding-bottom: 0 !important;
 }
-.formulario{
+.formulario {
   background-color: $color-secondary;
   margin: 3rem;
   padding: 2rem;
@@ -22,6 +22,9 @@
   &__texto.politicas{
     font-size: 80%;
     line-height: normal;
+  }
+  &.formulario-slider {
+    background-color: transparent;
   }
 }
 address.alenta__address{
