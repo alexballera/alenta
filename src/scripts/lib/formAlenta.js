@@ -3,7 +3,7 @@ import '../vendors/jquery-ui.js'
 
 var formSection = `
 <form name="formulario" class="formulario__section" id="formularioAlenta" action="sendMail.php" method="post" >
-    <div id="nameAlenta-group">
+    <div id="nameAlenta-group" class="form-item form-item-name">
       <label for="nameAlenta"></label>
       <input type="text" placeholder="Nombre" name="nameAlenta" id="nameAlenta">
     </div>
@@ -11,15 +11,15 @@ var formSection = `
       <label for="lastnameAlenta"></label>
       <input type="text" placeholder="Apellido" name="lastnameAlenta" id="lastnameAlenta">
     </div>
-    <div id="emailAlenta-group">
+    <div id="emailAlenta-group" class="form-item form-item-email">
       <label for="emailAlenta"></label>
       <input type="email" placeholder="Email" name="emailAlenta" id="emailAlenta">
     </div>
-    <div id="phoneAlenta-group">
+    <div id="phoneAlenta-group" class="form-item form-item-phone">
       <label for="phoneAlenta"></label>
       <input type="tel"  placeholder="Teléfono" name="phoneAlenta" id="phoneAlenta">
     </div>
-    <div id="msgAlenta-group">
+    <div id="msgAlenta-group" class="form-item form-item-message">
       <label for="msgAlenta"></label>
       <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgAlenta" id="msgAlenta" ></textarea>
     </div>

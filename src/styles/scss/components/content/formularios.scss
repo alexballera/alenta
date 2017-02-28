@@ -13,10 +13,6 @@ form.flexslider__form{
     margin-left: 4.2%;
     @include transition-all(0.3s)
   }
-  // @include respond-to(xl) {
-  //   margin-left: 4.7%;
-  //   @include transition-all(0.3s)
-  // }
 
   & input[type="email"],
   & input[type="text"],
@@ -87,44 +83,47 @@ form.formulario__section{
   & input[type="text"],
   & input[type="tel"],
   & textarea {
-    background-color: $color-secondary;
-    padding: 0.5rem;
-    width: 90%;
+    background-color: white;
+    box-sizing: border-box;
+    padding: .75rem;
+    width: 100%;
     height: 100%;
     margin: .25rem;
-    color: white !important;
+    color: $color-fonts !important;
     font-weight: bold;
     border: 1px solid white;
   }
+
   & button[type="submit"] {
     height: 100%;
     line-height: 50px;
     width: 150px;
     margin: .25rem .25rem .5rem .25rem;
-    color: $color-secondary;
-    background-color: white;
+    color: white;
+    background-color: $color-fonts;
     outline: none;
     border: none;
     margin-top: 1rem;
     font-size: 1.5rem;
     &:hover{
-      background-color: $color-hover;
+      background-color: $color-secondary;
+      color: white;
     }
   }
   ::-webkit-input-placeholder {
-     color: white;
+     color: $color-fonts ;
   }
 
   :-moz-placeholder { /* Firefox 18- */
-     color: white;
+     color: $color-fonts ;
   }
 
   ::-moz-placeholder {  /* Firefox 19+ */
-     color: white;
+     color: $color-fonts ;
   }
 
   :-ms-input-placeholder {
-     color: white;
+     color: $color-fonts ;
   }
 }
 
@@ -139,4 +138,15 @@ form.formulario__section{
   padding: 0.25rem;
   margin-top: 5px;
   color: red;
+}
+
+.form-item-name,
+.form-item-email,
+.form-item-phone {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 33%;
+}
+.form-item-message {
+  width: 100%;
 }

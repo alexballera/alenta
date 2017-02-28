@@ -1,9 +1,9 @@
 import $ from 'jquery'
-import queryUi from '../vendors/jquery-ui.js'
+import '../vendors/jquery-ui.js'
 
 var formSection = `
 <form name="formulario" class="formulario__section" id="formularioSeccion" action="sendMail.php" method="post" >
-    <div id="nameSeccion-group">
+    <div id="nameSeccion-group" class="form-item form-item-name">
       <label for="nameSeccion"></label>
       <input type="text" placeholder="Nombre" name="nameSeccion" id="nameSeccion">
     </div>
@@ -11,15 +11,15 @@ var formSection = `
       <label for="lastnameSeccion"></label>
       <input type="text" placeholder="Apellido" name="lastnameSeccion" id="lastnameSeccion">
     </div>
-    <div id="emailSeccion-group">
+    <div id="emailSeccion-group" class="form-item form-item-email">
       <label for="emailSeccion"></label>
       <input type="email" placeholder="Email" name="emailSeccion" id="emailSeccion">
     </div>
-    <div id="phoneSeccion-group">
+    <div id="phoneSeccion-group" class="form-item form-item-phone">
       <label for="phoneSeccion"></label>
       <input type="tel"  placeholder="Teléfono" name="phoneSeccion" id="phoneSeccion">
     </div>
-    <div id="msgSeccion-group">
+    <div id="msgSeccion-group" class="form-item form-item-message">
       <label for="msgSeccion"></label>
       <textarea cols="30" rows="10"  placeholder="Mensaje" name="msgSeccion" id="msgSeccion" ></textarea>
     </div>

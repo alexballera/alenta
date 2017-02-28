@@ -1,9 +1,13 @@
-.contactenos{
+.contactenos {
   margin-top: 50px;
   padding-bottom: 0 !important;
+  .contenido__texto-formulario {
+    border-top: 0 !important;
+    width: 100% !important;
+  }
 }
 .formulario {
-  background-color: $color-secondary;
+  background-color: $background-color-container;
   margin: 3rem;
   padding: 2rem;
   margin-top: 0;
@@ -20,6 +24,7 @@
     margin: 0 auto;
   }
   &__texto.politicas{
+    color: $color-fonts !important;
     font-size: 80%;
     line-height: normal;
   }
@@ -33,7 +38,7 @@ address.alenta__address{
   font-weight: 200;
   line-height: 1.75rem;
   padding: 1rem 0;
-  background-color: #F4F3F2;
+  background-color: $background-color-container;
   // border-top: 2px solid $color-primary;
   // border-bottom: 2px solid $color-primary;
 }
