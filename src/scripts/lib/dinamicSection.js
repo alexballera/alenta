@@ -99,7 +99,6 @@ var addFooterContacto = () => {
 }
 
 var hideSections = () => {
-  $('.footer__section').hide()
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
   $('article.contenido__alenta.seccion__cirugia').hide('slow')
