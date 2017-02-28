@@ -1,8 +1,8 @@
 import $ from 'jquery'
 var documento = $(document)
-var barra_alenta = documento.find('.barra-alenta')
-var barra_localizacion = documento.find('.barra-localizacion')
-var barra_proyectos = documento.find('.barra-proyectos')
+var barraAlenta = documento.find('.barra-alenta')
+var barraLocalizacion = documento.find('.barra-localizacion')
+var barraProyectos = documento.find('.barra-proyectos')
 
 export default () => {
   // documento.scroll(function (e) {
@@ -12,27 +12,27 @@ export default () => {
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 830) {
-      barra_alenta.hide('slow')
+      barraAlenta.hide('slow')
     } else {
-      barra_alenta.show('slow')
+      barraAlenta.show('slow')
     }
   })
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 1630) {
-      barra_localizacion.hide('slow')
+      barraLocalizacion.hide('slow')
     } else {
-      barra_localizacion.show('slow')
+      barraLocalizacion.show('slow')
     }
   })
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento <= 2300) {
-      barra_proyectos.hide('slow')
+      barraProyectos.hide('slow')
     } else {
-      barra_proyectos.show('slow')
+      barraProyectos.show('slow')
     }
   })
 }

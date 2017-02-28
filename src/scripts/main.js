@@ -7,11 +7,10 @@ import navbarTop from './lib/navbarTop'
 import navbarFloating from './lib/navbarFloating'
 import dinamicSection from './lib/dinamicSection'
 import animateFooterSection from './lib/animateFooterSection'
-import animateContent from './lib/animateContent'
+// import animateContent from './lib/animateContent'
 import formSlide from './lib/formSlide'
 import formSeccion from './lib/formSeccion'
 import formAlenta from './lib/formAlenta'
-
 
 (() => {
   'use strict'
@@ -31,6 +30,6 @@ import formAlenta from './lib/formAlenta'
     dinamicSection()
     smoove()
     animateFooterSection()
-    animateContent()
+    // animateContent()
   }
 })()
