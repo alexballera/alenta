@@ -6,11 +6,11 @@ var navbar = body.find('#navbar')
 
 var firstLevel = navbar.find('#dropdown__firstlevel')
 
-var secondLevel = navbar.find('#dropdown__secondlevel')
+/*var secondLevel = navbar.find('#dropdown__secondlevel')
 
-var caretDown = navbar.find('.fa-caret-down')
+var caretDown = navbar.find('.fa-caret-down')*/
 
-var itemAlentaDropdown = `
+/*var itemAlentaDropdown = `
       <ul class="dropdown second__level" id="dropdown__secondlevel">
         <li class="item"><a href="#localizacion">Localización</a></li>
         <li class="item"><a href="#proyecto">El Proyecto</a></li>
@@ -23,7 +23,7 @@ var itemAlentaDropdown = `
               </ul>
         </li>
       </ul>
-`
+`*/
 
 var footer = `
 <footer class="footer__section dinamic">
@@ -54,9 +54,9 @@ var footer = `
       </div>
 </footer>`
 
-var showItemAlentaDropdown = () => {
+/*var showItemAlentaDropdown = () => {
   firstLevel.append(itemAlentaDropdown)
-}
+}*/
 
 var removeFooter = () => {
   $('.footer_areas').remove()
@@ -65,8 +65,8 @@ var removeFooter = () => {
   $('.footer_hotel').remove()
   $('.footer_contacto').remove()
   $('.footer__creditos').remove()
-  secondLevel.remove()
-  caretDown.remove()
+/*  secondLevel.remove()
+  caretDown.remove()*/
 }
 
 var appendFooter = () => {
@@ -99,6 +99,7 @@ var addFooterContacto = () => {
 }
 
 var hideSections = () => {
+  $('#link-alenta').hide()
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
   $('article.contenido__alenta.seccion__cirugia').hide('slow')
@@ -109,6 +110,8 @@ var hideSections = () => {
 var hideSlideAlentaSection = () => {
   $('section.slider__container').hide('slow')
   $('article.contenido__alenta.seccion__alenta').hide('slow')
+  firstLevel.hide()
+  $('#link-alenta').show()
 }
 
 export default () => {
@@ -117,7 +120,7 @@ export default () => {
   $('.gotoalenta').click(function (e) {
     e.preventDefault()
     hideSections()
-    showItemAlentaDropdown()
+    firstLevel.show('slow')
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
   })
