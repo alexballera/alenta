@@ -9,7 +9,7 @@
   vertical-align: middle;
   color: white;
   display: none;
-  @include transition-all(0.3s)
+  @include transition-all(.3s);
   @include respond-to(xs) {
     top: 25%;
   }
@@ -96,10 +96,8 @@
   }
   &__mini{
     margin: 0;
-    &__item{}
     &__picture{
       width: 200px;
     }
-    &__image{}
   }
 }
