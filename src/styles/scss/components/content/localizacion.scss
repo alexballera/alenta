@@ -34,7 +34,19 @@
         img {
           width: 100%;
         }
+
+        .localizacion_direccion {
+          font-size: 1.25rem;
+          margin-top: 2rem;
+          strong {
+            text-transform: uppercase;
+          }
+          .horario {
+            text-align: center;
+          }
+        }
       }
+
       >.localizacion__items {
         background-color: white;
         left: 10%;
