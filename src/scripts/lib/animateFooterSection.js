@@ -5,13 +5,13 @@ var barraLocalizacion = documento.find('.barra-localizacion')
 var barraProyectos = documento.find('.barra-proyectos')
 
 export default () => {
-  /*documento.scroll(function (e) {
+  documento.scroll(function (e) {
     document.title = documento.scrollTop()
-  })*/
+  })
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
-    if (desplazamiento <= 830) {
+    if (desplazamiento <= 580) {
       barraAlenta.hide('slow')
     } else {
       barraAlenta.show('slow')
@@ -20,7 +20,7 @@ export default () => {
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
-    if (desplazamiento <= 1630) {
+    if (desplazamiento <= 1410) {
       barraLocalizacion.hide('slow')
     } else {
       barraLocalizacion.show('slow')
