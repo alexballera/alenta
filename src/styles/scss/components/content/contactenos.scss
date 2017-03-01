@@ -1,6 +1,11 @@
 .contactenos {
   margin-top: 50px;
   padding-bottom: 0 !important;
+
+  .contenido__titulo {
+    text-align: center;
+  }
+
   .contenido__texto-formulario {
     border-top: 0 !important;
     width: 100% !important;

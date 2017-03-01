@@ -98,6 +98,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     firstLevel.show('slow')
+    document.title = 'Alenta'
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
   })
@@ -106,6 +107,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
+    document.title = 'Consultorios'
     $('article.contenido__alenta.seccion__consultorios').show('slow')
     if (!$('.footer__section').length) {
       addFooterConsultorio()
@@ -119,6 +121,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
+    document.title = 'Áreas Médicas'
     $('article.contenido__alenta.seccion__areas').show('slow')
     if (!$('.footer__section').length) {
       addFooterAreas()
@@ -132,6 +135,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
+    document.title = 'Salas de Cirugía'
     $('article.contenido__alenta.seccion__cirugia').show('slow')
     if (!$('.footer__section').length) {
       addFooterCirugia()
@@ -145,6 +149,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
+    document.title = 'Hotel'
     $('article.contenido__alenta.seccion__hotel').show('slow')
     if (!$('.footer__section').length) {
       addFooterHotel()
@@ -158,6 +163,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
+    document.title = 'Contáctenos'
     $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').show('slow')
     if (!$('.footer__section').length) {
       addFooterContacto()
