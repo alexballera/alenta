@@ -1,8 +1,16 @@
+// Sección Contacto Alenta
 .contactenos {
-  margin-top: 50px;
-  padding-bottom: 0 !important;
+  padding: 0 !important;
+
+  .contacto-banner {
+    img {
+      margin-bottom: $height-navbar;
+      width: 100%;
+    }
+  }
 
   .contenido__titulo {
+    margin: 0;
     text-align: center;
   }
 

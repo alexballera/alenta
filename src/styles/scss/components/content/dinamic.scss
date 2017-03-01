@@ -24,20 +24,6 @@ footer.footer__section.dinamic{
   position: static;
 }
 
-.seccion__contacto{
-  >h2.contenido__titulo{
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-bottom: 4rem;
-  }
-  >.contenido__container{
-    height: 1300px;
-      @include respond-to(lg) {
-          height: 700px;
-      }
-  }
-}
-
 .seccion__areas{
   padding-bottom: 0;
   >section.contenido__seccion{
@@ -56,20 +42,5 @@ footer.footer__section.dinamic{
           height: 369px;
       }
     }
-  }
-}
-
-.seccion__contacto{
-  margin-top: 0;
-  >.contenido__container{
-    >.contenido__texto{
-      >h3,
-      >p{
-        padding-left: 3rem;
-      }
-    }
-  }
-  >footer.footer__section{
-    top: 850px;
   }
 }
