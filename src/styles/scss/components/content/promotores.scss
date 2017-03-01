@@ -1,31 +1,7 @@
-.promotores__container{
-  display: flex;
-  flex-direction: row;
-}
-.flexslider__promotores{
-  >.flex-viewport>ul.slides{
-    display: flex;
-    align-items: center;
-  }
-  background-color: $background-color-container;
-  &__item{
-    &.slide__acci>picture>img,
-    &.slide__obreval>picture>img{
-      margin: 0 auto;
-    }
-  }
-  &__picture{
-    display: flex;
-    flex-flow: row wrap;
-    >img{
-      width: 49% !important;
-      display: block;
-    }
-    >span{
+.promotores {
+  .promotores-banner {
+    img {
       width: 100%;
-      text-align: center;
-      margin-top: 10px;
-      color: dimgray;
     }
   }
 }
