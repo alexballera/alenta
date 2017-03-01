@@ -92,6 +92,9 @@
       box-sizing: border-box;
       height: 362px;
     }
+    &-formulario {
+      padding: 0 !important;
+    }
   }
   &__button{
     display: none;

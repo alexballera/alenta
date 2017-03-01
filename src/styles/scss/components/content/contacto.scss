@@ -4,12 +4,17 @@
   >.contenido__container {
     height: 1300px;
       @include respond-to(lg) {
-          height: 400px;
+          height: 375px;
       }
     >.contenido__texto {
       &:nth-child(1){
         border-top: none;
         padding-top: 0;
+      }
+      &-formulario {
+        .formulario {
+          padding: 0;
+        }
       }
     }
   }
@@ -18,7 +23,7 @@
       margin-top: $height-navbar;
     }
   }
-  footer.footer__section{
+  footer.footer__section {
     top: 850px;
   }
 }

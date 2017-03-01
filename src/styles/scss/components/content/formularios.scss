@@ -1,3 +1,29 @@
+.formulario {
+  background-color: $background-color-container;
+  margin: 1rem 3rem 0 3rem;
+  padding: 2rem;
+  &__titulo{
+    text-transform: uppercase;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  &__titulo,
+  &__texto{
+    color: white !important;
+    text-align: center !important;
+    width: 90%;
+    margin: 0 auto;
+  }
+  &__texto.politicas{
+    color: $color-fonts !important;
+    font-size: 80%;
+    line-height: normal;
+  }
+  &.formulario-slider {
+    background-color: transparent;
+  }
+}
+
 form.flexslider__form{
   @extend .text;
   background-color: rgba(0,0,0,.7);

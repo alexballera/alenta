@@ -4,7 +4,7 @@
 
   .contacto-banner {
     img {
-      margin-bottom: $height-navbar;
+      margin-bottom: 1rem;
       width: 100%;
     }
   }
@@ -17,32 +17,6 @@
   .contenido__texto-formulario {
     border-top: 0 !important;
     width: 100% !important;
-  }
-}
-.formulario {
-  background-color: $background-color-container;
-  margin: 3rem;
-  padding: 2rem;
-  margin-top: 0;
-  &__titulo{
-    text-transform: uppercase;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-  &__titulo,
-  &__texto{
-    color: white !important;
-    text-align: center !important;
-    width: 90%;
-    margin: 0 auto;
-  }
-  &__texto.politicas{
-    color: $color-fonts !important;
-    font-size: 80%;
-    line-height: normal;
-  }
-  &.formulario-slider {
-    background-color: transparent;
   }
 }
 address.alenta__address{
