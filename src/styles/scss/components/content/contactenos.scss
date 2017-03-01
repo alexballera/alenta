@@ -1,5 +1,6 @@
 // Sección Contacto Alenta
 .contactenos {
+  background-color: white !important;
   padding: 0 !important;
 
   .contacto-banner {
@@ -19,13 +20,17 @@
     width: 100% !important;
   }
 }
-address.alenta__address{
+
+.promotores-banner {
+  width: 100%;
+}
+
+.alenta-address {
+  background-color: $background-color-container;
   color: $color-fonts;
-  text-align: center;
   font-weight: 200;
   line-height: 1.75rem;
+  margin-top: -2px;
   padding: 1rem 0;
-  background-color: $background-color-container;
-  // border-top: 2px solid $color-primary;
-  // border-bottom: 2px solid $color-primary;
+  text-align: center;
 }
