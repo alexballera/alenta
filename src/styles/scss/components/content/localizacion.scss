@@ -41,7 +41,7 @@
 
         .localizacion_direccion {
           font-size: 1.25rem;
-          margin-top: 2rem;
+          margin: 2rem 0;
           strong {
             text-transform: uppercase;
           }
@@ -53,10 +53,10 @@
 
       >.localizacion__items {
         background-color: white;
-        left: 10%;
+        left: 3%;
         padding: 1rem;
         position: absolute;
-        top: 60%;
+        top: 45%;
         width: 30%;
 
         >.localizacion__item {
@@ -66,7 +66,7 @@
             content: '';
             display: inline-block;
             height: 5px;
-            width: 100px;
+            width: 25%;
             margin-right: 0.75rem;
           }
           &:nth-child(1){
