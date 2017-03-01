@@ -4,7 +4,7 @@
 .seccion__hotel,
 .seccion__contacto{
   padding-top: $height-navbar;
-  background-color: #F4F3F2;
+  background-color: $background-color-container;
   >section.contenido__seccion{
     >.contenido__container{
       height: 600px;
