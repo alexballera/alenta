@@ -104,7 +104,7 @@ var hideSections = () => {
 }
 
 var backgroundActivo = {
-  'backgroundColor': '#0079C0',
+  'backgroundColor': 'rgba(0, 121, 192, .7)',
   'color': 'white'
 }
 

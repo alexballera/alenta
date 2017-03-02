@@ -67,10 +67,10 @@
     }
     &:nth-child(3) {
       order: 1;
-      >img {
+      /* >img {
         width: 100%;
         max-height: 415px;
-        /* @include respond-to(md) {
+         @include respond-to(md) {
           width: 672px;
         }
         @include respond-to(lg) {
@@ -78,8 +78,8 @@
         }
         @include respond-to(xl) {
           width: 450px;
-        } */
-      }
+        }
+      } */
     }
     & h3 {
       color: $color-secondary;
@@ -93,7 +93,7 @@
     & ul>li {
       font-weight: 200;
       line-height: 1.75rem;
-      text-align: left;
+      text-align: justify;
     }
     p {
       text-align: justify;
