@@ -1,10 +1,12 @@
-.contenido{
-  &__seccion{
-    padding: 3rem;
+.contenido {
+  &__seccion {
     box-sizing: border-box;
-    &:nth-child(odd){
+    position: relative;
+
+    &:nth-child(odd) {
       background-color: $background-color-container;
     }
+
     &__banner {
       >img {
         margin-top: 2rem;
@@ -12,21 +14,25 @@
       }
     }
   }
-  &__titulo{
-    margin: 0 0 3rem;
+
+  &__titulo {
     color: $color-secondary;
-    // text-transform: uppercase;
     font-size: 2rem;
-    & span{
+    margin: 0 0 3rem;
+    padding: 3rem;
+    padding-bottom: 0;
+
+    & span {
       text-transform: lowercase;
     }
   }
-  &__container{
+
+  &__container {
     display: flex;
     flex-flow: row wrap;
   }
-  &__texto{
-    &:nth-child(odd){
+  &__texto {
+    &:nth-child(odd) {
       width: 100%;
       border-top: 2px solid $color-primary;
       box-sizing: border-box;
