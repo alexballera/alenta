@@ -14,6 +14,18 @@ var botonNumeral = logo.find('#boton-numeral')
 
 var botonAlenta = logo.find('#boton-alenta')
 
+var gotoalenta = navbar.find('.gotoalenta')
+
+var consultorios = navbar.find('.gotoconsultorio')
+
+var gotomedicas = navbar.find('.gotomedicas')
+
+var gotocirugias = navbar.find('.gotocirugias')
+
+var gotohotel = navbar.find('.gotohotel')
+
+var gotocontactanos = navbar.find('.gotocontactanos')
+
 var footer = `
 <footer class="footer__section dinamic">
       <div class="footer__container">
@@ -91,6 +103,24 @@ var hideSections = () => {
   $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').hide('slow')
 }
 
+var backgroundActivo = {
+  'backgroundColor': '#0079C0',
+  'color': 'white'
+}
+
+var backgroundDesactivo = {
+  'backgroundColor': 'transparent',
+  'color': 'rgba(0,0,0,.5)'
+}
+
+var desactivarBackground = () => {
+  consultorios.css(backgroundDesactivo)
+  gotomedicas.css(backgroundDesactivo)
+  gotocirugias.css(backgroundDesactivo)
+  gotohotel.css(backgroundDesactivo)
+  gotocontactanos.css(backgroundDesactivo)
+}
+
 var hideSlideAlentaSection = () => {
   $('section.slider__container').hide('slow')
   $('article.contenido__alenta.seccion__alenta').hide('slow')
@@ -98,26 +128,30 @@ var hideSlideAlentaSection = () => {
   linkAlenta.show()
   botonAlenta.show()
   botonNumeral.hide()
+  desactivarBackground()
 }
 
 export default () => {
   hideSections()
 
-  $('.gotoalenta').click(function (e) {
+  gotoalenta.click(function (e) {
     e.preventDefault()
     hideSections()
     firstLevel.show('slow')
     botonNumeral.show('slow')
     document.title = 'Alenta'
+    desactivarBackground()
+    firstLevel.find('a').css(backgroundActivo)
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
   })
 
-  $('.gotoconsultorio').click(function (e) {
+  consultorios.click(function (e) {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
     document.title = 'Consultorios'
+    consultorios.css(backgroundActivo)
     $('article.contenido__alenta.seccion__consultorios').show('slow')
     if (!$('.footer__section').length) {
       addFooterConsultorio()
@@ -127,11 +161,12 @@ export default () => {
     }
   })
 
-  $('.gotomedicas').click(function (e) {
+  gotomedicas.click(function (e) {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
     document.title = 'Áreas Médicas'
+    gotomedicas.css(backgroundActivo)
     $('article.contenido__alenta.seccion__areas').show('slow')
     if (!$('.footer__section').length) {
       addFooterAreas()
@@ -141,11 +176,12 @@ export default () => {
     }
   })
 
-  $('.gotocirugias').click(function (e) {
+  gotocirugias.click(function (e) {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
     document.title = 'Salas de Cirugía'
+    gotocirugias.css(backgroundActivo)
     $('article.contenido__alenta.seccion__cirugia').show('slow')
     if (!$('.footer__section').length) {
       addFooterCirugia()
@@ -155,11 +191,12 @@ export default () => {
     }
   })
 
-  $('.gotohotel').click(function (e) {
+  gotohotel.click(function (e) {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
     document.title = 'Hotel'
+    gotohotel.css(backgroundActivo)
     $('article.contenido__alenta.seccion__hotel').show('slow')
     if (!$('.footer__section').length) {
       addFooterHotel()
@@ -169,11 +206,12 @@ export default () => {
     }
   })
 
-  $('.gotocontactanos').click(function (e) {
+  gotocontactanos.click(function (e) {
     e.preventDefault()
     hideSections()
     hideSlideAlentaSection()
     document.title = 'Contáctenos'
+    gotocontactanos.css(backgroundActivo)
     $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').show('slow')
     if (!$('.footer__section').length) {
       addFooterContacto()

@@ -45,7 +45,7 @@
       background-color: transparent;
       border-top: none;
     }
-    >a{
+    >a {
       display: block;
       width: 100%;
       text-transform: uppercase;
@@ -75,8 +75,12 @@
       @include respond-to(xl) {
       }
       &:hover {
-        background-color: $color-secondary;
+        background-color: $color-secondary !important;
         @include transition-all(.5s);
+        color: $white !important;
+      }
+      &:active {
+        background-color: $color-secondary;
         color: $white;
       }
       &:before{
@@ -100,7 +104,7 @@
   }
 }
 
-.header{
+.header {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
