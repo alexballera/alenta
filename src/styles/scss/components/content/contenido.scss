@@ -6,7 +6,8 @@
       background-color: $background-color-container;
     }
     &__banner {
-      >img{
+      >img {
+        margin-top: 2rem;
         width: 100%;
       }
     }
