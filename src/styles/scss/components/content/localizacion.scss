@@ -40,9 +40,15 @@
         .localizacion_direccion {
           font-size: 1.25rem;
           margin: 2rem 0;
-          strong {
-            text-transform: uppercase;
+
+          address {
+            text-align: center;
+
+            strong {
+              text-transform: uppercase;
+            }
           }
+
           .horario {
             text-align: center;
           }

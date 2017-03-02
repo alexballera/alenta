@@ -8,7 +8,7 @@ var etapa2Left = documento.find('#etapa2-left')
 var etapa3Left = documento.find('#etapa3-left')
 
 export default () => {
-  /* documento.scroll(function (e) {
+ /* documento.scroll(function (e) {
     document.title = documento.scrollTop()
   }) */
 

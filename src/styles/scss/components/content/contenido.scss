@@ -2,11 +2,9 @@
   &__seccion {
     box-sizing: border-box;
     position: relative;
-
     &:nth-child(odd) {
       background-color: $background-color-container;
     }
-
     &__banner {
       >img {
         margin-top: 2rem;
@@ -14,14 +12,12 @@
       }
     }
   }
-
   &__titulo {
     color: $color-secondary;
     font-size: 2rem;
     margin: 0 0 3rem;
     padding: 3rem;
     padding-bottom: 0;
-
     &::after {
       border-top: 3px solid $color-secondary;
       content: '';
@@ -30,37 +26,33 @@
       margin-left: 2rem;
       width: 80%;
     }
-
     & span {
       text-transform: lowercase;
     }
   }
-
   &__container {
     display: flex;
     flex-flow: row wrap;
   }
   &__texto {
     &:nth-child(odd) {
-      width: 100%;
       box-sizing: border-box;
-      padding: 2rem 2rem 0 2rem;
-      text-align: center;
+      padding: 2rem;
+      padding-bottom: 0;
+      // text-align: center;
+      width: 100%;
       @include respond-to(lg) {
         width: 44%;
       }
     }
-    &:nth-child(1){
+    &:nth-child(1) {
       order: 3;
-      // @include respond-to(lg) {
-      //   order: 1;
-      // }
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       display: none;
-      width: 6%;
       text-align: center;
-      >img{
+      width: 6%;
+      >img {
         position: relative;
         top: -40px;
       }
@@ -68,11 +60,11 @@
         display: block;
       }
     }
-    &:nth-child(3){
+    &:nth-child(3) {
       order: 1;
-      >img{
+      >img {
         width: 100%;
-        @include respond-to(md) {
+        /*@include respond-to(md) {
           width: 672px;
         }
         @include respond-to(lg) {
@@ -80,65 +72,60 @@
         }
         @include respond-to(xl) {
           width: 450px;
-        }
-      }
-      @include respond-to(lg) {
-        // order: 3;
+        }*/
       }
     }
-    & h3{
+    & h3 {
       color: $color-secondary;
-      text-align: left;
+      font-size: 1.5rem;
       font-weight: 200;
       margin: 1.25rem 0;
-      font-size: 1.5rem;
+      text-align: left;
     }
     & p,
     & ul,
-    & ul>li{
-      // color: $color-fonts;
-      text-align: left;
+    & ul>li {
       font-weight: 200;
       line-height: 1.75rem;
+      text-align: left;
     }
     p {
       text-align: justify;
     }
-    >img.etapa1{
-      padding: 1rem;
-      // border: 1px solid $color-primary;
+    >img.etapa1 {
       box-sizing: border-box;
-      height: 362px;
+      // height: 362px;
+      // padding: 1rem;
     }
     &-formulario {
       padding: 0 !important;
     }
   }
-  &__button{
+  &__button {
     display: none;
     @include respond-to(lg) {
-      display: block;
       background-color: $color-primary;
-      color: rgb(105,210,239);
-      width: 64px;
+      border-radius: 10px;
+      color: rgb(105, 210, 239);
+      display: block;
+      left: 96%;
       position: relative;
       top: -380px;
-      left: 96%;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-      &:hover{
-        background-color: rgb(105,210,239);
-        transition: all 0.3s ease;
+      transition: all .3s ease;
+      width: 64px;
+      &:hover {
+        background-color: rgb(105, 210, 239);
+        transition: all .3s ease;
         span,
-        i{
+        i {
           color: $color-primary;
         }
       }
       &:active,
-      &:visited{
-        color: rgb(105,210,239);
+      &:visited {
+        color: rgb(105, 210, 239);
       }
-      >span{
+      >span {
         position: relative;
         top: 12px;
         font-size: 80%;
@@ -146,7 +133,7 @@
         text-align: center;
       }
       >i.fa.fa-caret-down,
-      >i.fa.fa-caret-up{
+      >i.fa.fa-caret-up {
         display: block;
         text-align: center;
       }

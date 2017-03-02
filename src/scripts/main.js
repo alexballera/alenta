@@ -6,7 +6,7 @@ import downTextSlide from './lib/downTextSlide'
 import navbarTop from './lib/navbarTop'
 import navbarFloating from './lib/navbarFloating'
 import dinamicSection from './lib/dinamicSection'
-import animateFooterSection from './lib/animateFooterSection'
+import animateBanners from './lib/animateBanners'
 // import animateContent from './lib/animateContent'
 import formSlide from './lib/formSlide'
 import formSeccion from './lib/formSeccion'
@@ -29,7 +29,7 @@ import formAlenta from './lib/formAlenta'
     navbarFloating()
     dinamicSection()
     smoove()
-    animateFooterSection()
+    animateBanners()
     // animateContent()
   }
 })()
