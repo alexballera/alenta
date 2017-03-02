@@ -1,0 +1,24 @@
+.proyecto {
+  &-header {
+    text-align: center;
+
+    img {
+      width: 100%;
+
+      &:nth-child(2) {
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+      }
+    }
+
+    p {
+      font-size: 2rem;
+      margin: 0 10% 2rem;
+      text-transform: uppercase;
+
+      span {
+        color: $color-secondary;
+      }
+    }
+  }
+}
