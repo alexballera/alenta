@@ -8,6 +8,12 @@ var firstLevel = navbar.find('#dropdown__firstlevel')
 
 var linkAlenta = navbar.find('#link-alenta')
 
+var logo = $('#header-picture')
+
+var botonNumeral = logo.find('#boton-numeral')
+
+var botonAlenta = logo.find('#boton-alenta')
+
 var footer = `
 <footer class="footer__section dinamic">
       <div class="footer__container">
@@ -77,6 +83,7 @@ var addFooterContacto = () => {
 
 var hideSections = () => {
   linkAlenta.hide()
+  botonAlenta.hide()
   $('article.contenido__alenta.seccion__consultorios').hide('slow')
   $('article.contenido__alenta.seccion__areas').hide('slow')
   $('article.contenido__alenta.seccion__cirugia').hide('slow')
@@ -89,6 +96,8 @@ var hideSlideAlentaSection = () => {
   $('article.contenido__alenta.seccion__alenta').hide('slow')
   firstLevel.hide()
   linkAlenta.show()
+  botonAlenta.show()
+  botonNumeral.hide()
 }
 
 export default () => {
@@ -98,6 +107,7 @@ export default () => {
     e.preventDefault()
     hideSections()
     firstLevel.show('slow')
+    botonNumeral.show('slow')
     document.title = 'Alenta'
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
