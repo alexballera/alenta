@@ -35,6 +35,11 @@
     flex-flow: row wrap;
   }
   &__texto {
+    img {
+      max-height: 415px;
+      width: 100%;
+    }
+
     &:nth-child(odd) {
       box-sizing: border-box;
       padding: 2rem;
@@ -64,7 +69,8 @@
       order: 1;
       >img {
         width: 100%;
-        /*@include respond-to(md) {
+        max-height: 415px;
+        /* @include respond-to(md) {
           width: 672px;
         }
         @include respond-to(lg) {
@@ -72,7 +78,7 @@
         }
         @include respond-to(xl) {
           width: 450px;
-        }*/
+        } */
       }
     }
     & h3 {
