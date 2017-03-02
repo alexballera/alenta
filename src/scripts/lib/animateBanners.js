@@ -4,7 +4,6 @@ var barraAlenta = documento.find('.barra-alenta')
 var barraLocalizacion = documento.find('.barra-localizacion')
 var bannerProyectos = documento.find('.proyecto-header > img:nth-child(2)')
 var barraProyectos = documento.find('.barra-proyectos > img')
-var bannerContacto = documento.find('.contacto-banner > img')
 
 export default () => {
   /* documento.scroll(function (e) {
@@ -44,15 +43,6 @@ export default () => {
       barraProyectos.hide('slow')
     } else {
       barraProyectos.show('slow')
-    }
-  })
-
-  documento.on('scroll', () => {
-    var desplazamiento = documento.scrollTop()
-    if (desplazamiento <= 6300) {
-      bannerContacto.hide('slow')
-    } else {
-      bannerContacto.show('slow')
     }
   })
 }

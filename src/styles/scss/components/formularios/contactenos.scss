@@ -13,6 +13,10 @@
   .contenido__titulo {
     margin: 0;
     text-align: center;
+
+    &::after {
+      display: none;
+    }
   }
 
   .contenido__texto-formulario {

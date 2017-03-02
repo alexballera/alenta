@@ -2,11 +2,13 @@
   background-color: $background-color-container;
   margin: 1rem 3rem;
   padding: 2rem;
+
   &__titulo{
     text-transform: uppercase;
     margin-left: auto !important;
     margin-right: auto !important;
   }
+
   &__titulo,
   &__texto{
     color: white !important;
@@ -14,13 +16,19 @@
     width: 90%;
     margin: 0 auto;
   }
+
   &__texto.politicas{
     color: $color-fonts !important;
     font-size: 80%;
     line-height: normal;
   }
+
   &.formulario-slider {
     background-color: transparent;
+  }
+
+  &__item {
+    text-align: center;
   }
 }
 
