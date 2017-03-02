@@ -1,57 +1,57 @@
 import $ from 'jquery'
 
 var header = $('#header')
-var boton_show = header.find('.fa-bars')
-var boton_hide = header.find('.fa-window-close-o')
-var top__navbar = header.find('#top__navbar')
-var navbar = top__navbar.find('#navbar')
-var second__level = navbar.find('.second__level')
-var third__level = navbar.find('.third__level')
+var botonShow = header.find('.fa-bars')
+var botonHide = header.find('.fa-window-close-o')
+var topNavbar = header.find('#top__navbar')
+var navbar = topNavbar.find('#navbar')
+var secondLevel = navbar.find('.second__level')
+var thirdLevel = navbar.find('.third__level')
 var mediaQuery = window.matchMedia('screen and (min-width: 768px)')
 
 export default () => {
-  boton_hide.hide()
-  second__level.hide()
-  third__level.hide()
+  botonHide.hide()
+  secondLevel.hide()
+  thirdLevel.hide()
 
   var responsive = () => {
     if (mediaQuery.matches) {
-      top__navbar.show()
+      topNavbar.show()
     } else {
-      top__navbar.hide()
+      topNavbar.hide()
     }
   }
   mediaQuery.addListener(responsive)
 
-  boton_show.click(function (e) {
+  botonShow.click(function (e) {
     e.preventDefault()
-    top__navbar.show('slide', {direction: 'up'}, 1000)
-    boton_hide.show()
-    boton_show.hide()
+    topNavbar.show('slide', {direction: 'up'}, 1000)
+    botonHide.show()
+    botonShow.hide()
   })
 
-  boton_hide.click(function (e) {
+  botonHide.click(function (e) {
     e.preventDefault()
-    top__navbar.hide('slide', {direction: 'up'}, 1000)
-    boton_hide.hide()
-    boton_show.show()
+    topNavbar.hide('slide', {direction: 'up'}, 1000)
+    botonHide.hide()
+    botonShow.show()
   })
 
   navbar.find('#dropdown__firstlevel').on({
     'mouseover': () => {
-      second__level.show('400')
+      secondLevel.show('400')
     },
     'mouseleave': () => {
-      second__level.hide('400')
+      secondLevel.hide('400')
     }
   })
 
   navbar.find('#item__dropdown').on({
     'mouseover': () => {
-      third__level.show('400')
+      thirdLevel.show('400')
     },
     'mouseleave': () => {
-      third__level.hide('400')
+      thirdLevel.hide('400')
     }
   })
 }

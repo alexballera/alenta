@@ -52,7 +52,7 @@
       font-weight: 300;
       position: relative;
       text-align: center;
-      @include transition-all(0.3s)
+      @include transition-all(.3s);
       line-height: $height-navbar;
       box-sizing: border-box;
       color: $white;
@@ -94,7 +94,7 @@
         }
       }*/
     }
-    &:first-child a:before {
+    &:first-child a::before {
       display: none;
     }
   }
@@ -110,14 +110,14 @@
   width: 100%;
   background-color: $white;
   z-index: 1000;
-  @include transition-all(0.3s)
+  @include transition-all(.3s);
   @include respond-to(lg) {
     padding-left: 1rem;
   }
   &__picture{
     width: 50%;
     box-sizing: border-box;
-    @include transition-all(0.3s)
+    @include transition-all(.3s);
     text-align: center;
     height: $height-navbar;
     @include respond-to(md) {
@@ -126,27 +126,27 @@
     }
     @include respond-to(lg) {
       width: 10%;
-      @include transition-all(0.3s)
+      @include transition-all(.3s);
     }
     >a img{
       margin-left: 10%;
-      @include transition-all(0.3s)
+      @include transition-all(.3s);
       width: 60%;
-      @media screen and (min-width: 415px) { 
+      @media screen and (min-width: 415px) {
         width: 45%;
       }
-      @media screen and (min-width: 575px) { 
+      @media screen and (min-width: 575px) {
         width: 37%;
       }
-      @media screen and (min-width: 728px) { 
+      @media screen and (min-width: 728px) {
         width: 35%;
       }
       @include respond-to(md) {
-        @include transition-all(0.3s)
+        @include transition-all(.3s);
         margin: 0;
         width: 14%;
       }
-      @media screen and (min-width: 970px) { 
+      @media screen and (min-width: 970px) {
         width: 13%;
       }
       @include respond-to(lg) {
@@ -163,12 +163,12 @@
         outline: none;
         >span{
         >i{
-          &.fa-bars{
-            &:hover{
+          &.fa-bars {
+            &:hover {
               color: grey;
             }
           }
-          &.fa-window-close-o{
+          &.fa-window-close-o {
             color: #dd1616;
             &:hover{
               color: #bf3737;
@@ -199,7 +199,7 @@
   &--little{
     height: $height-navbar-little;
     transition: all 0.7s ease;
-    >picture.header__picture{
+    >picture.header__picture {
       height: $height-navbar-little;
       >a img{
         width: 14%;
@@ -257,16 +257,7 @@ ul.dropdown.third__level{
     }
   }
 }
-ul.dropdown.second__level{
-  >li.item{
-    &:last-child{
-      >a:after{
-              content: '\f0da';
-              margin-left: 3rem;
-            }
-    }
-  }
-}
+
 ul.dropdown.third__level{
   >li.item {
     width: 200px;

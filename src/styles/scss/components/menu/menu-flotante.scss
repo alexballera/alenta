@@ -1,69 +1,26 @@
-.menu__flotante{
-	display: none;
-	position: fixed;
-	top: 200px;
-	z-index: 1000;
-	&__boton{
-		position: absolute;
-		top: -30px;
-		display: flex;
-		flex-direction: column;
-		>span{
-			display: block;
-			&:first-child{
-				color: $color-primary;
-				width: 175px;
-				text-align: right;
-				background-color: rgba(0,0,0,0.01);
-				transition: all ease 0.3s;
-				&:hover{
-					// background-color: rgba(0,0,0,0.05);
-					transition: all ease 0.3s;
-					color: $color-secondary;
-				}
-			}
-			&:last-child{
-				color: white;
-				background-color: $color-primary;
-				box-sizing: border-box;
-				width: 16px;
-				height: 70px;
-				transition: all ease 0.3s;
-				&:hover{
-					background-color: $color-secondary;
-					transition: all ease 0.3s;
-				}
-			}
-		}
-	}
-	&__contenedor{
-		background-image: url('../images/background-menu-flotante.png');
-		background-repeat: no-repeat;
-		width: 250px;
-		>.menu__flotante__item{
-			margin-top: 1px;
-			&:first-child{
-				margin-top: 0;
-			}
-			>a{
-				display: block;
-				height: 38px;
-				width: 175px;
-				padding-left: 30px;
-				line-height: 38px;
-				color: white;
-				box-sizing: border-box;
-				// background-color: rgba(0,0,0,0.01);
-				transition: all .5s ease;
-				font-size: 85%;
-				>span{
-					text-transform: uppercase;
-				}
-				&:hover{
-					// background-color: rgba(0,0,0,0.05);
-					color: rgba(0,0,0,0.5);
-				}
-			}
-		}
-	}
+.menu-flotante {
+  right: 0;
+  position: fixed;
+  top: 500px;
+  width: 100px;
+  z-index: 1000;
+  text-transform: uppercase;
+
+  &-item {
+    border-top: 1px solid $white;
+    a {
+      font-size: 80%;
+      height: 1.75rem;
+      padding: 0 0 0 .5rem;
+      line-height: 1.75rem;
+      text-align: left;
+      background-color: rgba(0, 121, 192, .5);
+      color: $white;
+      display: block;
+      &:hover{
+        @include transition-all(.3s);
+        background-color: rgba(0, 121, 192, .9);
+      }
+    }
+  }
 }
