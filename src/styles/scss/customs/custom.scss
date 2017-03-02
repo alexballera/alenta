@@ -12,31 +12,9 @@ a{
   }
 }
 
-.enlace__activo{
+.enlace__activo {
   background-color: $color-primary;
   color: white !important;
-}
-
-#alenta,
-#consultorios,
-#areas,
-#cirugias,
-#hotel,
-#contactenos,
-#localizacion,
-#proyecto,
-#etapa1,
-#etapa2,
-#etapa3,
-#promotores,
-#contactenos,
-#contacto {
-  box-sizing: border-box;
-  height: 0;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  top: -5rem;
 }
 
 .hide {
