@@ -34,7 +34,6 @@
   &__texto {
     &:nth-child(odd) {
       width: 100%;
-      border-top: 2px solid $color-primary;
       box-sizing: border-box;
       padding: 2rem 2rem 0 2rem;
       text-align: center;
