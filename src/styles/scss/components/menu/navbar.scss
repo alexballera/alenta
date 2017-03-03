@@ -206,8 +206,8 @@
     >picture.header__picture {
       height: $height-navbar-little;
       >a img{
-        width: 14%;
-        transition: all 0.3s ease;
+        width: 35%;
+        transition: all .3s ease;
         @include respond-to(lg) {
           width: 80%;
         }
