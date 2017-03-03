@@ -1,4 +1,3 @@
-import inicio from './lib/inicio'
 import headerLittle from './lib/headerLittle'
 import smoove from './lib/smoove'
 import botonScroll from './lib/botonScroll'
@@ -19,7 +18,6 @@ import formAlenta from './lib/formAlenta'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    inicio()
     formSlide()
     formSeccion()
     formAlenta()
