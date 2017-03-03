@@ -1,5 +1,5 @@
 import $ from 'jquery'
-import queryUi from '../vendors/jquery-ui.js'
+import '../vendors/jquery-ui.js'
 
 var formSlide = `
 <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formularioSlide" method="post" action="sendMail.php" >

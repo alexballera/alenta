@@ -25,6 +25,10 @@
 
   &.formulario-slider {
     background-color: transparent;
+    display: none;
+    @include respond-to(lg) {
+      display: block;
+    }
   }
 
   &__item {
@@ -44,8 +48,11 @@ form.flexslider__form{
     display: flex !important;
     flex-direction: column;
     justify-content: center;
+    margin-left: 3.6%;
+    @include transition-all(.3s);
+  }
+  @include respond-to(xl) {
     margin-left: 4.2%;
-    @include transition-all(0.3s)
   }
 
   & input[type="email"],
@@ -178,8 +185,12 @@ form.formulario__section{
 .form-item-phone {
   box-sizing: border-box;
   display: inline-block;
-  width: 33%;
+  width: 100%;
+  @media (min-width: 992px) {
+    width: 33%;
+  }
 }
+
 .form-item-message {
   width: 100%;
 }
