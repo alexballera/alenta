@@ -55,13 +55,21 @@ var footer = `
       </div>
 </footer>`
 
+var ocultarCreditos = () => {
+  $('.footer__creditos').hide()
+}
+
 var removeFooter = () => {
+  removeFooterHome()
+  ocultarCreditos()
+}
+
+var removeFooterHome = () => {
   $('.footer_areas').remove()
   $('.footer_consultorios').remove()
   $('.footer_cirugia').remove()
   $('.footer_hotel').remove()
   $('.footer_contacto').remove()
-  $('.footer__creditos').remove()
 }
 
 var appendFooter = () => {
@@ -90,7 +98,7 @@ var addFooterHotel = () => {
 
 var addFooterContacto = () => {
   appendFooter()
-  $('.footer__section').addClass('footer_consultorios')
+  $('.footer__section').addClass('footer_contacto')
 }
 
 var hideSections = () => {
@@ -141,6 +149,8 @@ export default () => {
     botonNumeral.show('slow')
     document.title = 'Alenta'
     desactivarBackground()
+    removeFooterHome()
+    $('.footer__creditos').show()
     firstLevel.find('a').css(backgroundActivo)
     $('section.slider__container').show('slow')
     $('article.contenido__alenta.seccion__alenta').show('slow')
@@ -154,6 +164,7 @@ export default () => {
     consultorios.css(backgroundActivo)
     $('article.contenido__alenta.seccion__consultorios').show('slow')
     if (!$('.footer__section').length) {
+      ocultarCreditos()
       addFooterConsultorio()
     } else {
       removeFooter()
@@ -169,6 +180,7 @@ export default () => {
     gotomedicas.css(backgroundActivo)
     $('article.contenido__alenta.seccion__areas').show('slow')
     if (!$('.footer__section').length) {
+      ocultarCreditos()
       addFooterAreas()
     } else {
       removeFooter()
@@ -184,6 +196,7 @@ export default () => {
     gotocirugias.css(backgroundActivo)
     $('article.contenido__alenta.seccion__cirugia').show('slow')
     if (!$('.footer__section').length) {
+      ocultarCreditos()
       addFooterCirugia()
     } else {
       removeFooter()
@@ -199,6 +212,7 @@ export default () => {
     gotohotel.css(backgroundActivo)
     $('article.contenido__alenta.seccion__hotel').show('slow')
     if (!$('.footer__section').length) {
+      ocultarCreditos()
       addFooterHotel()
     } else {
       removeFooter()
@@ -214,6 +228,7 @@ export default () => {
     gotocontactanos.css(backgroundActivo)
     $('article.contenido__seccion.localizacion.contactenos.contacto.seccion__contacto').show('slow')
     if (!$('.footer__section').length) {
+      ocultarCreditos()
       addFooterContacto()
     } else {
       removeFooter()

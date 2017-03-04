@@ -1,12 +1,10 @@
 // Sección Contacto
 .contacto {
-  background-color: $background-color-container !important;
   margin-top: 0;
   >.contenido__container {
-    height: 1300px;
-      @include respond-to(lg) {
-          height: 375px;
-      }
+    background-color: $background-color-container !important;
+    height: 700px;
+      
     >.contenido__texto {
       &:nth-child(1){
         border-top: none;
@@ -20,11 +18,13 @@
     }
   }
   .contacto-banner {
+    width: 100%;
     img {
       margin-top: $height-navbar;
     }
   }
-  footer.footer__section {
-    top: 850px;
-  }
+}
+
+.footer_contacto {
+  top: 780px !important;
 }
