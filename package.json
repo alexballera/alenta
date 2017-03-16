@@ -54,8 +54,5 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
-  "dependencies": {
-    "eslint": "^3.16.1",
-    "standard": "^8.6.0"
-  }
+  "dependencies": {}
 }

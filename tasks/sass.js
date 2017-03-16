@@ -5,7 +5,7 @@ import sassGlob from 'gulp-sass-glob'
 import autoprefixer from 'gulp-autoprefixer'
 import cssnano from 'gulp-cssnano'
 import rename from 'gulp-rename'
-import uncss from 'gulp-uncss'
+// import uncss from 'gulp-uncss'
 import notify from 'gulp-notify'
 import plumber from 'gulp-plumber'
 
@@ -44,6 +44,7 @@ gulp.task('styles', () => {
     .pipe(gulp.dest('./build/styles'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
+    .pipe(gulp.dest('./src/styles'))
     .pipe(gulp.dest('./build/styles'))
     .pipe(gulp.dest('./public/styles'))
     .pipe(browserSync.reload(reloadOptions))
