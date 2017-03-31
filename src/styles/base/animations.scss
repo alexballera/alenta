@@ -1,0 +1,26 @@
+.anim-appear {
+  opacity: 0;
+  transition: opacity 3s ease-in;
+
+  &.anim-appear-active {
+    opacity: 1;
+  }
+}
+
+.anim-enter {
+  opacity: 0;
+  transition: opacity 3s ease-in;
+
+  &.anim-enter-active {
+    opacity: 1;
+  }
+}
+
+.anim-leave {
+  opacity: 1;
+  transition: opacity 3s ease-in;
+
+  &.anim-leave-active {
+    opacity: 0;
+  }
+}

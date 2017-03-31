@@ -7,7 +7,7 @@ class TitleH2 extends React.Component {
   render () {
     return (
       <ReactCSSTransitionGroup
-        transitionName='nombre-de-clase'
+        transitionName='anim'
         transitionAppear
         transitionAppearTimeout={5000}
         transitionEnter={false}
