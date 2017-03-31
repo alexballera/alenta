@@ -1,9 +1,13 @@
 'use strict'
 
 import React from 'react'
+import {Navbar, NavItem} from 'react-materialize'
 
 export default () => {
   return (
-    <h2>Este es el Top NavBar</h2>
+    <Navbar brand='logo' right>
+      <NavItem href='get-started.html'>Getting started</NavItem>
+      <NavItem href='components.html'>Components</NavItem>
+    </Navbar>
   )
 }
