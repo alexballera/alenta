@@ -5,9 +5,10 @@ import sassGlob from 'gulp-sass-glob'
 import autoprefixer from 'gulp-autoprefixer'
 import cssnano from 'gulp-cssnano'
 import rename from 'gulp-rename'
-// import uncss from 'gulp-uncss'
 import notify from 'gulp-notify'
 import plumber from 'gulp-plumber'
+import sassLint from 'gulp-sass-lint'
+import 'sass-lint'
 
 var onError = function (err) {
   notify.onError({
@@ -21,47 +22,33 @@ var plumberOptions = {
   errorHandler: onError
 }
 
-gulp.task('build:styles', ['styles'], () => {
-  gulp.start('uncss')
-})
-gulp.task('styles', () => {
-  var autoprefixerOptions = {
-    browsers: ['last 2 versions']
-  }
-  var sassOptions = {
-    includePaths: [
-    ]
-    // outputStyle: 'compressed'
-  }
-  var reloadOptions = {
-    stream: true
-  }
-  return gulp.src('./src/styles/scss/style.scss')
-    .pipe(sassGlob())
-    .pipe(autoprefixer(autoprefixerOptions))
-    .pipe(sass(sassOptions).on('error', sass.logError))
-    .pipe(plumber(plumberOptions))
-    .pipe(gulp.dest('./build/styles'))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
-    .pipe(gulp.dest('./src/styles'))
-    .pipe(gulp.dest('./build/styles'))
-    .pipe(gulp.dest('./public/styles'))
-    .pipe(browserSync.reload(reloadOptions))
-})
+var autoprefixerOptions = {
+  browsers: ['last 2 versions']
+}
+var sassOptions = {
+  includePaths: [
+  ]
+  // outputStyle: 'compressed'
+}
+var reloadOptions = {
+  stream: true
+}
 
-gulp.task('uncss', () => {
-  var reloadOptions = {
-    stream: true
-  }
-  return gulp.src('./src/styles/style.css')
-    // .pipe(uncss({
-    //   html: ['index.html', './src/**/*.html']
-    // }))
-    .pipe(rename({ suffix: '.min' }))
-    .pipe(cssnano())
-    .pipe(gulp.dest('./src/styles'))
-    .pipe(gulp.dest('./build/styles'))
-    .pipe(gulp.dest('./public/styles'))
-    .pipe(browserSync.reload(reloadOptions))
+gulp.task('styles', () => {
+  return gulp.src('./src/main.scss')
+  .pipe(sassGlob())
+  .pipe(sassLint())
+  .pipe(sassLint.format())
+  .pipe(sassLint.failOnError())
+  .pipe(autoprefixer(autoprefixerOptions))
+  .pipe(sass(sassOptions).on('error', sass.logError))
+  .pipe(plumber(plumberOptions))
+  .pipe(rename('style.css'))
+  .pipe(gulp.dest('./build/styles'))
+  .pipe(rename({ suffix: '.min' }))
+  .pipe(cssnano())
+  .pipe(gulp.dest('./src/styles'))
+  .pipe(gulp.dest('./build/styles'))
+  .pipe(gulp.dest('./public/styles'))
+  .pipe(browserSync.reload(reloadOptions))
 })
