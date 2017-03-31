@@ -6,6 +6,5 @@ import app from './components/app.jsx'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    app()
   }
 })()

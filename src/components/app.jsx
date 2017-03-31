@@ -1,6 +1,18 @@
 'use strict'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Header from './header/Header.jsx'
 
-var pruebas = () => {
-  console.log('Pruebas')
+class App extends React.Component {
+  render () {
+    return (
+      <Header />
+    )
+  }
 }
-export default pruebas
+ReactDOM.render(
+  <App />,
+  document.getElementById('app')
+)
+
+export default App
