@@ -6,7 +6,7 @@ import Header from './header/Header.jsx'
 class App extends React.Component {
   render () {
     return (
-      <Header />
+      <Header name='Alex' />
     )
   }
 }
