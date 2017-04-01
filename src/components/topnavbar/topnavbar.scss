@@ -2,8 +2,14 @@
   background-color: $white;
   box-shadow: none;
 
-  .brand-logo img {
-    height: 64px;
+  .brand-logo {
+    @media (min-width: 992px) {
+      margin-left: 3rem;
+    }
+
+    img {
+      height: 64px;
+    }
   }
 
   .button-collapse {
