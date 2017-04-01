@@ -1,3 +1,23 @@
+.navbar-top {
+  .navbar-top {
+    width: 85%;
+
+    li {
+      text-align: center;
+      width: 16%;
+
+      a {
+        font-size: 1.15rem;
+        text-transform: uppercase;
+      }
+    }
+
+    .dropdown-content li {
+      width: 100%;
+    }
+  }
+}
+
 .dropdown-content.active {
-  left: 689.7188px !important;
+  left: 15% !important;
 }

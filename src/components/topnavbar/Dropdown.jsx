@@ -5,11 +5,12 @@ import { Dropdown, Button, NavItem, Icon } from 'react-materialize'
 
 export default (props) => {
   var estilos = {
+    backgroundColor: 'transparent',
     color: 'white',
+    fontSize: '1.2rem',
     height: 64,
     lineHeight: '64px',
-    textTransform: 'capitalize',
-    backgroundColor: 'transparent',
+    textTransform: 'uppercase',
     padding: 0
   }
   return (
