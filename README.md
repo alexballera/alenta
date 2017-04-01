@@ -28,7 +28,7 @@ Agregamos JQuery y Materializecss.js en js/vendors
 
     $ npm i -S react-materialize
 
-### react-toolbox
+### react-toolbox (pendiente de probarlo)
 [http://react-toolbox.com/#/](http://react-toolbox.com/#/)
 
     npm install --save react-toolbox

@@ -10,7 +10,8 @@
     "styles": "gulp styles",
     "scripts": "gulp build:scripts",
     "images": "gulp build:images",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "postinstall": "cp node_modules/materialize-css/js/date_picker/picker.js node_modules/materialize-css/bin"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -80,7 +81,6 @@
     "react-dom": "^15.4.2",
     "react-materialize": "^0.18.1",
     "react-tap-event-plugin": "^2.0.1",
-    "react-toolbox": "^2.0.0-beta.7",
     "reactify": "^1.1.1"
   }
 }

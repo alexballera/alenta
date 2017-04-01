@@ -2,12 +2,17 @@
 
 import React from 'react'
 import {Navbar, NavItem} from 'react-materialize'
+import Dropdown from './Dropdown.jsx'
 
 export default () => {
   return (
-    <Navbar brand='logo' right>
-      <NavItem href='get-started.html'>Getting started</NavItem>
-      <NavItem href='components.html'>Components</NavItem>
+    <Navbar brand='logo' right className='navbar-top'>
+      <NavItem><Dropdown item='Alenta' /></NavItem>
+      <NavItem href=''>Consultorios</NavItem>
+      <NavItem href=''>Áreas Médicas</NavItem>
+      <NavItem href=''>Salas De Cirugía</NavItem>
+      <NavItem href=''>Hotel</NavItem>
+      <NavItem href=''>Contáctenos</NavItem>
     </Navbar>
   )
 }

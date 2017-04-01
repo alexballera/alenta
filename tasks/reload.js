@@ -5,5 +5,5 @@ gulp.watch([
   './src/**/*.html',
   './src/**/*.scss',
   './src/**/*.jsx',
-  './src/js/lib/*.js'
+  './src/js/components/**/*.js'
 ]).on('change', browserSync.reload)

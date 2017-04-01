@@ -8,9 +8,6 @@ import App from './components/app.jsx'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    ReactDOM.render(
-      <App />,
-      document.getElementById('app')
-    )
+    ReactDOM.render(<App />, document.getElementById('app'))
   }
 })()
