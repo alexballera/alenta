@@ -8,6 +8,10 @@ import App from './components/app.jsx'
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
-    ReactDOM.render(<App />, document.getElementById('app'))
+    console.log('Fuera de SeTimeout')
+    setTimeout(() => {
+      console.log('Dentro de SeTimeout')
+      ReactDOM.render(<App />, document.getElementById('app'))
+    }, 3000)
   }
 })()
