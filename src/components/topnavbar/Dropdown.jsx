@@ -7,7 +7,6 @@ export default (props) => {
   var estilos = {
     backgroundColor: 'transparent',
     color: 'darkgrey',
-    fontSize: '1.15rem',
     height: 64,
     lineHeight: '64px',
     textTransform: 'uppercase',
