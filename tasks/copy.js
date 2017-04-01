@@ -10,6 +10,8 @@ gulp.task('copy', () => {
   //   .pipe(gulp.dest('./public/styles/vendors'))
   gulp.src(['./src/js/vendors/**'])
      .pipe(gulp.dest('./public/js/vendors'))
+  gulp.src(['./src/js/lib/**'])
+     .pipe(gulp.dest('./public/js/lib'))
   gulp.src([
     './src/*.txt',
     './src/sitemap.*',

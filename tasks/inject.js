@@ -4,6 +4,7 @@ import series from 'stream-series'
 
 gulp.task('inject', () => {
   var vendorJS = gulp.src(['./src/js/vendors/*.js'])
+  var libJS = gulp.src(['./src/js/lib/*.js'])
   var appJS = gulp.src(['./src/js/index.min.js'])
   // var vendorCSS = gulp.src(['./src/styles/vendors/*.*.ccs'])
   var appCSS = gulp.src(['./src/styles/style.min.css'])
@@ -11,6 +12,7 @@ gulp.task('inject', () => {
   gulp.src('./src/index.html')
     .pipe(inject(series([
       vendorJS,
+      libJS,
       appJS,
       // vendorCSS,
       appCSS
