@@ -7,7 +7,7 @@ export default (props) => {
   var estilos = {
     backgroundColor: 'transparent',
     color: 'white',
-    fontSize: '1.2rem',
+    fontSize: '1.15rem',
     height: 64,
     lineHeight: '64px',
     textTransform: 'uppercase',
@@ -15,8 +15,6 @@ export default (props) => {
   }
   return (
     <Dropdown
-      hover
-      belowOrigin
       trigger={
         <Button flat style={estilos} >{props.item} <Icon right>arrow_drop_down</Icon></Button>
       } >

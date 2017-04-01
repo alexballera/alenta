@@ -7,4 +7,6 @@ $(document).ready(function () {
     alignment: 'left',
     constrainWidth: false
   })
+
+  $('.brand-logo').html("<img src='images/alenta-medical-care.png' alt='Alenta' />")
 })
