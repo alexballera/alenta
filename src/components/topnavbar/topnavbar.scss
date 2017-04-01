@@ -3,7 +3,7 @@
   box-shadow: none;
 
   .brand-logo {
-    @media (min-width: 992px) {
+    @media #{$large-and-up} {
       margin-left: 3rem;
     }
 
@@ -29,7 +29,7 @@
         text-transform: uppercase;
 
         &:hover {
-          background-color: $color-primary;
+          background-color: $primary-color;
           color: $white;
 
           button {

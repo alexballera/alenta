@@ -14,12 +14,12 @@ export default () => {
       transitionEnter={false}
       transitionLeave={false}>
       <Navbar brand='Alenta' right className='navbar-top'>
-        <NavItem><Dropdown item='Alenta' /></NavItem>
-        <NavItem href=''>Consultorios</NavItem>
-        <NavItem href=''>Áreas Médicas</NavItem>
-        <NavItem href=''>Salas De Cirugía</NavItem>
-        <NavItem href=''>Hotel</NavItem>
-        <NavItem href=''>Contáctenos</NavItem>
+        <NavItem className='navbar-top-item'><Dropdown item='Alenta' /></NavItem>
+        <NavItem className='navbar-top-item' href=''>Consultorios</NavItem>
+        <NavItem className='navbar-top-item' href=''>Áreas Médicas</NavItem>
+        <NavItem className='navbar-top-item' href=''>Salas De Cirugía</NavItem>
+        <NavItem className='navbar-top-item' href=''>Hotel</NavItem>
+        <NavItem className='navbar-top-item' href=''>Contáctenos</NavItem>
       </Navbar>
     </ReactCSSTransitionGroup>
   )

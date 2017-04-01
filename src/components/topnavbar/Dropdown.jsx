@@ -18,11 +18,11 @@ export default (props) => {
       trigger={
         <Button flat style={estilos} >{props.item} <Icon right>arrow_drop_down</Icon></Button>
       } >
-      <NavItem>¿Qué Es Alenta?</NavItem>
+      <NavItem className='navbar-top-item' >¿Qué Es Alenta?</NavItem>
       <NavItem divider />
-      <NavItem>Localización</NavItem>
+      <NavItem className='navbar-top-item' >Localización</NavItem>
       <NavItem divider />
-      <NavItem>El Proyecto</NavItem>
+      <NavItem className='navbar-top-item' >El Proyecto</NavItem>
     </Dropdown>
   )
 }
