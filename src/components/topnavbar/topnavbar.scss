@@ -1,7 +1,13 @@
 .navbar-top {
+  background-color: $white;
+  box-shadow: none;
 
   .brand-logo img {
     height: 64px;
+  }
+
+  .button-collapse {
+    color: $color-fonts;
   }
 
   .navbar-top {
@@ -12,17 +18,51 @@
       width: 16%;
 
       a {
+        color: $color-fonts;
         font-size: 1.15rem;
         text-transform: uppercase;
+
+        &:hover {
+          background-color: $color-primary;
+          color: $white;
+
+          button {
+            color: $white !important;
+          }
+        }
+
+        button:hover,
+        button:active {
+          color: $white !important;
+        }
       }
     }
 
-    .dropdown-content li {
-      width: 100%;
+    .dropdown-content {
+      background-color: transparent;
+      li {
+        background-color: rgba(0, 121, 192, .5);
+        width: 100%;
+
+        a {
+          color: $white;
+          &:hover {
+            background-color: rgba(0, 121, 192, .9);
+          }
+        }
+      }
+
+      &.active {
+        left: 15% !important;
+      }
+    }
+  }
+
+  .side-nav {
+    li a {
+      color: $color-fonts;
+      text-transform: uppercase;
     }
   }
 }
 
-.dropdown-content.active {
-  left: 15% !important;
-}

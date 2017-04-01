@@ -1,7 +1,15 @@
 // Colores
 $white: #fff;
 $grey: #808080;
-$orange: #ffa500;
+$color-primary: #0079C0;
+$color-secondary: rgb(39,198,193);
+$color-fonts: darkgrey;
+$color-hover: #1BA991;
+$background-color-topnav: rgba(0,0,0,0.2);
+$background-color-container: #E4E4E4;
+$height-navbar: 64px;
+$height-navbar-little: ($height-navbar)-16px;
+
 
 %placeholder {
   ::-webkit-input-placeholder {

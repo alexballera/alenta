@@ -6,7 +6,7 @@ import { Dropdown, Button, NavItem, Icon } from 'react-materialize'
 export default (props) => {
   var estilos = {
     backgroundColor: 'transparent',
-    color: 'white',
+    color: 'darkgrey',
     fontSize: '1.15rem',
     height: 64,
     lineHeight: '64px',
