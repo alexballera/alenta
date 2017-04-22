@@ -32,11 +32,12 @@ gulp.task('styles', () => {
   var reloadOptions = {
     stream: true
   }
-  return gulp.src('./src/styles/scss/style.scss')
+  return gulp.src('./src/index.scss')
     .pipe(sassGlob())
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(plumber(plumberOptions))
+    .pipe(rename('style.css'))
     .pipe(gulp.dest('./build/styles'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano())
