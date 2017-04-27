@@ -13,7 +13,6 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="styles/style.min.css">
     <!-- endinject -->
-    <script src="scripts/vendors/selectivizr.js"></script>
     <!--[if (gte IE 6)&(lte IE 8)]>
       <script type="text/javascript" src="scripts/vendros/selectivizr.js"></script>
       <noscript><link rel="stylesheet" href="[fallback css]" /></noscript>
@@ -31,6 +30,17 @@
       <div id="contenedor">
         <!-- Header -->
         <header id="header" class="header">
+            <a class='dropdown-button btn-flat' href='#' data-activates='dropdown1'>Drop Me!</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">one</a></li>
+              <li><a href="#!">two</a></li>
+              <li class="divider"></li>
+              <li><a href="#!">three</a></li>
+              <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+              <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+            </ul>
             <picture class="header__picture" id="header-picture">
               <a href="#">
                 <img src="images/alenta-medical-care.png" alt="" class="header__image">
@@ -681,13 +691,9 @@
         <div class="error"></div>
       </div>
     </div>
-    <script src="scripts/vendors/modernizr.js"></script>
-    <script>
-      (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
-        t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
-      })(window, document, '_gscq','script','//widgets.getsitecontrol.com/64110/script.js');
-    </script>
     <!-- inject:js -->
+    <script src="scripts/vendors/jquery.min.js"></script>
+    <script src="scripts/vendors/materialize.min.js"></script>
     <script src="scripts/index.min.js"></script>
     <!-- endinject -->
   </body>

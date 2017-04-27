@@ -1,7 +1,7 @@
 import $ from 'jquery'
 var documento = $(document)
 var gototop = documento.find('.gototop')
-var boton__up = documento.find('#boton__up')
+var botonUp = documento.find('#boton__up')
 
 export default () => {
   // Con el siguiente código vemos la posicion en el title
@@ -14,14 +14,14 @@ export default () => {
     $('body,html').animate({scrollTop: '0'}, 1500)
   })
 
-  boton__up.hide()
+  botonUp.hide()
 
   documento.on('scroll', () => {
     var desplazamiento = documento.scrollTop()
     if (desplazamiento >= 2800) {
-      boton__up.show('slow')
+      botonUp.show('slow')
     } else {
-      boton__up.hide('slow')
+      botonUp.hide('slow')
     }
   })
 }

@@ -1,10 +1,10 @@
 import $ from 'jquery'
-import flexslider from '../vendors/jquery.flexslider.js'
+// import flexslider from '../vendors/jquery.flexslider.js'
 
 var slider = {
-    principal: $('.flexslider__principal'),
-    mini: $('.flexslider__mini'),
-    promotores: $('.flexslider__promotores')
+  principal: $('.flexslider__principal'),
+  mini: $('.flexslider__mini'),
+  promotores: $('.flexslider__promotores')
 }
 
 export default function () {
