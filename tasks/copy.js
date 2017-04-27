@@ -18,6 +18,9 @@ gulp.task('copy', () => {
     './src/scripts/vendors/**'
   ]).pipe(gulp.dest('./public/scripts/vendors'))
   gulp.src([
+    './src/scripts/lib/**'
+  ]).pipe(gulp.dest('./public/scripts/lib'))
+  gulp.src([
     './src/*.txt',
     './src/sitemap.*',
     './src/404.html',

@@ -1,4 +1,4 @@
-import Pruebas from './scripts/lib/prueba.js'
+import Pruebas from './scripts/lib2/prueba.js'
 
 (() => {
   'use strict'
