@@ -1,10 +1,11 @@
-body{
+body {
   font-size: 16px;
-  // font-family: $font-awesome;
 }
-a{
-  text-decoration: none;
+
+a {
   color: darkgrey;
+  text-decoration: none;
+
   &:hover,
   &:visited,
   &:active{

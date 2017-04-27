@@ -1,13 +1,11 @@
-import Pruebas from './scripts/lib2/prueba'
+'use strict'
+
 import WebFont from './scripts/Webfont'
 
 (() => {
-  'use strict'
-
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
   function onDOMLoad () {
     WebFont()
-    Pruebas()
   }
 })()

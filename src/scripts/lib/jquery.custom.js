@@ -11,9 +11,11 @@ if (typeof (jQuery) === 'undefined') {
 }
 
 $(function () {
-  $('.dropdown-button').dropdown({
-    hover: true,
-    belowOrigin: true
-  }
+  $('.dropdown-button').dropdown(
+    {
+      hover: true,
+      belowOrigin: true
+    }
   )
+  $('.button-collapse').sideNav()
 })
