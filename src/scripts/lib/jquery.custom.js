@@ -14,7 +14,8 @@ $(function () {
   $('.dropdown-button').dropdown(
     {
       hover: true,
-      belowOrigin: true
+      belowOrigin: true,
+      constrainWidth: false
     }
   )
   $('.button-collapse').sideNav()

@@ -1,0 +1,35 @@
+.navbar-top {
+  box-shadow: none;
+
+  .brand-logo {
+    img {
+      height: $navbar-height;
+    }
+  }
+
+  &-desktop {
+    line-height: $navbar-height;
+  }
+}
+
+#alenta,
+#consultorios,
+#areas,
+#cirugias,
+#hotel,
+#contactenos,
+#localizacion,
+#proyecto,
+#etapa1,
+#etapa2,
+#etapa3,
+#promotores,
+#contactenos,
+#contacto {
+  box-sizing: border-box;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -4rem;
+}
