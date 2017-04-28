@@ -23,3 +23,22 @@ a {
   display: none;
 }
 
+.text {
+  @include transition-all(.3s);
+  @include respond-to(xs) {
+    top: 25%;
+  }
+  @include respond-to(lg) {
+    top: 60px;
+  }
+  box-sizing: border-box;
+  color: $white;
+  height: 150px;
+  padding: 0 2rem;
+  padding-left: 20rem;
+  position: absolute;
+  top: 25%;
+  vertical-align: middle;
+  width: 600px;
+}
+

@@ -1,14 +1,4 @@
 'use strict'
-if (typeof (jQuery) === 'undefined') {
-  var jQuery
-  // Check if require is a defined function.
-  if (typeof (require) === 'function') {
-    jQuery = $ = require('jquery')
-  // Else use the dollar sign alias.
-  } else {
-    jQuery = $
-  }
-}
 
 // Dropdown
 $(function () {
@@ -24,9 +14,9 @@ $(function () {
   // Carousel
   $('.carousel.carousel-slider').carousel({fullWidth: true})
 
-  autoplay()
+  /* autoplay()
   function autoplay () {
     $('.carousel').carousel('next')
     setTimeout(autoplay, 4500)
-  }
+  } */
 })
