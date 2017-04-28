@@ -10,9 +10,9 @@ gulp.task('watch', () => {
       './src/index.scss'
     ], ['styles'])
   gulp.watch('./src/videos/**/*.*', ['build:images'])
+  gulp.watch('./src/scripts/lib/*.*.js', ['copy'])
   gulp.watch(
     [
-      './src/scripts/lib/*.*.js',
       './src/index.js',
       './src/components/**/*.js',
       './src/views/**/*.js'

@@ -27,38 +27,9 @@
     </p>
   <![endif]-->
     <div id="app">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="#!" class="brand-logo">Logo</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-          </ul>
-        </div>
-      </nav>
       <div id="contenedor">
         <!-- Header -->
         <header id="header" class="header">
-            <a class='dropdown-button btn-flat' href='#' data-activates='dropdown1'>Drop Me!</a>
-
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content'>
-              <li><a href="#!">one</a></li>
-              <li><a href="#!">two</a></li>
-              <li class="divider"></li>
-              <li><a href="#!">three</a></li>
-              <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-              <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-            </ul>
             <picture class="header__picture" id="header-picture">
               <a href="#">
                 <img src="images/alenta-medical-care.png" alt="" class="header__image">
@@ -555,11 +526,7 @@
                       Carrera 18 # 80-74 Bogotá, Colombia. Teléfono: 6949729 Celular: 3144628174 comercial@alenta.co www.alenta.com.co
                     </address>
                   </section>              
-                  <!-- Alenta ~> Footer -->
-                  <footer class="footer footer__alenta">
-                    <picture class=""><img src="images/logo.png" alt=""></picture>
-                    <picture class=""><img src="images/alenta-medical-care.png" alt=""></picture>
-                  </footer>
+
                   <!-- Menu Flotante -->
                   <nav class="menu-flotante">
                     <ul class="menu-flotante-contenedor" id="menu-flotante-contenedor">
@@ -699,10 +666,7 @@
           </div>
           <img class="promotores-banner" src="images/patrocinadores.png" alt="">
         </article>
-        <!-- Créditos -->
-        <footer class="footer__creditos" id="footer">
-          <p>Derechos Reservados <i class="fa fa-copyright" aria-hidden="true"></i> 2016 Agencia de Publicidad en Bogotá - Colombia Creativo Z Publicidad y Estrategias SAS <a href="http://creativoz.co/">CreatiVoz</a> </p>
-        </footer>
+
         <div id="dialog" title="Alenta" class="formulario__dialog">
           <p>Tu mensaje ha sido enviado, a la brevedad posible uno de nuestros agentes se estará comunicando con usted</p>
         </div>

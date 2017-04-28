@@ -10,6 +10,7 @@ if (typeof (jQuery) === 'undefined') {
   }
 }
 
+// Dropdown
 $(function () {
   $('.dropdown-button').dropdown(
     {
@@ -19,4 +20,13 @@ $(function () {
     }
   )
   $('.button-collapse').sideNav()
+
+  // Carousel
+  $('.carousel.carousel-slider').carousel({fullWidth: true})
+
+  autoplay()
+  function autoplay () {
+    $('.carousel').carousel('next')
+    setTimeout(autoplay, 4500)
+  }
 })
