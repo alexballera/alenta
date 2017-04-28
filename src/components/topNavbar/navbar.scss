@@ -1,14 +1,27 @@
 .navbar-top {
+  background-color: $white;
   box-shadow: none;
 
   .brand-logo {
     img {
       height: $navbar-height;
+
+      @media #{$small-and-down} {
+        height: $navbar-height-mobile;
+      }
     }
   }
 
   &-desktop {
     line-height: $navbar-height;
+
+    li a {
+
+      &:hover {
+        background-color: $primary-hover;
+        color: $white;
+      }
+    }
   }
 }
 

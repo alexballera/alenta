@@ -1,11 +1,13 @@
 'use strict'
 
 import WebFont from './scripts/Webfont'
-import createNavbar from './components/layout/navbar'
-import createMain from './components/layout/main'
-import createFooter from './components/layout/footer'
+import createNavbar from './components/layout/createNavbar'
+import createMain from './components/layout/createMain'
+import createFooter from './components/layout/createFooter'
 import topNavbar from './components/topNavbar'
-
+import home from './views/home'
+import footer from './components/footer'
+import Navigation from './components/navigation'
 (() => {
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 
@@ -15,5 +17,8 @@ import topNavbar from './components/topNavbar'
     createMain()
     createFooter()
     topNavbar()
+    home()
+    footer()
+    Navigation()
   }
 })()

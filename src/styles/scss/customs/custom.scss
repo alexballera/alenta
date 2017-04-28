@@ -2,17 +2,18 @@ body {
   font-size: 16px;
 }
 
-/*a {
-  color: darkgrey;
-  text-decoration: none;
+a {
+  color: $color-fonts;
 
-  &:hover,
   &:visited,
-  &:active{
+  &:active {
     color: $color-fonts;
   }
+  &:hover {
+    color: $white;
+  }
 }
-
+/*
 .enlace__activo {
   background-color: $color-primary;
   color: white !important;

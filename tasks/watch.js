@@ -6,6 +6,7 @@ gulp.task('watch', () => {
     [
       './src/styles/scss/**/*.scss',
       './src/components/**/*.scss',
+      './src/views/**/*.scss',
       './src/index.scss'
     ], ['styles'])
   gulp.watch('./src/videos/**/*.*', ['build:images'])
@@ -13,6 +14,7 @@ gulp.task('watch', () => {
     [
       './src/scripts/lib/*.*.js',
       './src/index.js',
-      './src/components/**/*.js'
+      './src/components/**/*.js',
+      './src/views/**/*.js'
     ], ['build:scripts'])
 })
