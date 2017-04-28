@@ -91,20 +91,5 @@ footer{
         }
       }
     }
-    &__creditos{
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      height: 100%;
-      >p{
-        line-height: 48px;
-        font-size: 90%;
-        >a{
-          color:#93C021;
-          &:hover{
-            color: $color-primary;
-          }
-        }
-      }
-    }
   }
 }

@@ -2,12 +2,20 @@
   background-color: $white;
   box-shadow: none;
 
+  .material-icons {
+    float: right !important;
+  }
+
   .brand-logo {
     img {
       height: $navbar-height;
 
       @media #{$small-and-down} {
         height: $navbar-height-mobile;
+      }
+
+      @media #{$large-and-up} {
+        margin-left: 2rem;
       }
     }
   }
@@ -16,6 +24,7 @@
     line-height: $navbar-height;
 
     li a {
+      text-transform: uppercase;
 
       &:hover {
         background-color: $primary-hover;
