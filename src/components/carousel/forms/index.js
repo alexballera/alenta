@@ -1,52 +1,13 @@
 import $ from 'jquery'
 import 'jquery-ui'
-import {formSlide1} from './formSlides'
-
-/* <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formularioSlide" method="post" action="sendMail.php" >
-    <div id="name-group" class="formulario__item">
-      <label for="name"></label>
-      <input type="text" placeholder="Nombre" name="name" id="name">
-    </div>
-    <div id="lastname-group" class="formulario__item">
-      <label for="lastname"></label>
-      <input type="text" placeholder="Apellido" name="lastname" id="lastname">
-    </div>
-    <div id="email-group" class="formulario__item">
-      <label for="email"></label>
-      <input type="email" placeholder="Email" name="email" id="email">
-    </div>
-    <div id="phone-group" class="formulario__item">
-      <label for="phone"></label>
-      <input type="tel"  placeholder="Teléfono" name="phone" id="phone">
-    </div>
-    <div id="msg-group" class="formulario__item">
-      <label for="msg"></label>
-      <textarea id="msg" cols="30" rows="4"  placeholder="Mensaje" name="msg"></textarea>
-    </div>
-    <div class="formulario__item">
-      <button type="submit" class="submit" id="submit">Enviar</button>
-    </div>
-    <div class="formulario-slider-contacto">
-      <div class="formulario-slider-contacto-item">
-        <h3>Sala de negocios:</h3>
-        <address>
-          Carrera 18 # 80-74<br>
-          Bogota-Colombia
-        </address>
-      </div>
-      <div class="formulario-slider-contacto-item">
-        <h3>Números de contacto:</h3>
-        <address>
-          Teléfono: 6949729 <br>
-          Celular: 310 2 47 62 54
-        </address>
-      </div>
-    </div>
-</form> */
+import {formSlide1, formSlide2, formSlide3, formSlide4, formSlide5} from './formSlides'
 
 export default () => {
   $('.carousel-item > #formSlide1').append(formSlide1)
-  // $('.carousel-item > #formSlide2').append(formSlide2)
+  $('.carousel-item > #formSlide2').append(formSlide2)
+  $('.carousel-item > #formSlide3').append(formSlide3)
+  $('.carousel-item > #formSlide4').append(formSlide4)
+  $('.carousel-item > #formSlide5').append(formSlide5)
 
   $('#dialog').hide()
 
@@ -65,12 +26,12 @@ export default () => {
     }
     // const URLprotocol = window.location.protocol
     // const URLdomain = window.location.host
-    const url = 'send.php'
+    // const url = 'send.php'
     // console.log(URLprotocol + '//' + URLdomain + '/' + url)
 
     $.ajax({
       type: 'POST',
-      url: url,
+      url: 'send.php',
       data: formData,
       dataType: 'json',
       encode: true,
