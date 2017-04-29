@@ -12,7 +12,12 @@ $(function () {
   $('.button-collapse').sideNav()
 
   // Carousel
-  $('.carousel.carousel-slider').carousel({fullWidth: true})
+  $('.carousel.carousel-slider').carousel(
+    {
+      fullWidth: true,
+      duration: 500
+    }
+  )
 
   autoplay()
   function autoplay () {
