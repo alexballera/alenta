@@ -14,10 +14,10 @@ $(function () {
   // Carousel
   $('.carousel.carousel-slider').carousel({fullWidth: true})
 
-  autoplay()
+ /* autoplay()
   function autoplay () {
     $('.carousel').carousel('next')
-    setTimeout(autoplay, 7500)
+    setTimeout(autoplay, 10500)
   }
-  $('#textarea1').trigger('autoresize')
+  $('#textarea1').trigger('autoresize') */
 })

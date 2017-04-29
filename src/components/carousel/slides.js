@@ -27,7 +27,8 @@ const Slide1 = yo`
       <h3>${data.slide1.title}</h3>
       <p>${data.slide1.text}</p>
     </div>
-    <div class="formulario formulario-slider formulario-container"></div>
+    <div id="formSlide1" class="formulario formulario-slider formulario-container">
+    </div>
 </picture>
 `
 const Slide2 = yo`
@@ -37,7 +38,8 @@ const Slide2 = yo`
       <h3>${data.slide2.title}</h3>
       <p>${data.slide2.text}</p>
     </div>
-    <div class="formulario formulario-slider formulario-container"></div>
+    <div id="formSlide2" class="formulario formulario-slider formulario-container">
+    </div>
 </picture>
 `
 export {Slide1, Slide2}
