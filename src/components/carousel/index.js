@@ -2,27 +2,12 @@
 
 import yo from 'yo-yo'
 import {app} from '../layout/app'
+import {Slide1, Slide2} from './slides'
 
 const Slider = yo`
 <div class="carousel carousel-slider">
-  <picture class="carousel-item" href="#one!">
-      <img src="images/slide1.jpg" height="600" alt="Slider Principal" />
-      <div class="carousel-item-text text-right">
-        <h3>Alenta</h3>
-        <p>Primer Centro de Servicios Médicos Ambulatorios <br>
-          y Complementarios de Colombia.</p>
-      </div>
-      <div class="formulario formulario-slider formulario-container"></div>
-  </picture>
-  <picture class="carousel-item" href="#two!">
-      <img src="images/slide1.jpg" height="600" alt="Slider Principal" />
-      <div class="carousel-item-text text-right">
-        <h3>Alenta</h3>
-        <p>Primer Centro de Servicios Médicos Ambulatorios <br>
-          y Complementarios de Colombia.</p>
-      </div>
-      <div class="formulario formulario-slider formulario-container"></div>
-  </picture>
+  ${Slide1}
+  ${Slide2}
 </div>
 `
 export default () => {

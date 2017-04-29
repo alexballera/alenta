@@ -5,8 +5,8 @@ import createNavbar from './components/layout/createNavbar'
 import createMain from './components/layout/createMain'
 import createFooter from './components/layout/createFooter'
 import topNavbar from './components/topNavbar'
-import Slider from './components/slider'
-import formSlide from './components/slider/formSlide'
+import Carousel from './components/carousel'
+import formSlide from './components/carousel/forms'
 import Home from './views/home'
 import Footer from './components/footer'
 import Navigation from './components/navigation'
@@ -17,7 +17,7 @@ import Navigation from './components/navigation'
     WebFont()
     createNavbar()
     topNavbar()
-    Slider()
+    Carousel()
     formSlide()
     createMain()
     Home()
