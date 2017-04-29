@@ -1,8 +1,39 @@
 import $ from 'jquery'
-// import '../vendors/jquery-ui.js'
+import 'jquery-ui'
 
 var formSlide = `
-<form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formularioSlide" method="post" action="sendMail.php" >
+<div class="row formulario-slide">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="first_name" type="text" >
+        <label for="first_name">Nombre</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="last_name" type="text" >
+        <label for="last_name">Apellido</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+        <input id="email" type="email" >
+        <label for="email">Email</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="telephone" type="tel" >
+        <label for="telephone">Teléfono</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s12">
+        <textarea id="textarea1" class="materialize-textarea"></textarea>
+        <label for="textarea1">Mensaje</label>
+      </div>
+    </div>
+  </form>
+</div>
+`
+/* <form name="formulario" class="formulario__form flexslider__form flexslider__form__principal form_test" id="formularioSlide" method="post" action="sendMail.php" >
     <div id="name-group" class="formulario__item">
       <label for="name"></label>
       <input type="text" placeholder="Nombre" name="name" id="name">
@@ -42,7 +73,7 @@ var formSlide = `
         </address>
       </div>
     </div>
-</form>`
+</form> */
 
 export default () => {
   $('.carousel-item>.formulario').append(formSlide)

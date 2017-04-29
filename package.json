@@ -68,6 +68,7 @@
     "yo-yo": "^1.4.0"
   },
   "dependencies": {
+    "jquery-ui": "^1.12.1",
     "jquery-ui-dist": "^1.12.1",
     "materialize-css": "^0.98.2"
   }

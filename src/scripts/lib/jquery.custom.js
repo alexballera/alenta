@@ -19,4 +19,5 @@ $(function () {
     $('.carousel').carousel('next')
     setTimeout(autoplay, 4500)
   } */
+  $('#textarea1').trigger('autoresize')
 })

@@ -12,7 +12,7 @@ const Slider = yo`
         <p>Primer Centro de Servicios Médicos Ambulatorios <br>
           y Complementarios de Colombia.</p>
       </div>
-      <div class="formulario formulario-slider"></div>
+      <div class="formulario formulario-slider formulario-container"></div>
   </picture>
   <picture class="carousel-item" href="#two!">
       <img src="images/slide1.jpg" height="600" alt="Slider Principal" />
@@ -21,7 +21,7 @@ const Slider = yo`
         <p>Primer Centro de Servicios Médicos Ambulatorios <br>
           y Complementarios de Colombia.</p>
       </div>
-      <div class="formulario formulario-slider"></div>
+      <div class="formulario formulario-slider formulario-container"></div>
   </picture>
 </div>
 `

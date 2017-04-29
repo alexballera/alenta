@@ -1,4 +1,32 @@
-form.flexslider__form {
+.formulario {
+  &-container {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 16px;
+    position: absolute;
+    right: 80px;
+    top: 220px;
+    width: 400px;
+    z-index: 2;
+  }
+  &-slide {
+    .input-field {
+      margin-top: 0;
+
+      input,
+      textarea {
+        color: $white;
+        height: 36px;
+        margin-bottom: 8px;
+      }
+
+      textarea  {
+        padding: 0;
+      }
+    }
+  }
+}
+
+/*form.flexslider__form {
   @extend .text;
   background-color: rgba(0, 0, 0, .7);
   height: 350px !important;
@@ -45,11 +73,11 @@ form.flexslider__form {
      color: #302b2b;
   }
 
-  :-moz-placeholder { /* Firefox 18- */
+  :-moz-placeholder {
      color: #302b2b;
   }
 
-  ::-moz-placeholder {  /* Firefox 19+ */
+  ::-moz-placeholder {
      color: #302b2b;
   }
 
@@ -77,3 +105,4 @@ form.flexslider__form {
     }
   }
 }
+*/
