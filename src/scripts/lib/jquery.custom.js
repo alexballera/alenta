@@ -25,4 +25,24 @@ $(function () {
     setTimeout(autoplay, 10500)
   }
   $('#textarea1').trigger('autoresize')
+
+  // Scrollspy
+  $('.scrollspy').scrollSpy({
+    scrollOffset: 0
+  })
+
+  // ScrollFire
+  var options = [
+    { selector: '.barra-banner',
+      offset: 0,
+      callback: function (el) {
+        Materialize.fadeInImage($(el))
+      }
+    }
+  ]
+  Materialize.scrollFire(options)
+
+  $(document).scroll(function (e) {
+    document.title = $(document).scrollTop()
+  })
 })

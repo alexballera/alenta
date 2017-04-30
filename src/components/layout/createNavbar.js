@@ -1,8 +1,7 @@
 'use strict'
 import { app } from './app'
 
-const navbar = document.createElement('nav')
-navbar.setAttribute('class', 'navbar-top')
+const navbar = document.createElement('div')
 navbar.setAttribute('id', 'navbar-top')
 
 export default () => {

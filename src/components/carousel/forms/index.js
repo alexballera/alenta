@@ -1,5 +1,4 @@
 import $ from 'jquery'
-import 'jquery-ui'
 import {formSlide1, formSlide2, formSlide3, formSlide4, formSlide5} from './formSlides'
 
 export default () => {
