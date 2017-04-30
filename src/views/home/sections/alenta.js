@@ -5,7 +5,7 @@ const Alenta = yo`
 <section class="blue-grey lighten-5 contenido__seccion acerca">
   <div class="container">
     <div id="alenta" class="section scrollspy"></div>
-    <h2 class="contenido__titulo">Qué es Alenta?</h2>
+    <h2 class="contenido__titulo">¿Qué es Alenta?</h2>
     <div class="alenta-definicion">
       <p>Es un cluster  de <span>servicios médicos ambulatorios especializados</span>
       con un alto standard de calidad en sus instalaciones.</p>
