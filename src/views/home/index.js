@@ -1,6 +1,7 @@
 'use strict'
 import createHome from './createHome'
 import Alenta from './sections/alenta'
+import Localization from './sections/localization'
 
 export default () => {
   createHome()
@@ -8,4 +9,5 @@ export default () => {
   const Home = document.getElementById('home')
 
   Home.appendChild(Alenta)
+  Home.appendChild(Localization)
 }

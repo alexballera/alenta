@@ -29,7 +29,7 @@ const Alenta = yo`
       </div>
     </div>
   </div>
-  <picture class="contenido__seccion__banner hide-on-small-only barra-alenta"><img src="images/barra1.png" alt="" class="barra-banner"></picture>
+  <picture class="contenido__seccion__banner hide-on-small-only barra-alenta"><img src="images/barra1.png" alt="" id="barra-alenta"></picture>
 </section>
 `
 module.exports = Alenta

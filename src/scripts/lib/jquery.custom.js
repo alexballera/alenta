@@ -33,7 +33,7 @@ $(function () {
 
   // ScrollFire
   var options = [
-    { selector: '.barra-banner',
+    { selector: '#barra-alenta',
       offset: 0,
       callback: function (el) {
         Materialize.fadeInImage($(el))
@@ -41,6 +41,16 @@ $(function () {
     }
   ]
   Materialize.scrollFire(options)
+
+  var options2 = [
+    { selector: '#barra-localization',
+      offset: 0,
+      callback: function (el) {
+        Materialize.fadeInImage($(el))
+      }
+    }
+  ]
+  Materialize.scrollFire(options2)
 
   $(document).scroll(function (e) {
     document.title = $(document).scrollTop()
