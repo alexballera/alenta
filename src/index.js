@@ -8,6 +8,7 @@ import topNavbar from './components/topNavbar'
 import Carousel from './components/carousel'
 import formSlide from './components/carousel/forms'
 import Home from './views/home'
+import Dialog from './components/dialog'
 import Footer from './components/footer'
 import Navigation from './components/navigation'
 (() => {
@@ -18,6 +19,7 @@ import Navigation from './components/navigation'
     createNavbar()
     topNavbar()
     Carousel()
+    Dialog()
     formSlide()
     createMain()
     Home()

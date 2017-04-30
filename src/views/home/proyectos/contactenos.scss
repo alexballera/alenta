@@ -37,3 +37,15 @@
   padding: 1rem 0;
   text-align: center;
 }
+.has-error {
+  & input[type='email'],
+  & input[type='text'],
+  & input[type='tel']{
+    background-color: pink;
+  }
+}
+.help-block {
+  padding: .25rem;
+  margin-top: 5px;
+  color: red;
+}
