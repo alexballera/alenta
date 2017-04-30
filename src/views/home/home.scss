@@ -31,20 +31,15 @@
     flex-flow: row wrap;
   }
   &__texto {
-    img {
-      max-height: 415px;
+    &-img {
+      max-height: 360px;
       width: 100%;
     }
 
     &:nth-child(odd) {
       box-sizing: border-box;
-      padding: 2rem;
       padding-bottom: 0;
-      // text-align: center;
       width: 100%;
-      @include respond-to(lg) {
-        width: 44%;
-      }
     }
 
     &:nth-child(2) {
@@ -77,8 +72,6 @@
     }
     >img.etapa1 {
       box-sizing: border-box;
-      // height: 362px;
-      // padding: 1rem;
     }
     &-formulario {
       padding: 0 !important;

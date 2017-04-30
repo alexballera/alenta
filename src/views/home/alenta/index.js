@@ -12,7 +12,7 @@ const Alenta = yo`
     </div>
     <div class="row valign-wrapper contenido__container">
       <div class="col s12 l6 contenido__texto">
-        <img src="images/que-es-alenta.png" alt="" />
+        <img src="images/que-es-alenta.png" alt="" class="contenido__texto-img" />
       </div>
       <div class="col s12 l6 contenido__texto">
         <h3>Misión</h3>

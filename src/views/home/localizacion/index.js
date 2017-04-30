@@ -2,7 +2,7 @@
 import yo from 'yo-yo'
 
 const Alenta = yo`
-<section class="blue-grey lighten-5 contenido__seccion acerca localizacion">
+<section class="contenido__seccion acerca localizacion">
   <div id="localizacion" class="section scrollspy"></div>
   <div class="container">
     <h2 class="contenido__titulo">Localización</h2>
