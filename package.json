@@ -14,7 +14,11 @@
   },
   "standard": {
     "parser": "babel-eslint",
-    "ignore": "/src/scripts/lib"
+    "ignore": [
+      "/src/scripts/lib",
+      "/src/scripts/externals",
+      "/src/views/home/menuFlotante/animations.js"
+    ]
   },
   "babel": {
     "presets": "latest",
