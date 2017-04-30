@@ -17,7 +17,8 @@
     "ignore": [
       "/src/scripts/lib",
       "/src/scripts/externals",
-      "/src/views/home/menuFlotante/animations.js"
+      "/src/views/home/menuFlotante/animations.js",
+      "/src/**/**/jquery.options.js"
     ]
   },
   "babel": {

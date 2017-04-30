@@ -6,6 +6,8 @@ import Proyectos from './proyectos'
 import Formulario from './proyectos/formulario'
 import menuFlotante from './menuFlotante'
 import menuFlotanteAnimations from './menuFlotante/animations'
+import JqueryOptions from './jquery.options'
+
 export default () => {
   createHome()
   document.title = 'Alenta - Que es Alenta'
@@ -17,4 +19,5 @@ export default () => {
   Formulario()
   Home.appendChild(menuFlotante)
   menuFlotanteAnimations()
+  JqueryOptions()
 }

@@ -3,7 +3,7 @@ import yo from 'yo-yo'
 import Desktop from './templates/desktop'
 import sideNav from './templates/sideNav'
 import { DropdownDesktop, DropdownMobile } from './templates/dropdown'
-
+import JqueryOptions from './templates/jquery.options'
 const elem = yo`
 <div>
   <div class="navbar-fixed">
@@ -25,4 +25,5 @@ const elem = yo`
 
 export default () => {
   document.getElementById('navbar-top').appendChild(elem)
+  JqueryOptions()
 }

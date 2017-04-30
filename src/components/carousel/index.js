@@ -2,6 +2,7 @@
 
 import yo from 'yo-yo'
 import {app} from '../layout/app'
+import JqueryOptions from './jquery.options'
 import {
   Slide1,
   Slide2,
@@ -21,4 +22,5 @@ const Slider = yo`
 `
 export default () => {
   app.appendChild(Slider)
+  JqueryOptions()
 }
