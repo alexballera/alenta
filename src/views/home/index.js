@@ -4,6 +4,7 @@ import Alenta from './alenta'
 import Localization from './localizacion'
 import Proyectos from './proyectos'
 import Formulario from './proyectos/formulario'
+import menuFlotante from './menuFlotante'
 
 export default () => {
   createHome()
@@ -14,4 +15,5 @@ export default () => {
   Home.appendChild(Localization)
   Home.appendChild(Proyectos)
   Formulario()
+  Home.appendChild(menuFlotante)
 }

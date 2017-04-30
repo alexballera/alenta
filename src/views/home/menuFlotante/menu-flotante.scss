@@ -1,0 +1,28 @@
+.menu-flotante {
+  height: 0;
+  position: fixed;
+  right: 0;
+  text-transform: uppercase;
+  top: 500px;
+  width: 100px;
+  z-index: 1000;
+
+  &-item {
+    border-top: 1px solid $white;
+    float: none;
+    a {
+      background-color: rgba(0, 121, 192, .5);
+      color: $white;
+      display: block;
+      font-size: 80%;
+      height: 1.75rem;
+      line-height: 1.75rem;
+      padding: 0 0 0 .5rem;
+      text-align: left;
+      &:hover {
+        @include transition-all(.3s);
+        background-color: rgba(0, 121, 192, .9);
+      }
+    }
+  }
+}
