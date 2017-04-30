@@ -52,6 +52,26 @@ $(function () {
   ]
   Materialize.scrollFire(options2)
 
+  var options3 = [
+    { selector: '#barra-proyectos',
+      offset: 0,
+      callback: function (el) {
+        Materialize.fadeInImage($(el))
+      }
+    }
+  ]
+  Materialize.scrollFire(options2)
+
+  var options4 = [
+    { selector: '#barra-proyectos2',
+      offset: 0,
+      callback: function (el) {
+        Materialize.fadeInImage($(el))
+      }
+    }
+  ]
+  Materialize.scrollFire(options2)
+
   $(document).scroll(function (e) {
     document.title = $(document).scrollTop()
   })
