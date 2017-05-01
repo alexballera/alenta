@@ -7,6 +7,7 @@ import Formulario from './proyectos/formulario'
 import menuFlotante from './menuFlotante'
 import menuFlotanteAnimations from './menuFlotante/animations'
 import JqueryOptions from './jquery.options'
+import animateBanners from './animateBanners'
 
 export default () => {
   createHome()
@@ -20,4 +21,5 @@ export default () => {
   Home.appendChild(menuFlotante)
   menuFlotanteAnimations()
   JqueryOptions()
+  animateBanners()
 }
