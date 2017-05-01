@@ -12,7 +12,7 @@ import {
 } from './slides'
 
 const Slider = yo`
-<div class="carousel carousel-slider hide-on-med-and-down">
+<div id="carousel" class="carousel carousel-slider hide-on-med-and-down">
   ${Slide1}
   ${Slide2}
   ${Slide3}

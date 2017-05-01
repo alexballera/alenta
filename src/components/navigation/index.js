@@ -1,8 +1,8 @@
 'use strict'
-import {$app} from '../layout/app'
+import hideViews from './hideViews'
+import initHome from './initHome'
 
 export default () => {
-  const navbar = $app.find('#navbar-top')
-  console.log(navbar)
-  // navbar.hide()
+  hideViews()
+  initHome()
 }
