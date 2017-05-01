@@ -1,0 +1,14 @@
+.footer-secciones {
+  background-color: $background-color-transparent;
+  color: $white;
+  padding: 2rem 0;
+
+  &-item {
+    border-left: 1px solid $background-color-container;
+  }
+
+  .material-icons {
+    color: $secondary-color;
+    font-size: 3rem;
+  }
+}
