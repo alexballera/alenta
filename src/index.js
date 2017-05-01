@@ -8,6 +8,7 @@ import topNavbar from './components/topNavbar'
 import Carousel from './components/carousel'
 import formSlide from './components/carousel/forms'
 import Home from './views/home'
+import Consultorios from './views/consultorios'
 import Dialog from './components/dialog'
 import Footer from './components/footer'
 import Navigation from './components/navigation'
@@ -23,6 +24,7 @@ import Navigation from './components/navigation'
     formSlide()
     createMain()
     Home()
+    Consultorios()
     createFooter()
     Footer()
     Navigation()

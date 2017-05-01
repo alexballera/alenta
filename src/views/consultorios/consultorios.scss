@@ -1,0 +1,27 @@
+.secciones {
+  padding: 3rem;
+  &-img {
+    width: 100%;
+  }
+  &-texto {
+    .row.contenedor-interno {
+      >.contenido__texto {
+        &:first-child {
+          border-top: 2px solid $color-secondary;
+          box-sizing: border-box;
+
+          & img {
+            position: absolute;
+            right: 0;
+            top: 10px;
+          }
+        }
+        &:last-child {
+          & img {
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+}
