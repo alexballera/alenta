@@ -11,7 +11,7 @@ const Contactenos = yo`
       <div class="formulario" id="formulario_alenta"></div>
     </div>
   </div>
-  <img class="promotores-banner" src="images/patrocinadores.png" alt="">
+  <img class="promotores-banner hide-on-small-only" src="images/patrocinadores.png" alt="">
   <address class="alenta-address">
     Carrera 18 # 80-74 Bogotá, Colombia. Teléfono: 6949729 Celular: 3144628174 comercial@alenta.co www.alenta.com.co
   </address>

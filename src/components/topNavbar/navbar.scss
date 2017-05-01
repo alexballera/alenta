@@ -6,6 +6,12 @@
     float: right !important;
   }
 
+  .button-collapse {
+    .material-icons:hover {
+      color: $primary-color;
+    }
+  }
+
   .brand-logo {
     img {
       height: $navbar-height;
@@ -31,6 +37,12 @@
         color: $white;
       }
     }
+  }
+}
+
+.side-nav {
+  li > a> .material-icons {
+    float: right !important;
   }
 }
 
