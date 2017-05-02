@@ -21,4 +21,7 @@ export default () => {
 
   $app.find('#seccion-hotel').hide()
   $app.find('#li-hotel').removeClass('activado')
+
+  $app.find('#seccion-contacto').hide()
+  $app.find('#li-contacto').removeClass('activado')
 }

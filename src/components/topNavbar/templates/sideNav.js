@@ -5,6 +5,7 @@ import onClickShowConsultorios from '../../../components/navigation/showConsulto
 import onClickShowMedicas from '../../../components/navigation/showMedicas'
 import onClickShowCirugias from '../../../components/navigation/showCirugias'
 import onClickShowHotel from '../../../components/navigation/showHotel'
+import onClickShowContacto from '../../../components/navigation/showContacto'
 
 const sideNav = yo`
 <ul class="side-nav" id="mobile-demo">
@@ -19,7 +20,7 @@ const sideNav = yo`
   <li class="divider"></li>
   <li><a href="" onclick=${onClickShowHotel}>Hotel</a></li>
   <li class="divider"></li>
-  <li><a href="">Contactenos</a></li>
+  <li><a href="" onclick=${onClickShowContacto}>Contactenos</a></li>
   <li class="divider"></li>
 </ul>
 `

@@ -9,7 +9,7 @@ const Hotel = yo`
   <section class="contenido__seccion secciones" style="min-height:474px;">
     <div class="row contenido__container">
       <div class="col s12 l6 contenido__texto">
-        <img className="secciones-img" src="images/sala-cirugia.png" alt="Consultorio Img" />
+        <img className="secciones-img" src="images/hotel.png" alt="Consultorio Img" />
       </div>
       <div className="col s12 l6 secciones-texto">
         <div className="row contenedor-interno">
@@ -17,15 +17,15 @@ const Hotel = yo`
             <img src="images/logo2.png" alt="" />
           </div>
           <div class=" col s12 contenido__texto">
-            <h3>SALAS DE CIRUGIA AMBULATORIA</h3>
+            <h3>HOTEL Y LOCALES COMERCIALES</h3>
             <ul>
               <li>
                 <img src="images/logo2.png" alt="">
-                <span>4 quirófanos dotados con última tecnología</span>
+                <span>Fideicomiso de renta inmobiliaria conformado por 18 habitaciones hoteleras,</span>
               </li>
               <li>
                 <img src="images/logo2.png" alt="">
-                <span>Destinados para cirugía ambulatoria</span>
+                <span>3 locales comerciales en el primer piso y un local comercial en el sexto piso.</span>
               </li>
               <li>
                 <img src="images/logo2.png" alt="">

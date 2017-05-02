@@ -1,31 +1,4 @@
 
-<!-- Sección Hotel -->
-<article class="contenido__alenta seccion__hotel">
-      <div id="hotel" class="contenido__seccion"></div>
-      <section class="contenido__seccion acerca localizacion consultorios areas-medicas">
-            <div class="contenido__container">
-                <div class="contenido__texto">
-                      <h3>HOTEL Y LOCALES COMERCIALES</h3>
-                      <ul>
-                            <li>
-                            <img src="images/logo2.png" alt="">
-                            <span>Fideicomiso de renta inmobiliaria conformado por 18 habitaciones hoteleras,</span>
-                            </li>
-                            <li>
-                            <img src="images/logo2.png" alt="">
-                            <span>3 locales comerciales en el primer piso y un local comercial en el sexto piso.</span>
-                            </li>
-                            <li>
-                            <img src="images/logo2.png" alt="">
-                            <span>Comercialización a través de 100 derechos fiduciarios</span>
-                            </li>
-                      </ul>
-                </div>
-                <div class="contenido__texto"><img src="images/logo2.png" alt="" /></div>
-                <div class="contenido__texto"><img src="images/hotel.png" alt="Hotel Img" /></div>
-            </div>
-      </section>
-</article>
 <!-- Boton de regresar -->
 <button class="boton__up" id="boton__up">
     <a href="" id="button-alenta" class="gototop"><i class="fa fa-caret-up fa-3x"></i></a>

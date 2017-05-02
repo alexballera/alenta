@@ -5,6 +5,7 @@ import onClickShowConsultorios from '../../../components/navigation/showConsulto
 import onClickShowMedicas from '../../../components/navigation/showMedicas'
 import onClickShowCirugias from '../../../components/navigation/showCirugias'
 import onClickShowHotel from '../../../components/navigation/showHotel'
+import onClickShowContacto from '../../../components/navigation/showContacto'
 
 const Desktop = yo`
 <ul class="navbar-top-desktop right hide-on-med-and-down">
@@ -14,7 +15,7 @@ const Desktop = yo`
   <li class="waves-effect waves-blue" id="li-medicas"><a href="" onclick=${onClickShowMedicas}>Áreas Médicas</a></li>
   <li class="waves-effect waves-blue" id="li-cirugias"><a href="" onclick=${onClickShowCirugias}>Salas de Cirugía</a></li>
   <li class="waves-effect waves-blue" id="li-hotel"><a href="" onclick=${onClickShowHotel}>Hotel</a></li>
-  <li class="waves-effect waves-blue" id="li-contactenos"><a href="" >Contactenos</a></li>
+  <li class="waves-effect waves-blue" id="li-contactenos" onclick=${onClickShowContacto}><a href="" >Contactenos</a></li>
 </ul>
 `
 module.exports = Desktop

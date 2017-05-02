@@ -12,6 +12,7 @@ import Consultorios from './views/consultorios'
 import Medicas from './views/medicas'
 import Cirugias from './views/cirugias'
 import Hotel from './views/hotel'
+import Contacto from './views/contactenos'
 import Dialog from './components/dialog'
 import Footer from './components/footer'
 import {Navigation} from './components/navigation'
@@ -31,6 +32,7 @@ import {Navigation} from './components/navigation'
     Medicas()
     Cirugias()
     Hotel()
+    Contacto()
     createFooter()
     Footer()
     Navigation()
