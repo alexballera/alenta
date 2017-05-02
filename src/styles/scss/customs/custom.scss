@@ -13,11 +13,13 @@ a {
     color: $white;
   }
 }
-/*
-.enlace__activo {
-  background-color: $color-primary;
-  color: white !important;
-}*/
+
+.activado {
+  background-color: $primary-color;
+  a {
+    color: $white;
+  }
+}
 
 .hide {
   display: none;
