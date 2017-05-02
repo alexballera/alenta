@@ -12,7 +12,6 @@ import loader from '../../components/loader'
 
 export default () => {
   createHome()
-  document.title = 'Alenta - Que es Alenta'
   const Home = document.getElementById('home')
 
   loader()

@@ -11,7 +11,7 @@ import Home from './views/home'
 import Consultorios from './views/consultorios'
 import Dialog from './components/dialog'
 import Footer from './components/footer'
-import Navigation from './components/navigation'
+import {Navigation} from './components/navigation'
 (() => {
   document.addEventListener('DOMContentLoaded', onDOMLoad)
 

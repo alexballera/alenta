@@ -1,11 +1,13 @@
 'use strict'
 import {$app} from '../layout/app'
+import {Common} from '../navigation'
 import hideViews from './hideViews'
 
 const onClickShowConsultorios = (e) => {
   e.preventDefault()
   hideViews()
-  $app.find('#navbar-top').show('slow')
+  document.title = 'Consultorios'
+  Common()
   $app.find('#seccion-consultorios').show('slow')
 }
 
