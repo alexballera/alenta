@@ -9,6 +9,7 @@ import Carousel from './components/carousel'
 import formSlide from './components/carousel/forms'
 import Home from './views/home'
 import Consultorios from './views/consultorios'
+import Medicas from './views/medicas'
 import Dialog from './components/dialog'
 import Footer from './components/footer'
 import {Navigation} from './components/navigation'
@@ -25,6 +26,7 @@ import {Navigation} from './components/navigation'
     createMain()
     Home()
     Consultorios()
+    Medicas()
     createFooter()
     Footer()
     Navigation()

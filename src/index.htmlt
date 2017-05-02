@@ -1,32 +1,4 @@
 
-<!-- Sección Áreas Médicas -->
-<article class="contenido__alenta seccion__areas">
-      <div id="areas" class="contenido__seccion"></div>
-      <section class="contenido__seccion acerca localizacion consultorios areas-medicas">
-        <div class="contenido__container">
-              <div class="contenido__texto">
-                  <h3>AREAS MEDICAS Y OFICINAS EN VENTA Y ARRIENDO</h3>
-                  <ul>
-                        <li>
-                        <img src="images/logo2.png" alt="">
-                        <span>Pisos desde En venta desde 377 m2 hasta 549 hasta m2</span>
-                        </li>
-                        <li>
-                        <img src="images/logo2.png" alt="">
-                        <span>Para entrega en diciembre de 2017</span>
-                        </li>
-                        <li>
-                        <img src="images/logo2.png" alt="">
-                        <span>Áreas de oficinas y consultorios entregados en obra gris <br>
-                        Posibilidad de construcción de acabados y mobiliario interior a través de proveedores aliados</span>
-                        </li>
-                  </ul>
-              </div>
-              <div class="contenido__texto"><img src="images/logo2.png" alt="" /></div>
-              <div class="contenido__texto"><img src="images/etapa2-2.png" alt="Areas Medicas Img" /></div>
-        </div>
-      </section>
-</article>
 <!-- Sección Cirugía -->
 <article class="contenido__alenta seccion__cirugia">
       <div id="cirugias" class="contenido__seccion"></div>

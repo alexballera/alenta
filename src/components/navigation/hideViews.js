@@ -9,6 +9,10 @@ export default () => {
   $app.find('#home').hide()
   $app.find('#loader').hide()
   $app.find('#footer').hide()
+
   $app.find('#seccion-consultorios').hide()
   $app.find('#li-consultorios').removeClass('activado')
+
+  $app.find('#seccion-medicas').hide()
+  $app.find('#li-medicas').removeClass('activado')
 }

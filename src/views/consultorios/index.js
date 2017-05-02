@@ -1,7 +1,7 @@
 'use strict'
 import yo from 'yo-yo'
 import {app} from '../../components/layout/app'
-import Footer from '../footer'
+import {FooterConsultorios} from '../footer'
 
 const Consultorios = yo`
 <article id="seccion-consultorios" class="blue-grey lighten-5 contenido__alenta seccion__consultorios">
@@ -42,7 +42,7 @@ const Consultorios = yo`
       </div>
     </div>
   </section>
-  ${Footer}
+  ${FooterConsultorios}
 </article>
 `
 export default () => {
