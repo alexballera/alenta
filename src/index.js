@@ -10,6 +10,8 @@ import formSlide from './components/carousel/forms'
 import Home from './views/home'
 import Consultorios from './views/consultorios'
 import Medicas from './views/medicas'
+import Cirugias from './views/cirugias'
+import Hotel from './views/hotel'
 import Dialog from './components/dialog'
 import Footer from './components/footer'
 import {Navigation} from './components/navigation'
@@ -27,6 +29,8 @@ import {Navigation} from './components/navigation'
     Home()
     Consultorios()
     Medicas()
+    Cirugias()
+    Hotel()
     createFooter()
     Footer()
     Navigation()

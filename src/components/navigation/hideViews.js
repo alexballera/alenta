@@ -15,4 +15,10 @@ export default () => {
 
   $app.find('#seccion-medicas').hide()
   $app.find('#li-medicas').removeClass('activado')
+
+  $app.find('#seccion-cirugias').hide()
+  $app.find('#li-cirugias').removeClass('activado')
+
+  $app.find('#seccion-hotel').hide()
+  $app.find('#li-hotel').removeClass('activado')
 }

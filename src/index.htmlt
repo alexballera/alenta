@@ -1,31 +1,4 @@
 
-<!-- Sección Cirugía -->
-<article class="contenido__alenta seccion__cirugia">
-      <div id="cirugias" class="contenido__seccion"></div>
-      <section class="contenido__seccion acerca localizacion consultorios cirugia">
-            <div class="contenido__container">
-                  <div class="contenido__texto">
-                        <h3>SALAS DE CIRUGIA AMBULATORIA</h3>
-                        <ul>
-                              <li>
-                              <img src="images/logo2.png" alt="">
-                              <span>4 quirófanos dotados con última tecnología</span>
-                              </li>
-                              <li>
-                              <img src="images/logo2.png" alt="">
-                              <span>Destinados para cirugía ambulatoria</span>
-                              </li>
-                              <li>
-                              <img src="images/logo2.png" alt="">
-                              <span>Comercialización a través de 100 derechos fiduciarios</span>
-                              </li>
-                        </ul>
-                  </div>
-                  <div class="contenido__texto"><img src="images/logo2.png" alt="" /></div>
-                  <div class="contenido__texto"><img src="images/sala-cirugia.png" alt="Areas Medicas Img" /></div>
-            </div>
-      </section>
-</article>
 <!-- Sección Hotel -->
 <article class="contenido__alenta seccion__hotel">
       <div id="hotel" class="contenido__seccion"></div>
