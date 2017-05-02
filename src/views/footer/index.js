@@ -3,12 +3,12 @@ import yo from 'yo-yo'
 
 const Footer = yo`
 <footer class="row footer-secciones">
-  <div class="col s12 offset-l6 l3 footer-secciones-item">
+  <div class="col s12 offset-l6 l3 section footer-secciones-item">
     <div className="row">
-      <div className="col s2">
+      <div className="col offset-s2 s2 l2">
         <i class="material-icons">location_on</i>
       </div>
-      <div className="col s10">
+      <div className="col s6 l10">
         <h3>Sala de negocios:</h3>
         <address>
           <strong>Dirección:</strong> Carrera 18 # 80-74<br>
@@ -17,12 +17,13 @@ const Footer = yo`
       </div>
     </div>
   </div>
-  <div class="col s12 l3 footer-secciones-item">
+  <div class="col s12 divider hide-on-large-only"></div>
+  <div class="col s12 l3 section footer-secciones-item">
     <div className="row">
-      <div className="col s2">
+      <div className="col offset-s2 s2 l2">
         <i class="material-icons">stay_primary_portrait</i>
       </div>
-      <div className="col s10">
+      <div className="col s6 l10">
         <h3>Números de contacto:</h3>
         <address>
           <strong>Teléfono:</strong> 6949729 <br>

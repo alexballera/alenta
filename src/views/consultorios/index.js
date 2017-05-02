@@ -4,9 +4,9 @@ import {app} from '../../components/layout/app'
 import Footer from '../footer'
 
 const Consultorios = yo`
-<article class="blue-grey lighten-5 contenido__alenta seccion__consultorios">
+<article id="seccion-consultorios" class="blue-grey lighten-5 contenido__alenta seccion__consultorios">
   <div id="consultorios"></div>
-  <section class="contenido__seccion secciones">
+  <section class="contenido__seccion secciones" style="min-height:474px;">
     <div class="row contenido__container">
       <div class="col s12 l6 contenido__texto">
         <img className="secciones-img" src="images/consultorio.jpg" alt="Consultorio Img" />
