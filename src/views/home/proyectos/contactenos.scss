@@ -1,0 +1,51 @@
+// Sección Contacto Alenta
+.contactenos {
+  padding: 0 !important;
+
+  .contacto-banner {
+    img {
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+  }
+
+  .contenido__titulo {
+    margin: 0;
+    text-align: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .contenido__texto-formulario {
+    border-top: 0 !important;
+    width: 100% !important;
+  }
+}
+
+.promotores-banner {
+  width: 100%;
+}
+
+.alenta-address {
+  background-color: $background-color-container;
+  color: $color-fonts;
+  font-weight: 200;
+  line-height: 1.75rem;
+  margin-top: -2px;
+  padding: 1rem 0;
+  text-align: center;
+}
+.has-error {
+  & input[type='email'],
+  & input[type='text'],
+  & input[type='tel']{
+    background-color: pink;
+  }
+}
+.help-block {
+  padding: .25rem;
+  margin-top: 5px;
+  color: red;
+}

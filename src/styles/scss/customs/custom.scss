@@ -1,22 +1,52 @@
-body{
+body {
   font-size: 16px;
-  font-family: $font-awesome;
 }
-a{
-  text-decoration: none;
-  color: darkgrey;
-  &:hover,
+
+a {
+  color: $color-fonts;
+
   &:visited,
-  &:active{
+  &:active {
     color: $color-fonts;
+  }
+  &:hover {
+    color: $white;
   }
 }
 
-.enlace__activo {
-  background-color: $color-primary;
-  color: white !important;
+.activado {
+  background-color: $primary-color;
+  a {
+    color: $white;
+  }
 }
 
 .hide {
   display: none;
+}
+
+.text {
+  @include transition-all(.3s);
+  @include respond-to(xs) {
+    top: 25%;
+  }
+  @include respond-to(lg) {
+    top: 60px;
+  }
+  box-sizing: border-box;
+  color: $white;
+  height: 150px;
+  padding: 0 2rem;
+  padding-left: 20rem;
+  position: absolute;
+  top: 25%;
+  vertical-align: middle;
+  width: 600px;
+}
+
+.row {
+  margin-bottom: 0;
+}
+.blue-grey.lighten-5 {
+  background-color: $background-color-container !important;
 }

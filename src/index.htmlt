@@ -1,0 +1,17 @@
+
+<!-- Boton de regresar -->
+<button class="boton__up" id="boton__up">
+    <a href="" id="button-alenta" class="gototop"><i class="fa fa-caret-up fa-3x"></i></a>
+</button>
+</section>
+<!-- Sección Contacto -->
+<article class="contenido__seccion localizacion contactenos contacto seccion__contacto" id="contacto">
+<div class="contenido__container">
+<picture class="contacto-banner"><img src="images/banner-contacto.jpeg" alt=""></picture>
+<h2 class="contenido__titulo">Contáctenos</h2>
+<div class="contenido__texto contenido__texto-formulario">
+  <div class="formulario" id="formulario_contacto"></div>
+</div>
+</div>
+<img class="promotores-banner" src="images/patrocinadores.png" alt="">
+</article>

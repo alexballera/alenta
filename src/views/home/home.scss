@@ -1,0 +1,149 @@
+.contenido {
+  &__seccion {
+    box-sizing: border-box;
+    position: relative;
+    &__banner {
+      >img {
+        margin-top: 2rem;
+        width: 100%;
+      }
+    }
+  }
+  &__titulo {
+    color: $color-secondary;
+    font-size: 2rem;
+    margin: 0 0 3rem;
+    padding-top: 3rem;
+    &::after {
+      border-top: 3px solid $color-secondary;
+      content: '';
+      display: inline-block;
+      height: 5px;
+      margin-left: 2rem;
+      width: 70%;
+    }
+    & span {
+      text-transform: lowercase;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  &__texto {
+    &-img {
+      max-height: 344px;
+      width: 100%;
+    }
+
+    &:nth-child(odd) {
+      box-sizing: border-box;
+      padding-bottom: 0;
+      width: 100%;
+    }
+
+    &:nth-child(2) {
+      text-align: center;
+      width: 6%;
+/*      >img {
+        position: relative;
+        top: -40px;
+      }*/
+      @include respond-to(lg) {
+        display: block;
+      }
+    }
+    & h3 {
+      color: $color-secondary;
+      font-size: 1.5rem;
+      font-weight: 200;
+      margin: 1.25rem 0;
+      text-align: left;
+    }
+    & p,
+    & ul,
+    & ul>li {
+      font-weight: 200;
+      line-height: 1.75rem;
+      text-align: justify;
+    }
+    p {
+      text-align: justify;
+    }
+    >img.etapa1 {
+      box-sizing: border-box;
+    }
+    &-formulario {
+      padding: 0 !important;
+    }
+  }
+  &__button {
+    display: none;
+    @include respond-to(lg) {
+      background-color: $color-primary;
+      border-radius: 10px;
+      color: rgb(105, 210, 239);
+      display: block;
+      left: 96%;
+      position: relative;
+      top: -380px;
+      transition: all .3s ease;
+      width: 64px;
+      &:hover {
+        background-color: rgb(105, 210, 239);
+        transition: all .3s ease;
+        span,
+        i {
+          color: $color-primary;
+        }
+      }
+      &:active,
+      &:visited {
+        color: rgb(105, 210, 239);
+      }
+      >span {
+        display: block;
+        font-size: 80%;
+        position: relative;
+        text-align: center;
+        top: 12px;
+      }
+      >.fa.fa-caret-down,
+      >.fa.fa-caret-up {
+        display: block;
+        text-align: center;
+      }
+    }
+    &__localizacion {
+      top: -860px;
+    }
+    &__proyecto {
+      top: -610px;
+    }
+    &__etapa1 {
+      top: -800px;
+    }
+    &__etapa2 {
+      top: -680px;
+    }
+    &__etapa3 {
+      top: -890px;
+    }
+    &__promotores {
+      top: -220px;
+    }
+    &__contactanos {
+      top: -550px;
+    }
+  }
+}
+
+.alenta-definicion {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: justify;
+
+  span {
+    color: $color-secondary;
+  }
+}

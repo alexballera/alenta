@@ -11,10 +11,10 @@ gulp.task('build:scripts', () => {
     presets: 'latest'
   }
 
-  return browserify('./src/scripts/main.js')
+  return browserify('./src/index.js')
     .transform(babelify, {presets})
     .bundle()
-    .pipe(source('main.js'))
+    .pipe(source('index.js'))
     .pipe(buffer())
     .pipe(gulp.dest('./build/scripts'))
     .pipe(uglify())

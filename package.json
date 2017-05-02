@@ -4,12 +4,26 @@
   "description": "Maquetado de Alenta a peticion de Creativoz",
   "main": "index.js",
   "scripts": {
+    "postinstall": "cp node_modules/materialize-css/js/date_picker/picker.js node_modules/materialize-css/bin",
     "test": "standard",
-    "start": "gulp",
+    "start": "npm run postinstall && npm run test && gulp",
     "styles": "gulp styles",
     "scripts": "gulp build:scripts",
     "images": "gulp build:images",
     "deploy": "gulp deploy"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/src/scripts/lib",
+      "/src/scripts/externals",
+      "/src/views/home/menuFlotante/animations.js",
+      "/src/**/**/jquery.options.js"
+    ]
+  },
+  "babel": {
+    "presets": "latest",
+    "plugins": "transform-regenerator"
   },
   "repository": {
     "type": "git",
@@ -22,6 +36,7 @@
   },
   "homepage": "https://github.com/alexballera/alenta#readme",
   "devDependencies": {
+    "babel-eslint": "^7.2.3",
     "babel-preset-latest": "^6.16.0",
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.1",
@@ -51,8 +66,15 @@
     "require-dir": "^0.3.1",
     "sass-lint": "^1.10.2",
     "standard": "^8.6.0",
+    "stream-series": "^0.1.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webfontloader": "^1.6.27",
+    "yo-yo": "^1.4.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery-ui": "^1.12.1",
+    "jquery-ui-dist": "^1.12.1",
+    "materialize-css": "^0.98.2"
+  }
 }

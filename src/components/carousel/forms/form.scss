@@ -1,0 +1,41 @@
+.formulario {
+  &-container {
+    background-color: $background-color-transparent;
+    padding: 10px;
+    position: absolute;
+    right: 80px;
+    top: 185px;
+    width: 400px;
+    z-index: 2;
+  }
+  &-slide {
+    .input-field {
+      margin-top: 0;
+
+      input,
+      textarea {
+        color: $white;
+        height: 36px;
+        margin-bottom: 8px;
+      }
+
+      textarea  {
+        padding-bottom: 0;
+        padding-top: 10px;
+      }
+    }
+
+    &-contacto {
+      font-size: 90%;
+      margin-top: 1rem;
+
+      &-item:first-child {
+        border-right: 1px solid $secondary-color;
+      }
+      
+      h3 {
+        font-weight: bolder;
+      }
+    }
+  }
+}

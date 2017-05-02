@@ -1,0 +1,107 @@
+.localizacion {
+  .contenido__container {
+    .contenido__texto {
+      p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        >img {
+          width: 5%;
+        }
+      }
+      ul {
+        margin-left: 1rem;
+        li {
+          img {
+            width: 3%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .imagen-localizacion {
+          @include respond-to(xl) {
+            width: 100%;
+          }
+        }
+      }
+      &.localizacion-mapa {
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        width: 100%;
+
+        img {
+          height: 100% !important;
+          width: 100%;
+        }
+
+        .localizacion_direccion {
+          font-size: 1rem;
+          margin: 2rem 1rem;
+          @media (min-width: 768px) {
+            font-size: 1.25rem;
+          }
+
+          address {
+            text-align: center;
+
+            strong {
+              text-transform: uppercase;
+            }
+          }
+
+          .horario {
+            text-align: center;
+          }
+        }
+      }
+
+      >.localizacion__items {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+          left: 1%;
+          top: 15%;
+          width: 40%;
+        }
+        @media (min-width: 992px) {
+          left: 3%;
+          top: 25%;
+          width: 30%;
+        }
+        background-color: $white;
+        padding: 1rem;
+        position: absolute;
+
+        >.localizacion__item {
+          width: 100%;
+          &:before {
+            border-top: 5px solid;
+            content: '';
+            display: inline-block;
+            height: 5px;
+            margin-right: .75rem;
+            width: 25%;
+          }
+          &:nth-child(1) {
+            &:before{color: lightgreen;}
+          }
+          &:nth-child(2) {
+            &:before{color: red;}
+          }
+          &:nth-child(3) {
+            &:before{color: rgb(247, 44, 237);}
+          }
+          &:nth-child(4) {
+            &:before{color: yellow;}
+          }
+          &:nth-child(5) {
+            &:before {
+              border-top-style: dotted;
+              color: lightblue;
+            }
+          }
+        }
+      }
+    }
+  }
+}

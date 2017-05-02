@@ -3,7 +3,7 @@
   margin-top: 0;
   >.contenido__container {
     background-color: $background-color-container !important;
-    height: 700px;
+    height: 900px;
       
     >.contenido__texto {
       &:nth-child(1){
@@ -26,5 +26,5 @@
 }
 
 .footer_contacto {
-  top: 780px !important;
+  top: 980px !important;
 }
