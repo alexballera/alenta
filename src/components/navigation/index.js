@@ -7,6 +7,8 @@ import showHome from './showHome'
 import showConsultorios from './showConsultorios'
 import showMedicas from './showMedicas'
 import showCirugias from './showCirugias'
+import showHotel from './showHotel'
+import showContacto from './showContacto'
 import page from 'page'
 
 const Common = () => {
@@ -24,6 +26,8 @@ const Navigation = () => {
   page('/consultorios', showConsultorios)
   page('/areas-medicas', showMedicas)
   page('/cirugias', showCirugias)
+  page('/hotel', showHotel)
+  page('/contacto', showContacto)
   page()
 }
 export {Common, Navigation}

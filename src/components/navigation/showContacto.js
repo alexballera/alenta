@@ -3,8 +3,7 @@ import {$app} from '../layout/app'
 import {Common} from '../navigation'
 import hideViews from './hideViews'
 
-const onClickShowContacto = (e) => {
-  e.preventDefault()
+const showContacto = () => {
   hideViews()
   Common()
 
@@ -13,4 +12,4 @@ const onClickShowContacto = (e) => {
   document.title = 'Contactenos'
 }
 
-module.exports = onClickShowContacto
+module.exports = showContacto

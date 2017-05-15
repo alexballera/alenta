@@ -1,7 +1,5 @@
 'use strict'
 import yo from 'yo-yo'
-import onClickShowHotel from '../../../components/navigation/showHotel'
-import onClickShowContacto from '../../../components/navigation/showContacto'
 
 const sideNav = yo`
 <ul class="side-nav" id="mobile-demo">
@@ -14,9 +12,9 @@ const sideNav = yo`
   <li class="divider"></li>
   <li><a href="/cirugias">Salas de Cirugía</a></li>
   <li class="divider"></li>
-  <li><a href="" onclick=${onClickShowHotel}>Hotel</a></li>
+  <li><a href="/hotel">Hotel</a></li>
   <li class="divider"></li>
-  <li><a href="" onclick=${onClickShowContacto}>Contactenos</a></li>
+  <li><a href="/contacto">Contactenos</a></li>
   <li class="divider"></li>
 </ul>
 `

@@ -1,7 +1,5 @@
 'use strict'
 import yo from 'yo-yo'
-import onClickShowHotel from '../../../components/navigation/showHotel'
-import onClickShowContacto from '../../../components/navigation/showContacto'
 
 const Desktop = yo`
 <ul class="navbar-top-desktop right hide-on-med-and-down">
@@ -10,8 +8,8 @@ const Desktop = yo`
   <li class="waves-effect waves-blue" id="li-consultorios"><a href="/consultorios">Consultorios</a></li>
   <li class="waves-effect waves-blue" id="li-medicas"><a href="areas-medicas">Áreas Médicas</a></li>
   <li class="waves-effect waves-blue" id="li-cirugias"><a href="/cirugias">Salas de Cirugía</a></li>
-  <li class="waves-effect waves-blue" id="li-hotel"><a href="" onclick=${onClickShowHotel}>Hotel</a></li>
-  <li class="waves-effect waves-blue" id="li-contactenos" onclick=${onClickShowContacto}><a href="" >Contactenos</a></li>
+  <li class="waves-effect waves-blue" id="li-hotel"><a href="/hotel">Hotel</a></li>
+  <li class="waves-effect waves-blue" id="li-contactenos"><a href="/contacto" >Contactenos</a></li>
 </ul>
 `
 module.exports = Desktop
