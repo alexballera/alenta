@@ -5,6 +5,7 @@ import hideViews from './hideViews'
 import initHome from './initHome'
 import showHome from './showHome'
 import showConsultorios from './showConsultorios'
+import showMedicas from './showMedicas'
 import page from 'page'
 
 const Common = () => {
@@ -20,6 +21,7 @@ const Navigation = () => {
   initHome()
   page('/', showHome)
   page('/consultorios', showConsultorios)
+  page('/areas-medicas', showMedicas)
   page()
 }
 export {Common, Navigation}
