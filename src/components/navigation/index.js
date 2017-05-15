@@ -3,6 +3,8 @@
 import {$app} from '../layout/app'
 import hideViews from './hideViews'
 import initHome from './initHome'
+import showHome from './showHome'
+import page from 'page'
 
 const Common = () => {
   $app.find('#navbar-top').show('slow')
@@ -15,5 +17,7 @@ const Common = () => {
 const Navigation = () => {
   hideViews()
   initHome()
+  page('/', showHome)
+  page()
 }
 export {Common, Navigation}

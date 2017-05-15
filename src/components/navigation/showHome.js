@@ -2,7 +2,7 @@
 import {$app} from '../layout/app'
 import hideViews from './hideViews'
 
-const showDefault = () => {
+const showHome = () => {
   hideViews()
   $app.find('#navbar-top').show('slow')
   $app.find('#link-home').show()
@@ -13,12 +13,4 @@ const showDefault = () => {
   document.title = 'Alenta - Que es Alenta'
 }
 
-const onClickshowHome = (e) => {
-  e.preventDefault()
-  showDefault()
-}
-
-const showHome = () => {
-  showDefault()
-}
-export {showHome, onClickshowHome}
+module.exports = showHome
