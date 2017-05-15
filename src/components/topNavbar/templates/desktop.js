@@ -1,6 +1,5 @@
 'use strict'
 import yo from 'yo-yo'
-import onClickShowCirugias from '../../../components/navigation/showCirugias'
 import onClickShowHotel from '../../../components/navigation/showHotel'
 import onClickShowContacto from '../../../components/navigation/showContacto'
 
@@ -10,7 +9,7 @@ const Desktop = yo`
   <li class="waves-effect waves-blue" id="link-seccion"><a href="/" >Qué es Alenta</a></li>
   <li class="waves-effect waves-blue" id="li-consultorios"><a href="/consultorios">Consultorios</a></li>
   <li class="waves-effect waves-blue" id="li-medicas"><a href="areas-medicas">Áreas Médicas</a></li>
-  <li class="waves-effect waves-blue" id="li-cirugias"><a href="" onclick=${onClickShowCirugias}>Salas de Cirugía</a></li>
+  <li class="waves-effect waves-blue" id="li-cirugias"><a href="/cirugias">Salas de Cirugía</a></li>
   <li class="waves-effect waves-blue" id="li-hotel"><a href="" onclick=${onClickShowHotel}>Hotel</a></li>
   <li class="waves-effect waves-blue" id="li-contactenos" onclick=${onClickShowContacto}><a href="" >Contactenos</a></li>
 </ul>

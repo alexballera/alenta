@@ -3,8 +3,7 @@ import {$app} from '../layout/app'
 import {Common} from '../navigation'
 import hideViews from './hideViews'
 
-const onClickShowCirugias = (e) => {
-  e.preventDefault()
+const showCirugias = () => {
   hideViews()
   Common()
 
@@ -13,4 +12,4 @@ const onClickShowCirugias = (e) => {
   document.title = 'Salas De Cirugías'
 }
 
-module.exports = onClickShowCirugias
+module.exports = showCirugias
