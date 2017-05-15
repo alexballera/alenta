@@ -4,6 +4,7 @@ import {$app} from '../layout/app'
 import hideViews from './hideViews'
 import initHome from './initHome'
 import showHome from './showHome'
+import showConsultorios from './showConsultorios'
 import page from 'page'
 
 const Common = () => {
@@ -18,6 +19,7 @@ const Navigation = () => {
   hideViews()
   initHome()
   page('/', showHome)
+  page('/consultorios', showConsultorios)
   page()
 }
 export {Common, Navigation}
